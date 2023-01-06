@@ -11,23 +11,25 @@ body {
     width: 100vw;
     height: 100%;
     box-sizing: border-box;
-  }
+}
 #grid_index {
     display: grid;
     height: 100%;
     width: 100vw;
-    gap: .1em;
-    grid-template-rows: 0.3fr repeat(4,0.3fr) 0.5fr;
+    gap: 1em;
+    /* grid-template-rows: 0.3fr repeat(4,0.3fr) 0.5fr; */
     /*Posición áreas*/
     grid-template-areas: 
     "header"
-    "item1"
-    "item2"
-    "item3"
-    "item4"
+    "main"
+    "servicios_index"
+    "productos_index"
+    "novedades_index"
+    "texto_index"
     "footer"
     ;
 }
+
 header{
     grid-area: header;
     display: flex;
@@ -36,6 +38,7 @@ header{
     font-size: medium;
     font-weight: normal;
     position: sticky;
+    
 }
 
 header nav div div ul li{
@@ -58,45 +61,20 @@ header nav div div ul li a:hover{
     width: auto;
     height :50px;
     padding-top: 10px;
-    
-        
 }  
+/*Cierra header para todas las páginas*/
 
-.item1{
-    grid-area: item1;
-    background-color: aqua;
-    height:100%;
-}
-.item2{
-    grid-area: item2;
-    background-color: blue;
-    background-position: center;
-    background-size:cover ;
-    background-repeat: none;
-    height:100%;
-}
-.item3{
-    grid-area: item3;
-    background-color: violet;
-    height:100%;
-}
-.item4{
-    grid-area: item4;
-    background-color: green;
-    height:100%;
-}
-
+/*Abre footer para todas las páginas*/
 footer {
     grid-area: footer;
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
     align-items: center;
     flex-wrap: wrap;
     display: flex;
     background: linear-gradient(90deg, rgba(232,133,133,1) 0%, rgba(191,21,21,1) 100%);
-  }
+}
 
 .contendor_footer_datos {
     display: flex;
@@ -136,66 +114,64 @@ footer {
     padding:0.3em 0.4em;
     margin-top: 0.8em;
     scale: 1.2;
+}
+/*Cierra footer para todas las páginas*/
 
-
+/* Abre estilo Estilos para index.html*/
+.main_Index{
+    width: 100%;
+    height: 100%;
+    grid-area: main;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-/* .header{
-position: fixed;
-width: 1366px;
-height: 80px;
-left: 0px;
-top: 0px;
-background: linear-gradient(0deg, rgba(235, 137, 137, 0.1), rgba(235, 137, 137, 0.1)), linear-gradient(180deg, #B71414 0%, #CF6262 78.65%, rgba(82, 17, 17, 0.347537) 96.35%, rgba(78, 17, 17, 0.322917) 99.99%, rgba(28, 16, 16, 0) 100%);
-z-index: 100;
+.servicios_index{
+    display:flex;
+    grid-area: servicios_index;
+    height: 400px;
+    width: 100%;
+    justify-content: center;
 }
-.header img{
-    position: absolute;
-    width: 248px;
-    height: 58px;
-    left: 8px;
-    top: 8px;
+
+.productos_index{
+    display:flex;
+    grid-area: productos_index;
+    height: 400px;
+    width: 100%;
+    justify-content: center;
 }
-.header nav{
-    position: absolute;
-    width: 1366px;
-    height: 49px;
-    left: 0px;
-    top: 82px;
-    background: linear-gradient(0deg, rgba(234, 219, 219, 0.2), rgba(234, 219, 219, 0.2)), #776969;
+.novedades_index{
+    display:flex;
+    grid-area: novedades_index;
+    height: 400px;
+    width: 100%;
+    justify-content: center;
 }
-.menu {
-    list-style: none;
-    font-size:0; 
+.texto_index{
+    display:flex;
+    grid-area: texto_index;
+    flex-wrap: wrap;
+    padding: 10px; 
+    justify-content: center;
+    justify-self: center;
+    height: 700px;
+    width: 90%;
+    box-sizing: border-box;
+    border-width: 1px;
+    background: #F9D7CC;
+    border-radius: 15px;
 }
-.menu li {
-    position:relative;
-    display: inline-block;
-    margin-inline:30px;
-    margin-top: 5px;
-    width: 191px;
-    height: 35px;
-    font-family:Roboto;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 30px;
+
+.titulo{
+    font-weight:700;
+    font-size:medium;
+    text-align: center;
+    color:black;
 }
-.menu li a{
-    color:white;
-    text-decoration-line:none;
-}
-.imagenPrincipal{
-    position: absolute;
-    left: 19px;
-    top: 150px;
-}
-.imagenPrincipal img {
-    position: absolute;
-    width: 1305px;
-    height: 600px;
-    border-radius: 25px;
-    border: 1px solid; 
-} */
+
+/* Abre estilo Estilos para index.html*/
 .servicios {
     position: absolute;
     left: 19px;

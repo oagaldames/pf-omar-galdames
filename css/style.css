@@ -1,0 +1,566 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+position: fixed;
+width: 1366px;
+height: 80px;
+left: 0px;
+top: 0px;
+background: linear-gradient(0deg, rgba(235, 137, 137, 0.1), rgba(235, 137, 137, 0.1)), linear-gradient(180deg, #B71414 0%, #CF6262 78.65%, rgba(82, 17, 17, 0.347537) 96.35%, rgba(78, 17, 17, 0.322917) 99.99%, rgba(28, 16, 16, 0) 100%);
+z-index: 100;
+}
+.header img{
+    position: absolute;
+    width: 248px;
+    height: 58px;
+    left: 8px;
+    top: 8px;
+}
+.header nav{
+    position: absolute;
+    width: 1366px;
+    height: 49px;
+    left: 0px;
+    top: 82px;
+    background: linear-gradient(0deg, rgba(234, 219, 219, 0.2), rgba(234, 219, 219, 0.2)), #776969;
+}
+.menu {
+    list-style: none;
+    font-size:0; 
+}
+.menu li {
+    position:relative;
+    display: inline-block;
+    margin-inline:30px;
+    margin-top: 5px;
+    width: 191px;
+    height: 35px;
+    font-family:Roboto;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+}
+.menu li a{
+    color:white;
+    text-decoration-line:none;
+}
+.imagenPrincipal{
+    position: absolute;
+    left: 19px;
+    top: 150px;
+}
+.imagenPrincipal img {
+    position: absolute;
+    width: 1305px;
+    height: 600px;
+    border-radius: 25px;
+    border: 1px solid; 
+}
+.servicios {
+    position: absolute;
+    left: 19px;
+    top: 773px;  
+}
+.servicios img {
+    width: 400px;
+    height: 315px;
+    border: 1px solid;
+    border-radius: 25px;
+    
+}
+.servicios figcaption {
+    position: relative;
+    color: black;
+    font-family:Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 10px;
+    text-align:center;
+}
+.servicios .textoServicio p{
+    position: absolute;
+    left: 26px;
+    padding: 2px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+.productos {
+    position: absolute;
+    left: 473px;
+    top: 773px;
+}
+.productos img {
+    width: 400px;
+    height: 315px;
+    border: 1px solid;
+    border-radius: 25px;
+}
+.productos figcaption {
+    position: relative;
+    color: black;
+    font-family:Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 10px;
+    text-align:center;
+}
+.productos .textoProducto p{
+    position: absolute;
+    left: 26px;
+    padding: 2px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+
+}
+.novedades {
+    position: absolute;
+    left: 927px;
+    top: 773px;
+}
+.novedades img {
+    width: 400px;
+    height: 315px;
+    border: 1px solid;
+    border-radius: 25px;
+}
+.novedades figcaption {
+    position: relative;
+    color: black;
+    font-family:Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 10px;
+    text-align:center;
+}
+.novedades .textoNovedades p{
+    position: absolute;
+    left: 26px;
+    padding: 2px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+.cuadroTexto{
+    position: absolute;
+    box-sizing: border-box;
+    width: 1321px;
+    height: 551px;
+    left: 19px;
+    top: 1205px;
+    background: #F9D7CC;
+    border-radius: 25px;
+}
+.cuadroTexto .titulo{
+    position: absolute;
+    width: 1300px;
+    top:30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color:black;
+}
+.cuadroTexto .textoNosotros{
+    position: absolute;
+    width: 1300px;
+    height: 414px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 28px;
+    text-align: center;
+    color:black;  
+    padding:140px 40px;
+}
+.cuadroTitulo{
+    box-sizing: border-box;
+    position: absolute;
+    width: 1313px;
+    height: 109px;
+    left: 28px;
+    top: 140px;
+    background: #D9D9D9;
+    border-radius: 25px;
+}
+.cuadroTitulo .tituloPagina{
+position: relative;
+padding: 10px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 800;
+font-size: 70px;
+line-height: 82px;
+text-align: center;
+color: black;
+}
+.cuadroInfoUno{
+    box-sizing: border-box;
+    background: #F9D7CC;
+    border-radius: 25px;
+    position: absolute; 
+    width: 1310px;
+    height: 360px;
+    left: 30px;
+    top: 258px;
+}
+.cuadroInfoDos{
+    box-sizing: border-box;
+    position: absolute;
+    width: 1310px;
+    height: 360px;
+    left: 30px;
+    background: #F9D7CC;
+    border-radius: 25px;
+    top: 638px;
+}
+.cuadroInfoTres{
+    box-sizing: border-box;
+    position: absolute;
+    width: 1310px;
+    height: 360px;
+    left: 30px;
+    background: #F9D7CC;
+    border-radius: 25px;
+    top: 1020px;
+}
+.cuadroInfoCuatro{
+    box-sizing: border-box;
+    position: absolute;
+    width: 1310px;
+    height: 360px;
+    left: 30px;
+    background: #F9D7CC;
+    border-radius: 25px;
+    top: 1398px;
+}
+.imgInfo {
+    position: absolute;
+    left: 20px;
+    top: 20px;  
+}
+.imgInfo img{
+    width: 480px;
+    height: 320px;
+    border: 1px solid;
+    border-radius: 25px;
+}
+.tit{
+position: relative;
+width: 600px;
+height: 44px;
+left: 650px;
+top: 40px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 45px;
+line-height: 53px;
+text-align: center;
+color:black;
+}
+.info{
+    position: relative;
+    width: 677px;
+    height: 87px;
+    left: 614px;
+    top: 120px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    color:black;
+}
+.cuadroProductoUno{
+    box-sizing: border-box;
+    background: #F9D7CC;
+    border-radius: 25px;
+    position: absolute; 
+    width: 634px;
+    height: 420px;
+    left: 24px;
+    top: 340px;
+}
+.cuadroProductoDos{
+    box-sizing: border-box;
+    background: #F9D7CC;
+    border-radius: 25px;
+    position: absolute; 
+    width: 634px;
+    height: 420px;
+    left: 703px;
+    top: 340px;
+}
+.cuadroProductoTres{
+    box-sizing: border-box;
+    background: #F9D7CC;
+    border-radius: 25px;
+    position: absolute; 
+    width: 634px;
+    height: 420px;
+    left: 24px;
+    top: 800px;
+}
+.cuadroProductoCuatro{
+    box-sizing: border-box;
+    background: #F9D7CC;
+    border-radius: 25px;
+    position: absolute; 
+    width: 634px;
+    height: 420px;
+    left: 703px;
+    top: 800px;
+}
+.cuadroProductoCinco{
+    box-sizing: border-box;
+    background: #F9D7CC;
+    border-radius: 25px;
+    position: absolute; 
+    width: 634px;
+    height: 420px;
+    left: 24px;
+    top: 1260px;
+}
+.cuadroProductoSeis{
+    box-sizing: border-box;
+    background: #F9D7CC;
+    border-radius: 25px;
+    position: absolute; 
+    width: 634px;
+    height: 420px;
+    left: 703px;
+    top: 1260px;
+}
+.imgProd{
+    position: relative;
+    left:35px;
+    width: 550px;
+    height: 280px;
+    border-radius: 25px;
+}
+.titProd{
+    position: relative;
+    width: 600px;
+    height: 44px;
+    left: 15px;
+    top: 340px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+    color:black;
+}
+.novedadesPrincipal{
+    position: absolute;
+    left: 250px;
+    top: 260px;
+}
+.novedadesPrincipal img {
+    position: absolute;
+    width: 900px;
+    height: 600px;
+    border-radius: 25px;
+    border: 1px solid; 
+}
+.cuadroNovedadesUno{
+    box-sizing: border-box;
+    border-radius: 25px;
+    position: absolute; 
+    width: 420px;
+    height: 280px;
+    left: 5px;
+    top: 880px;
+}
+.cuadroNovedadesDos{
+    box-sizing: border-box;
+    border-radius: 25px;
+    position: absolute; 
+    width: 420px;
+    height: 280px;
+    left: 450px;
+    top: 880px;
+}
+.cuadroNovedadesTres{
+    box-sizing: border-box;
+    border-radius: 25px;
+    position: absolute; 
+    width: 420px;
+    height: 280px;
+    left: 920px;
+    top: 880px;
+}
+.imgNov{
+    position: relative;
+    left:30px;
+    width: 420x;
+    height: 280px;
+    border-radius: 25px;
+}
+.imagenPrincipalContacto {
+    position: absolute;
+    width: 1320px;
+    height: 665px;
+    left: 24px;
+    top: 278px;
+    border-radius: 30px;
+}
+.cuadroTextoContacto{
+    position: absolute;
+    box-sizing: border-box;
+    width: 1320px;
+    height: 800px;
+    left: 24px;
+    top: 960px;
+    background: #F9D7CC;
+    border-radius: 25px;
+    
+}
+.tituloTextoContacto{
+    position: relative;
+    width: 600px;
+    top:200px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color:black;
+}
+.textoContacto {
+    position: relative;
+    width: 400px;
+    top: 280px;
+    left: 100px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color:black;    
+}
+.datosContacto{
+    position: absolute;
+    width: 600px;
+    top: 1200px;
+    left: 700px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    color:black;
+}
+.datosContacto legend{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+}
+.boton{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    left: 200px;
+    background: #7B7676;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    color:white;
+}
+.boton:hover {
+    cursor: pointer;
+}
+.footer{
+position: absolute;
+width: 1366px;
+height: 108px;
+left: 0px;
+top: 1780px;
+background: linear-gradient(0deg, rgba(235, 137, 137, 0.1), rgba(235, 137, 137, 0.1)), linear-gradient(180deg, #B71414 0%, #CF6262 78.65%, rgba(82, 17, 17, 0.347537) 96.35%, rgba(78, 17, 17, 0.322917) 99.99%, rgba(28, 16, 16, 0) 100%);
+font-family: 'Roboto';
+font-style: normal;
+color: white;
+}
+.footer .uno{
+    position:absolute;
+    display:inline;
+    justify-content: center;
+    left: 15px;
+    top: 30px;
+}
+.footer .dos{
+    position:absolute;
+    display:inline;
+    justify-content: center;
+    left: 15px;
+    top: 52px;
+}
+.footer .tres{
+    position:absolute;
+    display:inline;
+    justify-content: center;
+    left: 15px;
+    top: 74px;
+}
+.footer .contacto{
+    position:absolute;
+    left: 40px;
+    top: 5px;
+    font-size: 18px;
+}
+.footer .texto{
+    position: relative;
+    left: 1170px;
+    top: 0px;
+  
+}
+.footer .redes{
+    position: relative;
+    left: 1200px;
+    top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

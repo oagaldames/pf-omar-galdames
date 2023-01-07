@@ -171,16 +171,16 @@ footer {
 
 .titulo{
     font-weight:700;
-    font-size:medium;
+    font-size: 20px;
     text-align: center;
     color:black;
 }
 
 /*Cierra Estilos Mobile First index.html*/
 /*Media Screen +768px*/
-/*Abre Media Index +768*/
-@media screen and (min-width: 768px){
-        
+/*Abre Media Index +768/-1024**/
+@media (min-width: 768px){
+
     footer {
         grid-area: footer;
         margin: 0;
@@ -306,12 +306,21 @@ footer {
     .novedades_index .btn{
         margin-top: 2.4em;
     }
-   
+
+    .texto_index{
+        height: 350px;
+    }
+
+    .titulo{
+        font-size: 25px;
+        font-weight: 800;
+        
+    }
 }
 
-
-
-
+/*cierra Media Index +768 /-1024*/
+/*Abre Media Index +768*/
+@media(min-width:1024px){
 
 
 /* Abre estilo Estilos para index.html

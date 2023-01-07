@@ -16,9 +16,7 @@ body {
     display: grid;
     height: 100%;
     width: 100vw;
-    gap: 1em;
-    /* grid-template-rows: 0.3fr repeat(4,0.3fr) 0.5fr; */
-    /*Posición áreas*/
+    gap: 0.5em;
     grid-template-areas: 
     "header"
     "main"
@@ -38,33 +36,36 @@ header{
     font-size: medium;
     font-weight: normal;
     position: sticky;
-    
 }
 
 header nav div div ul li{
     border-radius: 10pt;
 }
+
 header nav div div ul li a:hover{
     transition: all 0.5s;
     background-color: #f7c7aa;
     border-radius: 10pt;
 }
+
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link{
     color: white;
     font-weight: normal;
 }
+
 .header_containerLogo {
     display: flex;
 }
+
 .logo_header {
     display: flex;
     width: auto;
     height :50px;
     padding-top: 10px;
 }  
-/*Cierra header para todas las páginas*/
+/*Cierra header para las páginas responsive*/
 
-/*Abre footer mobile first*/
+/*Abre footer las páginas responsive mobile first*/
 footer {
     grid-area: footer;
     margin: 0;
@@ -115,7 +116,7 @@ footer {
     margin-top: 0.8em;
     scale: 1.2;
 }
-/*Cierra footer mobile first para todas las páginas*/
+/*Cierra footer mobile first para todas las responsive*/
 
 /* Abre estilo Estilos Mobile First para index.html*/
 .main_Index{
@@ -131,10 +132,11 @@ footer {
     width: 12rem;
     padding-bottom: 5px;
 }
+
 .servicios_index{
-    display:flex;
+    display:flex; 
     grid-area: servicios_index;
-    height: 410px;
+    height: 400px;
     width: 100%;
     justify-content: center;
 }
@@ -161,7 +163,7 @@ footer {
     padding: 10px; 
     justify-content: center;
     justify-self: center;
-    height: 700px;
+    height: 500px;
     width: 90%;
     box-sizing: border-box;
     border-width: 1px;
@@ -169,27 +171,25 @@ footer {
     border-radius: 15px;
 }
 
-.titulo{
+.titulo_index{
     font-weight:700;
     font-size: 20px;
     text-align: center;
     color:black;
 }
 
+.textoNosotros_index{
+    font-size: 13px;
+    font-weight: 300;
+}
+
 /*Cierra Estilos Mobile First index.html*/
+
 /*Media Screen +768px*/
 /*Abre Media Index +768/-1024**/
-@media (min-width: 768px){
+@media(min-width: 768px){
 
     footer {
-        grid-area: footer;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        align-items: center;
-        flex-wrap: wrap;
-        display: flex;
-        background: linear-gradient(90deg, rgba(232,133,133,1) 0%, rgba(191,21,21,1) 100%);
         height: 120px;
     }
     
@@ -270,561 +270,649 @@ footer {
         width: 100%;
         padding: 15px;
     }
-    .servicios_index .btn{
-        margin-top: 1em;
+   
+   .servicios_index .btn{
+        margin-top: 0.3em;
     }
-
-    
     .servicios_index{
-        display:flex;
         grid-area: servicios_index;
         grid-column:1 / 2;
-        height: 430px;
+        height:420px;
         width: 100%;
-        justify-content: center;
+        align-self: center;
     }
     
     .productos_index{
-        display:flex;
         grid-area: productos_index;
         grid-column:2 / 3;
-        height: 430px;
+        height: 420px;
         width: 100%;
-        justify-content: center;
+        align-self: center;
     }
     .productos_index .btn{
-        margin-top: 2.1em;
+        margin-top: 1.4em;
     }
+
     .novedades_index{
-        display:flex;
         grid-area: novedades_index;
         grid-column:3 / 4;
-        height: 430px;
+        height: 420px;
         width: 100%;
-        justify-content: center;
+        align-self: center;
     }    
+
     .novedades_index .btn{
-        margin-top: 2.4em;
+        margin-top: 2.8em;
     }
 
     .texto_index{
-        height: 350px;
+        height: 300px;
     }
 
-    .titulo{
+    .titulo_index{
         font-size: 25px;
         font-weight: 800;
-        
+    }
+    .textoNosotros_index{
+        font-size: 15px;
+        font-weight: 200;
+    }
+}
+/*cierra Media Index +768 /-1024*/
+
+/*Abre Media Index +1024*/
+@media(min-width:1024px){
+    .servicios_index{
+        height: 450px;
+    }
+    
+    .productos_index{
+        height: 450px;
+    }
+    /* .productos_index .btn{
+        margin-top: 2.1em;
+    } */
+    .novedades_index{
+        height: 450px;
+    }    
+    .novedades_index .btn{
+        margin-top: 1.6em;
+    }
+
+    .texto_index_index{
+        height: 400px;
+    }
+
+    .titulo_index{
+        font-size: 30px;
+        font-weight: 800;
+    }
+    .textoNosotros{
+        font-size: 21px;
+        font-weight: 200;
     }
 }
 
-/*cierra Media Index +768 /-1024*/
-/*Abre Media Index +768*/
-@media(min-width:1024px){
+/*estilos de paginas no responsive*/
 
-
-/* Abre estilo Estilos para index.html
-.servicios {
-    position: absolute;
-    left: 19px;
-    top: 773px;  
-}
-.servicios img {
-    width: 400px;
-    height: 315px;
-    border: 1px solid;
-    border-radius: 25px;
+.header{
+    position: fixed;
+    width: 1366px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(0deg, rgba(235, 137, 137, 0.1), rgba(235, 137, 137, 0.1)), linear-gradient(180deg, #B71414 0%, #CF6262 78.65%, rgba(82, 17, 17, 0.347537) 96.35%, rgba(78, 17, 17, 0.322917) 99.99%, rgba(28, 16, 16, 0) 100%);
+    z-index: 100;
+    }
+    .header img{
+        position: absolute;
+        width: 248px;
+        height: 58px;
+        left: 8px;
+        top: 8px;
+    }
+    .header nav{
+        position: absolute;
+        width: 1366px;
+        height: 49px;
+        left: 0px;
+        top: 82px;
+        background: linear-gradient(0deg, rgba(234, 219, 219, 0.2), rgba(234, 219, 219, 0.2)), #776969;
+    }
+    .menu {
+        list-style: none;
+        font-size:0; 
+    }
+    .menu li {
+        position:relative;
+        display: inline-block;
+        margin-inline:30px;
+        margin-top: 5px;
+        width: 191px;
+        height: 35px;
+        font-family:Roboto;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+    }
+    .menu li a{
+        color:white;
+        text-decoration-line:none;
+    }
+    .imagenPrincipal{
+        position: absolute;
+        left: 19px;
+        top: 150px;
+    }
+    .imagenPrincipal img {
+        position: absolute;
+        width: 1305px;
+        height: 600px;
+        border-radius: 25px;
+        border: 1px solid; 
+    }
+    .servicios {
+        position: absolute;
+        left: 19px;
+        top: 773px;  
+    }
+    .servicios img {
+        width: 400px;
+        height: 315px;
+        border: 1px solid;
+        border-radius: 25px;
+        
+    }
+    .servicios figcaption {
+        position: relative;
+        color: black;
+        font-family:Roboto;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        padding: 10px;
+        text-align:center;
+    }
+    .servicios .textoServicio p{
+        position: absolute;
+        left: 26px;
+        padding: 2px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        text-align: center;
+        color: black;
+    }
+    .productos {
+        position: absolute;
+        left: 473px;
+        top: 773px;
+    }
+    .productos img {
+        width: 400px;
+        height: 315px;
+        border: 1px solid;
+        border-radius: 25px;
+    }
+    .productos figcaption {
+        position: relative;
+        color: black;
+        font-family:Roboto;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        padding: 10px;
+        text-align:center;
+    }
+    .productos .textoProducto p{
+        position: absolute;
+        left: 26px;
+        padding: 2px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        text-align: center;
+        color: black;
     
-}
-.servicios figcaption {
+    }
+    .novedades {
+        position: absolute;
+        left: 927px;
+        top: 773px;
+    }
+    .novedades img {
+        width: 400px;
+        height: 315px;
+        border: 1px solid;
+        border-radius: 25px;
+    }
+    .novedades figcaption {
+        position: relative;
+        color: black;
+        font-family:Roboto;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        padding: 10px;
+        text-align:center;
+    }
+    .novedades .textoNovedades p{
+        position: absolute;
+        left: 26px;
+        padding: 2px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        text-align: center;
+        color: black;
+    }
+    .cuadroTexto{
+        position: absolute;
+        box-sizing: border-box;
+        width: 1321px;
+        height: 551px;
+        left: 19px;
+        top: 1205px;
+        background: #F9D7CC;
+        border-radius: 25px;
+    }
+    .cuadroTexto .titulo{
+        position: absolute;
+        width: 1300px;
+        top:30px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 75px;
+        text-align: center;
+        color:black;
+    }
+    .cuadroTexto .textoNosotros{
+        position: absolute;
+        width: 1300px;
+        height: 414px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 35px;
+        line-height: 28px;
+        text-align: center;
+        color:black;  
+        padding:140px 40px;
+    }
+    .cuadroTitulo{
+        box-sizing: border-box;
+        position: absolute;
+        width: 1313px;
+        height: 109px;
+        left: 28px;
+        top: 140px;
+        background: #D9D9D9;
+        border-radius: 25px;
+    }
+    .cuadroTitulo .tituloPagina{
     position: relative;
-    color: black;
-    font-family:Roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
     padding: 10px;
-    text-align:center;
-}
-.servicios .textoServicio p{
-    position: absolute;
-    left: 26px;
-    padding: 2px;
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 82px;
     text-align: center;
     color: black;
-}
-.productos {
-    position: absolute;
-    left: 473px;
-    top: 773px;
-}
-.productos img {
-    width: 400px;
-    height: 315px;
-    border: 1px solid;
-    border-radius: 25px;
-}
-.productos figcaption {
-    position: relative;
-    color: black;
-    font-family:Roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    padding: 10px;
-    text-align:center;
-}
-.productos .textoProducto p{
-    position: absolute;
-    left: 26px;
-    padding: 2px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    text-align: center;
-    color: black;
-
-}
-.novedades {
-    position: absolute;
-    left: 927px;
-    top: 773px;
-}
-.novedades img {
-    width: 400px;
-    height: 315px;
-    border: 1px solid;
-    border-radius: 25px;
-}
-.novedades figcaption {
-    position: relative;
-    color: black;
-    font-family:Roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    padding: 10px;
-    text-align:center;
-}
-.novedades .textoNovedades p{
-    position: absolute;
-    left: 26px;
-    padding: 2px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    text-align: center;
-    color: black;
-}
-.cuadroTexto{
-    position: absolute;
-    box-sizing: border-box;
-    width: 1321px;
-    height: 551px;
-    left: 19px;
-    top: 1205px;
-    background: #F9D7CC;
-    border-radius: 25px;
-}
-.cuadroTexto .titulo{
-    position: absolute;
-    width: 1300px;
-    top:30px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 75px;
-    text-align: center;
-    color:black;
-}
-.cuadroTexto .textoNosotros{
-    position: absolute;
-    width: 1300px;
-    height: 414px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 35px;
-    line-height: 28px;
-    text-align: center;
-    color:black;  
-    padding:140px 40px;
-} */
-.cuadroTitulo{
-    box-sizing: border-box;
-    position: absolute;
-    width: 1313px;
-    height: 109px;
-    left: 28px;
-    top: 140px;
-    background: #D9D9D9;
-    border-radius: 25px;
-}
-.cuadroTitulo .tituloPagina{
-position: relative;
-padding: 10px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 800;
-font-size: 70px;
-line-height: 82px;
-text-align: center;
-color: black;
-}
-.cuadroInfoUno{
-    box-sizing: border-box;
-    background: #F9D7CC;
-    border-radius: 25px;
-    position: absolute; 
-    width: 1310px;
-    height: 360px;
-    left: 30px;
-    top: 258px;
-}
-.cuadroInfoDos{
-    box-sizing: border-box;
-    position: absolute;
-    width: 1310px;
-    height: 360px;
-    left: 30px;
-    background: #F9D7CC;
-    border-radius: 25px;
-    top: 638px;
-}
-.cuadroInfoTres{
-    box-sizing: border-box;
-    position: absolute;
-    width: 1310px;
-    height: 360px;
-    left: 30px;
-    background: #F9D7CC;
-    border-radius: 25px;
-    top: 1020px;
-}
-.cuadroInfoCuatro{
-    box-sizing: border-box;
-    position: absolute;
-    width: 1310px;
-    height: 360px;
-    left: 30px;
-    background: #F9D7CC;
-    border-radius: 25px;
-    top: 1398px;
-}
-.imgInfo {
-    position: absolute;
-    left: 20px;
-    top: 20px;  
-}
-.imgInfo img{
-    width: 480px;
-    height: 320px;
-    border: 1px solid;
-    border-radius: 25px;
-}
-.tit{
-position: relative;
-width: 600px;
-height: 44px;
-left: 650px;
-top: 40px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 45px;
-line-height: 53px;
-text-align: center;
-color:black;
-}
-.info{
-    position: relative;
-    width: 677px;
-    height: 87px;
-    left: 614px;
-    top: 120px;
-    font-family: 'Roboto Condensed';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 29px;
-    text-align: center;
-    color:black;
-}
-.cuadroProductoUno{
-    box-sizing: border-box;
-    background: #F9D7CC;
-    border-radius: 25px;
-    position: absolute; 
-    width: 634px;
-    height: 420px;
-    left: 24px;
-    top: 340px;
-}
-.cuadroProductoDos{
-    box-sizing: border-box;
-    background: #F9D7CC;
-    border-radius: 25px;
-    position: absolute; 
-    width: 634px;
-    height: 420px;
-    left: 703px;
-    top: 340px;
-}
-.cuadroProductoTres{
-    box-sizing: border-box;
-    background: #F9D7CC;
-    border-radius: 25px;
-    position: absolute; 
-    width: 634px;
-    height: 420px;
-    left: 24px;
-    top: 800px;
-}
-.cuadroProductoCuatro{
-    box-sizing: border-box;
-    background: #F9D7CC;
-    border-radius: 25px;
-    position: absolute; 
-    width: 634px;
-    height: 420px;
-    left: 703px;
-    top: 800px;
-}
-.cuadroProductoCinco{
-    box-sizing: border-box;
-    background: #F9D7CC;
-    border-radius: 25px;
-    position: absolute; 
-    width: 634px;
-    height: 420px;
-    left: 24px;
-    top: 1260px;
-}
-.cuadroProductoSeis{
-    box-sizing: border-box;
-    background: #F9D7CC;
-    border-radius: 25px;
-    position: absolute; 
-    width: 634px;
-    height: 420px;
-    left: 703px;
-    top: 1260px;
-}
-.imgProd{
-    position: relative;
-    left:35px;
-    width: 550px;
-    height: 280px;
-    border-radius: 25px;
-}
-.titProd{
+    }
+    .cuadroInfoUno{
+        box-sizing: border-box;
+        background: #F9D7CC;
+        border-radius: 25px;
+        position: absolute; 
+        width: 1310px;
+        height: 360px;
+        left: 30px;
+        top: 258px;
+    }
+    .cuadroInfoDos{
+        box-sizing: border-box;
+        position: absolute;
+        width: 1310px;
+        height: 360px;
+        left: 30px;
+        background: #F9D7CC;
+        border-radius: 25px;
+        top: 638px;
+    }
+    .cuadroInfoTres{
+        box-sizing: border-box;
+        position: absolute;
+        width: 1310px;
+        height: 360px;
+        left: 30px;
+        background: #F9D7CC;
+        border-radius: 25px;
+        top: 1020px;
+    }
+    .cuadroInfoCuatro{
+        box-sizing: border-box;
+        position: absolute;
+        width: 1310px;
+        height: 360px;
+        left: 30px;
+        background: #F9D7CC;
+        border-radius: 25px;
+        top: 1398px;
+    }
+    .imgInfo {
+        position: absolute;
+        left: 20px;
+        top: 20px;  
+    }
+    .imgInfo img{
+        width: 480px;
+        height: 320px;
+        border: 1px solid;
+        border-radius: 25px;
+    }
+    .tit{
     position: relative;
     width: 600px;
     height: 44px;
-    left: 15px;
-    top: 340px;
+    left: 650px;
+    top: 40px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 50px;
-    line-height: 59px;
+    font-size: 45px;
+    line-height: 53px;
     text-align: center;
     color:black;
-}
-.novedadesPrincipal{
+    }
+    .info{
+        position: relative;
+        width: 677px;
+        height: 87px;
+        left: 614px;
+        top: 120px;
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 29px;
+        text-align: center;
+        color:black;
+    }
+    .cuadroProductoUno{
+        box-sizing: border-box;
+        background: #F9D7CC;
+        border-radius: 25px;
+        position: absolute; 
+        width: 634px;
+        height: 420px;
+        left: 24px;
+        top: 340px;
+    }
+    .cuadroProductoDos{
+        box-sizing: border-box;
+        background: #F9D7CC;
+        border-radius: 25px;
+        position: absolute; 
+        width: 634px;
+        height: 420px;
+        left: 703px;
+        top: 340px;
+    }
+    .cuadroProductoTres{
+        box-sizing: border-box;
+        background: #F9D7CC;
+        border-radius: 25px;
+        position: absolute; 
+        width: 634px;
+        height: 420px;
+        left: 24px;
+        top: 800px;
+    }
+    .cuadroProductoCuatro{
+        box-sizing: border-box;
+        background: #F9D7CC;
+        border-radius: 25px;
+        position: absolute; 
+        width: 634px;
+        height: 420px;
+        left: 703px;
+        top: 800px;
+    }
+    .cuadroProductoCinco{
+        box-sizing: border-box;
+        background: #F9D7CC;
+        border-radius: 25px;
+        position: absolute; 
+        width: 634px;
+        height: 420px;
+        left: 24px;
+        top: 1260px;
+    }
+    .cuadroProductoSeis{
+        box-sizing: border-box;
+        background: #F9D7CC;
+        border-radius: 25px;
+        position: absolute; 
+        width: 634px;
+        height: 420px;
+        left: 703px;
+        top: 1260px;
+    }
+    .imgProd{
+        position: relative;
+        left:35px;
+        width: 550px;
+        height: 280px;
+        border-radius: 25px;
+    }
+    .titProd{
+        position: relative;
+        width: 600px;
+        height: 44px;
+        left: 15px;
+        top: 340px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 59px;
+        text-align: center;
+        color:black;
+    }
+    .novedadesPrincipal{
+        position: absolute;
+        left: 250px;
+        top: 260px;
+    }
+    .novedadesPrincipal img {
+        position: absolute;
+        width: 900px;
+        height: 600px;
+        border-radius: 25px;
+        border: 1px solid; 
+    }
+    .cuadroNovedadesUno{
+        box-sizing: border-box;
+        border-radius: 25px;
+        position: absolute; 
+        width: 420px;
+        height: 280px;
+        left: 5px;
+        top: 880px;
+    }
+    .cuadroNovedadesDos{
+        box-sizing: border-box;
+        border-radius: 25px;
+        position: absolute; 
+        width: 420px;
+        height: 280px;
+        left: 450px;
+        top: 880px;
+    }
+    .cuadroNovedadesTres{
+        box-sizing: border-box;
+        border-radius: 25px;
+        position: absolute; 
+        width: 420px;
+        height: 280px;
+        left: 920px;
+        top: 880px;
+    }
+    .imgNov{
+        position: relative;
+        left:30px;
+        width: 420x;
+        height: 280px;
+        border-radius: 25px;
+    }
+    .imagenPrincipalContacto {
+        position: absolute;
+        width: 1320px;
+        height: 665px;
+        left: 24px;
+        top: 278px;
+        border-radius: 30px;
+    }
+    .cuadroTextoContacto{
+        position: absolute;
+        box-sizing: border-box;
+        width: 1320px;
+        height: 800px;
+        left: 24px;
+        top: 960px;
+        background: #F9D7CC;
+        border-radius: 25px;
+        
+    }
+    .tituloTextoContacto{
+        position: relative;
+        width: 600px;
+        top:200px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        color:black;
+    }
+    .textoContacto {
+        position: relative;
+        width: 400px;
+        top: 280px;
+        left: 100px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        color:black;    
+    }
+    .datosContacto{
+        position: absolute;
+        width: 600px;
+        top: 1200px;
+        left: 700px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: left;
+        color:black;
+    }
+    .datosContacto legend{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .boton{
+        position: relative;
+        width: 200px;
+        height: 50px;
+        left: 200px;
+        background: #7B7676;
+        font-weight: 400;
+        font-size: 30px;
+        text-align: center;
+        color:white;
+    }
+    .boton:hover {
+        cursor: pointer;
+    }
+    .footer{
     position: absolute;
-    left: 250px;
-    top: 260px;
-}
-.novedadesPrincipal img {
-    position: absolute;
-    width: 900px;
-    height: 600px;
-    border-radius: 25px;
-    border: 1px solid; 
-}
-.cuadroNovedadesUno{
-    box-sizing: border-box;
-    border-radius: 25px;
-    position: absolute; 
-    width: 420px;
-    height: 280px;
-    left: 5px;
-    top: 880px;
-}
-.cuadroNovedadesDos{
-    box-sizing: border-box;
-    border-radius: 25px;
-    position: absolute; 
-    width: 420px;
-    height: 280px;
-    left: 450px;
-    top: 880px;
-}
-.cuadroNovedadesTres{
-    box-sizing: border-box;
-    border-radius: 25px;
-    position: absolute; 
-    width: 420px;
-    height: 280px;
-    left: 920px;
-    top: 880px;
-}
-.imgNov{
-    position: relative;
-    left:30px;
-    width: 420x;
-    height: 280px;
-    border-radius: 25px;
-}
-.imagenPrincipalContacto {
-    position: absolute;
-    width: 1320px;
-    height: 665px;
-    left: 24px;
-    top: 278px;
-    border-radius: 30px;
-}
-.cuadroTextoContacto{
-    position: absolute;
-    box-sizing: border-box;
-    width: 1320px;
-    height: 800px;
-    left: 24px;
-    top: 960px;
-    background: #F9D7CC;
-    border-radius: 25px;
+    width: 1366px;
+    height: 108px;
+    left: 0px;
+    top: 1780px;
+    background: linear-gradient(0deg, rgba(235, 137, 137, 0.1), rgba(235, 137, 137, 0.1)), linear-gradient(180deg, #B71414 0%, #CF6262 78.65%, rgba(82, 17, 17, 0.347537) 96.35%, rgba(78, 17, 17, 0.322917) 99.99%, rgba(28, 16, 16, 0) 100%);
+    font-family: 'Roboto';
+    font-style: normal;
+    color: white;
+    }
+    .footer .uno{
+        position:absolute;
+        display:inline;
+        justify-content: center;
+        left: 15px;
+        top: 30px;
+    }
+    .footer .dos{
+        position:absolute;
+        display:inline;
+        justify-content: center;
+        left: 15px;
+        top: 52px;
+    }
+    .footer .tres{
+        position:absolute;
+        display:inline;
+        justify-content: center;
+        left: 15px;
+        top: 74px;
+    }
+    .footer .contacto{
+        position:absolute;
+        left: 40px;
+        top: 5px;
+        font-size: 18px;
+    }
+    .footer .texto{
+        position: relative;
+        left: 1170px;
+        top: 0px;
+      
+    }
+    .footer .redes{
+        position: relative;
+        left: 1200px;
+        top: 10px;
+    }
     
-}
-.tituloTextoContacto{
-    position: relative;
-    width: 600px;
-    top:200px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 38px;
-    text-align: center;
-    color:black;
-}
-.textoContacto {
-    position: relative;
-    width: 400px;
-    top: 280px;
-    left: 100px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 30px;
-    text-align: center;
-    color:black;    
-}
-.datosContacto{
-    position: absolute;
-    width: 600px;
-    top: 1200px;
-    left: 700px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: left;
-    color:black;
-}
-.datosContacto legend{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 40px;
-    text-align: center;
-}
-.boton{
-    position: relative;
-    width: 200px;
-    height: 50px;
-    left: 200px;
-    background: #7B7676;
-    font-weight: 400;
-    font-size: 30px;
-    text-align: center;
-    color:white;
-}
-.boton:hover {
-    cursor: pointer;
-}
-.footer{
-position: absolute;
-width: 1366px;
-height: 108px;
-left: 0px;
-top: 1780px;
-background: linear-gradient(0deg, rgba(235, 137, 137, 0.1), rgba(235, 137, 137, 0.1)), linear-gradient(180deg, #B71414 0%, #CF6262 78.65%, rgba(82, 17, 17, 0.347537) 96.35%, rgba(78, 17, 17, 0.322917) 99.99%, rgba(28, 16, 16, 0) 100%);
-font-family: 'Roboto';
-font-style: normal;
-color: white;
-}
-.footer .uno{
-    position:absolute;
-    display:inline;
-    justify-content: center;
-    left: 15px;
-    top: 30px;
-}
-.footer .dos{
-    position:absolute;
-    display:inline;
-    justify-content: center;
-    left: 15px;
-    top: 52px;
-}
-.footer .tres{
-    position:absolute;
-    display:inline;
-    justify-content: center;
-    left: 15px;
-    top: 74px;
-}
-.footer .contacto{
-    position:absolute;
-    left: 40px;
-    top: 5px;
-    font-size: 18px;
-}
-.footer .texto{
-    position: relative;
-    left: 1170px;
-    top: 0px;
-  
-}
-.footer .redes{
-    position: relative;
-    left: 1200px;
-    top: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

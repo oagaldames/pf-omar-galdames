@@ -28,6 +28,21 @@ body {
     ;
 }
 
+#grid_servicios {
+    display: grid;
+    height: 100%;
+    width: 100vw;
+    gap: 0.5em;
+    grid-template-areas: 
+    "header"
+    "titulo_servicios"
+    "servicios_1"
+    "servicios_2"
+    "servicios_3"
+    "servicios_4" 
+    "footer"
+    ;
+}
 header{
     grid-area: header;
     display: flex;
@@ -183,16 +198,82 @@ footer {
     font-weight: 300;
 }
 
+
+/* Abre estilo Estilos Mobile First para servicios.html*/
+
+.contenedor_cards_servicios .card{
+    width: 12rem;
+    padding-bottom: 5px;
+    background: #F9D7CC;
+}
+
+.titulo_servicios{
+    display:flex;
+    grid-area: titulo_servicios;
+    flex-wrap: wrap;
+    padding: 5px; 
+    justify-content: center;
+    justify-self: center;
+    height: 40px;
+    width: 90%;
+    box-sizing: border-box;
+    border-width: 1px;
+    background:#D9D9D9;
+    border-radius: 15px;
+}
+
+.titulo_servicios h1{
+    font-weight:700;
+    font-size: 25px;
+    text-align: center;
+    color:black;
+}
+
+.servicios_1{
+    display:flex; 
+    grid-area: servicios_1;
+    height: 300px;
+    width: 100%;
+    justify-content: center;
+}
+
+.servicios_2{
+    display:flex;
+    grid-area: servicios_2;
+    height: 300px;
+    width: 100%;
+    justify-content: center;
+}
+
+.servicios_3{
+    display:flex;
+    grid-area: servicios_3;
+    height: 400px;
+    width: 100%;
+    justify-content: center;
+}
+.servicios_4{
+    display:flex;
+    grid-area: servicios_4;
+    height: 400px;
+    width: 100%;
+    justify-content: center;
+}
+.card-body p{
+    font-size: 10px;
+    font-weight:300;
+}
+
 /*Cierra Estilos Mobile First index.html*/
 
 /*Media Screen +768px*/
-/*Abre Media Index +768/-1024**/
+
 @media(min-width: 768px){
 
     footer {
         height: 120px;
     }
-    
+/*Abre Media Index +768/-1024**/    
     .contendor_footer_datos {
         display: grid;
         width: 100%;
@@ -266,12 +347,11 @@ footer {
         ;
         gap:0.5em;
     }
-    .card{
+    .contenedor_cards .card{
         width: 100%;
         padding: 15px;
     }
-   
-   .servicios_index .btn{
+    .servicios_index .btn{
         margin-top: 0.3em;
     }
     .servicios_index{
@@ -316,6 +396,71 @@ footer {
     .textoNosotros_index{
         font-size: 15px;
         font-weight: 200;
+    }
+
+
+/*Abre Media Servicios +768/-1024**/
+    
+#grid_servicios {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    gap: 0.5em;
+    grid-template-areas: 
+    "header" 
+    "titulo_servicios" 
+    "card_servicios" 
+    "footer" 
+    ;
+}
+.contenedor_cards_servicios{
+        display: flex;
+        grid-area: card_servicios;
+        width: 100%;
+        height: 100%;
+        letter-spacing: 0.08em;
+        line-height: 1em;
+        padding: 1em; 
+        /* grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "servicios_1" "servicios_2" "servicios_3" "servicios_4"
+        ; */
+        gap:0.5em;
+    }
+    .contenedor_cards_servicios .card{
+        width: 10rem;
+        padding: 5px;
+   }
+   
+
+    .servicios_1{
+        /* grid-area: servicios_1;
+        grid-column:1 / 2; */
+        height:500px;
+        width: 100%;
+        align-self: center;
+    }
+    .servicios_2{
+        /* grid-area: servicios_2;
+        grid-column:2 / 3; */
+        height:500px;
+        width: 100%;
+        align-self: center;
+    }
+    .servicios_3{
+        /* grid-area: servicios_3;
+        grid-column:3 / 4; */
+        height:500px;
+        width: 100%;
+        align-self: center;
+    }
+    .servicios_4{
+        /* grid-area: servicios_4;
+        grid-column:4 / 5; */
+        height:500px;
+        width: 100%;
+        align-self: center;
     }
 }
 /*cierra Media Index +768 /-1024*/

@@ -1,5 +1,5 @@
-# preentrega2-Omar-galdames
-Segunda Entrega Desarrollo Web- CoderHouse
+# preentrega3-Omar-galdames
+Tercera Entrega Desarrollo Web- CoderHouse
 Autor: Omar Adrian Galdames.
 
 Se utilizo HTML, CSS, FLEXBOX, GRID y BOOTSTRAP

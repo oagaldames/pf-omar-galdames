@@ -11,3 +11,61 @@
     justify-content: $justify;
     align-items: $aling;
 }
+@mixin titulos($name-area){    
+        display:flex;
+        grid-area:$name-area; /*titulo_servicios;*/
+        flex-wrap: wrap;
+        padding: 5px; 
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        align-self: center;
+        height: 80%;
+        width: 90%;
+        box-sizing: border-box;
+        border-width: 1px;
+        background:$bg-titulos;
+        border-radius: 15px;
+    }
+@mixin text-tit($sf,$wf){
+    font-weight: $wf;
+    font-size:$sf; /*20px;*/
+
+}
+@mixin cont-foo-da($ls,$lh,$pl){
+    display: grid;
+    width: 100%;
+    height: 100%;
+    // align-items: flex-start;
+    flex-direction: column;
+    letter-spacing: $ls;
+    line-height: $lh;
+    padding-left: $pl;
+    font-style:normal ;
+    color: white;
+}
+@mixin icon-foo($mt,$sca,$mr){
+    margin-top: 0.5em;
+    scale: 1.5;
+    margin-right: 0.5em;
+}
+@mixin ele-foo($fs,$fw){
+    font-size: $fs;
+    font-weight: $fw;
+}
+@mixin tit-redes-foo($fh,$fs,$fw,$ta,$pt,$pr){
+    width: 100%;
+    height:$fh;
+    font-size: $fs;
+    font-weight: $fw;
+    text-align:$ta ;
+    padding-top: $pt;
+    padding-right:$pr ;
+}
+@mixin red-ico-foo($pt,$pr,$pb,$pl,$mt,$sca){
+
+    padding:$pt $pr $pb $pl;
+    margin-top: $mt;
+    scale: $sca; 
+
+}

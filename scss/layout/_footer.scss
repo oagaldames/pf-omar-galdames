@@ -8,42 +8,21 @@ footer {
     display: flex;
     background: $bg-hf;
     .contendor_footer_datos {
-        display: flex;
-        width: 100%;
-        align-items: flex-start;
-        flex-direction: column;
-        font-family: "Roboto";
-        letter-spacing: 0.03em;
-        line-height: 0.2;
-        padding-left: 1em;
-        font-style:normal ;
-        color: white;
+        @include cont-foo-da(0.03em,0.2,1em);
         h2{
-            width: 100%;
-            height: 25px;
-            font-size: 25px;
-            font-weight: 800;
+        @extend .text-prin-foo
         }
         .elemento_icon{
-            margin-top: 0.3em;
-            scale: 1.3;
-        
+            @include icon-foo(0.3em,1.3,0);        
         }
         .elemento_footer{
-            font-size: 13px;
-            font-weight: 500;
+            @include ele-foo(13px,300);
         }
         .red_social h3{
-            padding-top: 25px;
-            width: 100%;
-            height: 40px;
-            font-size: 20px;
-            font-weight: 800;
+            @include tit-redes-foo(30px,15px,500,left,25px,0px);
         }
         .red_icon {
-            padding:0.3em 0.4em;
-            margin-top: 0.8em;
-            scale: 1.2;
+            @include red-ico-foo(0.3em,0.4em,0.3em,0.4em,0.8em,1.2);
         }
     }
 }

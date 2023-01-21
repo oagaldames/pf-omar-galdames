@@ -4,6 +4,7 @@
     height: 100%;
     width: 100vw;
     gap: 0.5em;
+    background-color: $bg-bd;
     grid-template-areas: 
     "header"
     "main"
@@ -19,6 +20,7 @@
     height: 100%;
     width: 100vw;
     gap: 0.5em;
+    background-color: $bg-bd;
     grid-template-areas: 
     "header"
     "titulo_servicios"

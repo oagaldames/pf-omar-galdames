@@ -13,7 +13,7 @@
 }
 @mixin titulos($name-area){    
         display:flex;
-        grid-area:$name-area; /*titulo_servicios;*/
+        grid-area:$name-area;
         flex-wrap: wrap;
         padding: 5px; 
         justify-content: center;
@@ -29,15 +29,13 @@
     }
 @mixin text-tit($sf,$wf){
     font-weight: $wf;
-    font-size:$sf; /*20px;*/
+    font-size:$sf; 
 
 }
 @mixin cont-foo-da($ls,$lh,$pl){
-    display: grid;
+    display: flex;
     width: 100%;
     height: 100%;
-    // align-items: flex-start;
-    flex-direction: column;
     letter-spacing: $ls;
     line-height: $lh;
     padding-left: $pl;
@@ -63,9 +61,7 @@
     padding-right:$pr ;
 }
 @mixin red-ico-foo($pt,$pr,$pb,$pl,$mt,$sca){
-
     padding:$pt $pr $pb $pl;
     margin-top: $mt;
     scale: $sca; 
-
 }

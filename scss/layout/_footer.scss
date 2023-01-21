@@ -9,6 +9,9 @@ footer {
     background: $bg-hf;
     .contendor_footer_datos {
         @include cont-foo-da(0.03em,0.2,1em);
+        
+        align-items: flex-start;
+        flex-direction: column;
         h2{
         @extend .text-prin-foo
         }

@@ -1,0 +1,46 @@
+header {
+    grid-area: header;
+    display: flex;
+    background: $bg-hf;
+    justify-content: flex-end;
+    font-size: medium;
+    font-weight: normal;
+    position: sticky;
+    nav{
+        div{
+            div {
+                ul{
+                    li {
+                        border-radius: 10pt;
+                        a {
+                            &:hover {
+                            transition: all 0.5s;
+                            background-color: #f7c7aa;
+                            border-radius: 10pt;
+                            }
+                        }
+                    }
+                }
+            }
+        }   
+    }
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link{
+    color: white;
+    font-weight: normal;
+}
+.header_containerLogo {
+    display: flex;
+}
+    
+.logo_header {
+    display: flex;
+    width: auto;
+    height :50px;
+    padding-top: 10px;
+    &:hover{
+        filter: opacity(.5);
+    }
+}
+    
+    

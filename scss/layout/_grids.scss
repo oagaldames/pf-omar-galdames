@@ -1,0 +1,31 @@
+
+#grid_index {
+    display: grid;
+    height: 100%;
+    width: 100vw;
+    gap: 0.5em;
+    grid-template-areas: 
+    "header"
+    "main"
+    "servicios_index"
+    "productos_index"
+    "novedades_index"
+    "texto_index"
+    "footer"
+    ;
+}
+#grid_servicios {
+    display: grid;
+    height: 100%;
+    width: 100vw;
+    gap: 0.5em;
+    grid-template-areas: 
+    "header"
+    "titulo_servicios"
+    "servicios_1"
+    "servicios_2"
+    "servicios_3"
+    "servicios_4" 
+    "footer"
+    ;
+}

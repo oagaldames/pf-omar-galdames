@@ -1,0 +1,13 @@
+@mixin grid ($justify,$aling,$col){ /* (pongo parametros en el mixin)*/
+    display: grid;
+    justify-content: justify;
+    align-items: aling;
+    grid-template-columns:$col;
+
+}
+@mixin flex($direct,$justify,$aling){
+    display:flex;
+    flex-direction: $direct;
+    justify-content: $justify;
+    align-items: $aling;
+}

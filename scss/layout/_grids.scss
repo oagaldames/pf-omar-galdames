@@ -8,12 +8,10 @@
     grid-template-areas: 
     "header"
     "main"
-    "servicios_index"
-    "productos_index"
-    "novedades_index"
+    "cards"
     "texto_index"
-    "footer"
-    ;
+    "footer";
+    justify-content: center;
 }
 #grid_servicios {
     display: grid;

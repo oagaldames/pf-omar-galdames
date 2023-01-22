@@ -35,6 +35,6 @@ header {
     }
 }
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link{
-    color: white;
-    font-weight: normal;
+    color: $color-font_hf;
+    font-weight:normal;
 }

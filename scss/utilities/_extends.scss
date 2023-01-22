@@ -6,31 +6,11 @@
     margin-top: 5px;
 }
 .carousel-ind{
-    width: 100%;
-    height: 100%;
     grid-area: main;
     justify-content: center;
     align-items: center;
+    width: 100%;
     height: 100%;
 }
-.cards-ind{
-    display:flex;
-    height: 420px;
-    width: 100%;
-    justify-content: center;
-}
 
-.cuadro-texto-ind{
-display:flex;
-    grid-area: texto_index;
-    flex-wrap: wrap;
-    padding: 10px; 
-    justify-content: center;
-    justify-self: center;
-    height: 500px;
-    width: 90%;
-    box-sizing: border-box;
-    border-width: 1px;
-    background: $bg-cuadro-text;
-    border-radius: 25px;
-}
+

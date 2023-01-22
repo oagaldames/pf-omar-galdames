@@ -65,3 +65,39 @@
     margin-top: $mt;
     scale: $sca; 
 }
+@mixin cards-ind($ch,$cw){
+    .card{
+        height: $ch;
+        width: $cw;
+            &:hover {
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+            }
+    }
+}
+@mixin cuadro-texto($pa,$he,$wi,$br){
+    display:flex;
+    grid-area: texto_index;
+    flex-wrap: wrap;
+    padding: $pa; 
+    justify-content: center;
+    justify-self: center;
+    height: $he;
+    width: $wi;
+    box-sizing: border-box;
+    border-width: 1px;
+    background: $bg-cuadro-text;
+    border-radius: $br;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+@mixin font-tit($fw,$fs){
+    font-weight:$fw;
+    font-size: $fs;
+    text-align: center;
+    color:black;  
+}
+@mixin font-text-ind($fw,$fs){
+    font-weight: $fw;
+    font-size: $fs;
+    text-align: center;
+    color:black;  
+}

@@ -1,44 +1,34 @@
 .main_Index{
 @extend .carousel-ind;
 }
-
-.card{
-    width: 14rem;
-    gap: 3px;
-    &:hover {
-        box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-        
+.contenedor_cards{
+    grid-area: cards;
+    display: flex;
+    flex-direction: column;
+    gap:10px;    
+    justify-self: center;
+    .servicios_index{
+        @include cards-ind(420px,18rem);
     }
-}
-.servicios_index{
-    @extend .cards-ind;
-    grid-area: servicios_index;
-    
-}
 
-.productos_index{
-    @extend .cards-ind;
-    grid-area: productos_index;
-}
+    .productos_index{
+        @include cards-ind(420px,18rem);
+    }
 
-.novedades_index{
-    @extend .cards-ind;
-    grid-area: novedades_index;
+    .novedades_index{
+        @include cards-ind(420px,18rem);
+    }
 }
 
 .texto_index{
-    @extend .cuadro-texto-ind;
+    @include cuadro-texto(15px,520px,90%,20px);
+    .titulo_index{
+        @include font-tit(700,40px);  
+    }
+    .textoNosotros_index{
+        @include font-text-ind(550,13px);  
+    }
 }
 
-.titulo_index{
-    font-weight:700;
-    font-size: 20px;
-    text-align: center;
-    color:black;
-}
 
-.textoNosotros_index{
-    font-size: 13px;
-    font-weight: 300;
-}
 

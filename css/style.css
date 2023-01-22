@@ -38,7 +38,7 @@ body {
   width: 100vw;
   gap: 0.5em;
   background-color: #bb9d85;
-  grid-template-areas: "header" "titulo_servicios" "servicios_1" "servicios_2" "servicios_3" "servicios_4"  "footer"; }
+  grid-template-areas: "header" "titulo_servicios" "servicios" "footer"; }
 
 header {
   grid-area: header;
@@ -153,18 +153,6 @@ footer {
     text-align: center;
     color: black; }
 
-.contenedor_servicios {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 450px;
-  box-sizing: border-box;
-  border-width: 1px;
-  background: #F9D7CC;
-  border-radius: 15px;
-  gap: 10px; }
-
-/*poner tutulo*/
 .titulo_servicios {
   display: flex;
   grid-area: "titulo_servicios";
@@ -182,66 +170,105 @@ footer {
   border-radius: 15px; }
   .titulo_servicios h1 {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 25px;
     font-style: bold; }
 
-.servicios_1 {
+.contenedor_servicios {
+  grid-area: servicios;
   display: flex;
   flex-direction: column;
-  grid-area: servicios_1;
+  width: 100%;
   height: 100%;
-  width: 100%; }
-
-.servicios_2 {
-  display: flex;
-  flex-direction: column;
-  grid-area: servicios_2;
-  height: 100%;
-  width: 100%; }
-
-.servicios_3 {
-  display: flex;
-  flex-direction: column;
-  grid-area: servicios_3;
-  height: 100%;
-  width: 100%; }
-
-.servicios_4 {
-  display: flex;
-  flex-direction: column;
-  grid-area: servicios_4;
-  height: 100%;
-  width: 100%; }
-
-.figure_servicios {
-  width: 90%;
-  align-self: center; }
-
-.figure_servicios:hover.figure_servicios img {
-  border-radius: 25%;
-  box-shadow: 0px 0px 5px 5px #ec731e;
-  filter: saturate(180%); }
-
-.titulo_fig {
-  padding-top: 10px;
-  font-weight: 700;
-  font-size: 18px;
-  text-align: center;
-  color: black; }
-
-.text_fig {
-  /* padding-top: 5px; */
-  font-weight: 400;
-  font-size: 12px;
-  text-align: center;
-  color: black; }
-
-.contenedor_texto {
-  display: flex;
-  align-items: center;
-  align-self: center;
-  height: 100%;
-  width: 80%; }
+  gap: 10px;
+  justify-content: center; }
+  .contenedor_servicios .contenedor_figure_1 {
+    box-sizing: border-box;
+    border-width: 1px;
+    background: #F9D7CC;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%; }
+    .contenedor_servicios .contenedor_figure_1:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
+    .contenedor_servicios .contenedor_figure_1 .titulo_fig {
+      font-weight: 300;
+      font-size: 20px;
+      font-style: bold; }
+    .contenedor_servicios .contenedor_figure_1 .servicios_1 .card {
+      height: 100%;
+      width: 100%; }
+    .contenedor_servicios .contenedor_figure_1 .servicios_1 .contenedor_texto .text_fig {
+      font-weight: 500;
+      font-size: 13px;
+      text-align: center;
+      color: black;
+      padding: 5px; }
+  .contenedor_servicios .contenedor_figure_2 {
+    box-sizing: border-box;
+    border-width: 1px;
+    background: #F9D7CC;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%; }
+    .contenedor_servicios .contenedor_figure_2:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
+    .contenedor_servicios .contenedor_figure_2 .titulo_fig {
+      font-weight: 300;
+      font-size: 20px;
+      font-style: bold; }
+    .contenedor_servicios .contenedor_figure_2 .servicios_2 .card {
+      height: 100%;
+      width: 100%; }
+    .contenedor_servicios .contenedor_figure_2 .servicios_2 .contenedor_texto .text_fig {
+      font-weight: 500;
+      font-size: 13px;
+      text-align: center;
+      color: black;
+      padding: 5px; }
+  .contenedor_servicios .contenedor_figure_3 {
+    box-sizing: border-box;
+    border-width: 1px;
+    background: #F9D7CC;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%; }
+    .contenedor_servicios .contenedor_figure_3:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
+    .contenedor_servicios .contenedor_figure_3 .titulo_fig {
+      font-weight: 300;
+      font-size: 20px;
+      font-style: bold; }
+    .contenedor_servicios .contenedor_figure_3 .servicios_3 .card {
+      height: 100%;
+      width: 100%; }
+    .contenedor_servicios .contenedor_figure_3 .servicios_3 .contenedor_texto .text_fig {
+      font-weight: 500;
+      font-size: 13px;
+      text-align: center;
+      color: black;
+      padding: 5px; }
+  .contenedor_servicios .contenedor_figure_4 {
+    box-sizing: border-box;
+    border-width: 1px;
+    background: #F9D7CC;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%; }
+    .contenedor_servicios .contenedor_figure_4:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
+    .contenedor_servicios .contenedor_figure_4 .titulo_fig {
+      font-weight: 300;
+      font-size: 20px;
+      font-style: bold; }
+    .contenedor_servicios .contenedor_figure_4 .servicios_4 .card {
+      height: 100%;
+      width: 100%; }
+    .contenedor_servicios .contenedor_figure_4 .servicios_4 .contenedor_texto .text_fig {
+      font-weight: 500;
+      font-size: 13px;
+      text-align: center;
+      color: black;
+      padding: 5px; }
 
 /*Media Screen +768px*/
 @media (min-width: 768px) {

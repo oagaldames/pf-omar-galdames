@@ -1,86 +1,121 @@
-.contenedor_servicios{
-    display:flex;
-    flex-direction: column;
-    width: 100%;
-    height: 450px;
-    box-sizing: border-box;
-    border-width: 1px;
-    background: #F9D7CC;
-    border-radius: 15px;
-    gap: 10px;
-    
-}
-/*poner tutulo*/
-.titulo_servicios{
+//*Estilos servicios.html mobile*//
+
+.titulo_servicios {
     @include titulos("titulo_servicios");
-    h1{
-        @include text-tit(20px,400);
-        font-style:bold;
+
+    h1 {
+        @include text-tit(25px, 400);
+
     }
 }
 
-.servicios_1{
-    display:flex; 
+.contenedor_servicios {
+    grid-area: servicios;
+    display: flex;
     flex-direction: column;
-    grid-area: servicios_1;
-    height: 100%;
     width: 100%;
-}
-
-.servicios_2{
-    display:flex; 
-    flex-direction: column;
-    grid-area: servicios_2;
     height: 100%;
-    width: 100%;
+    gap: 10px;
+    justify-content: center;
+    .contenedor_figure_1 {
+        @include fig-serv(100%, 100%, 10px);
+
+        .titulo_fig {
+            @include text-tit(20px, 300);
+        }
+        .servicios_1 {
+            @include cards-serv(100%, 100%);
+
+            .contenedor_texto {
+                .text_fig {
+                    @include font-text-ind(500, 13px);
+                    padding: 5px;
+                }
+            }
+        }
+    }
+    .contenedor_figure_2 {
+        @include fig-serv(100%, 100%, 10px);
+        .titulo_fig {
+            @include text-tit(20px, 300);
+        }
+        .servicios_2 {
+            @include cards-serv(100%, 100%);
+            .contenedor_texto {
+                .text_fig {
+                    @include font-text-ind(500, 13px);
+                    padding: 5px;
+                }
+            }
+        }
+    }
+    .contenedor_figure_3 {
+        @include fig-serv(100%, 100%, 10px);
+        .titulo_fig {
+            @include text-tit(20px, 300);
+        }
+        .servicios_3 {
+            @include cards-serv(100%, 100%);
+            .contenedor_texto {
+                .text_fig {
+                    @include font-text-ind(500, 13px);
+                    padding: 5px;
+                }
+            }
+        }
+    }
+    .contenedor_figure_4 {
+        @include fig-serv(100%, 100%, 10px);
+        .titulo_fig {
+            @include text-tit(20px, 300);
+        }
+        .servicios_4 {
+            @include cards-serv(100%, 100%);
+            .contenedor_texto {
+                .text_fig {
+                    @include font-text-ind(500, 13px);
+                    padding: 5px;
+                }
+            }
+        }
+    }
 }
 
-.servicios_3{
-    display:flex; 
-    flex-direction: column;
-    grid-area: servicios_3;
-    height: 100%;
-    width: 100%;
-}
-.servicios_4{
-    display:flex; 
-    flex-direction: column;
-    grid-area: servicios_4;
-    height: 100%;
-    width: 100%;
-}
-.figure_servicios{
-    width: 90%;
-    align-self: center;
-}
-.figure_servicios:hover.figure_servicios img{
-    
-    border-radius:25%;
-    box-shadow: 0px 0px 5px 5px #ec731e;
-    filter: saturate(180%);
-}
 
-.titulo_fig{
-    padding-top: 10px;
-    font-weight:700;
-    font-size: 18px;
-    text-align: center;
-    color:black;
-}
 
-.text_fig{
-    /* padding-top: 5px; */
-    font-weight:400;
-    font-size: 12px;
-    text-align: center;
-    color:black;
-}
 
-.contenedor_texto{
-    display:flex;
-    align-items: center;
-    align-self: center;
-    height: 100%;
-    width: 80%;
-    
-}
+// .figure_servicios{
+//     width: 90%;
+//     align-self: center;
+// }
+// .figure_servicios:hover.figure_servicios img{
+
+//     border-radius:25%;
+//     box-shadow: 0px 0px 5px 5px #ec731e;
+//     filter: saturate(180%);
+// }
+
+// .titulo_fig{
+//     padding-top: 10px;
+//     font-weight:700;
+//     font-size: 18px;
+//     text-align: center;
+//     color:black;
+// }
+
+// .text_fig{
+//     /* padding-top: 5px; */
+//     font-weight:400;
+//     font-size: 12px;
+//     text-align: center;
+//     color:black;
+// }
+
+// .contenedor_texto{
+//     display:flex;
+//     align-items: center;
+//     align-self: center;
+//     height: 100%;
+//     width: 80%;
+
+// }

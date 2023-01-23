@@ -22,6 +22,7 @@
 }
 
 .texto_index{
+    grid-area: texto_index;
     @include cuadro-texto(15px,520px,90%,20px);
     .titulo_index{
         @include font-tit(700,40px);  

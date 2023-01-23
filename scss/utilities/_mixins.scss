@@ -65,7 +65,6 @@
 }
 @mixin cuadro-texto($pa,$he,$wi,$br){
     display:flex;
-    grid-area: texto_index;
     flex-wrap: wrap;
     padding: $pa; 
     justify-content: center;

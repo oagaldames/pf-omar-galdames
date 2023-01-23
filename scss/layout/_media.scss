@@ -177,7 +177,7 @@
         .contenedor_producto_1 {
             @include contenedores-figures(100%, 100%, 15px,0.04em,1.2em,0.5em,1em);
             margin-bottom: 0;
-            margin-right: 0.5em;;
+            margin-right: 0.5em;
             .titulo_fig {
                 @include serv-tit-fig(15px, 700, 25px, center);
             }
@@ -276,6 +276,45 @@
     }
 
 }
+    /*Estilos pagina productos */
+.titulo_novedades {
+    @include titulos("titulo_novedades");
+
+    h1 {
+        @include text-tit(40px, 900);
+    }
+}
+
+.contenedor_novedades{
+    flex-direction: row;
+    .novedades_1 {
+        @include contenedores-figures(100%, 100%, 15px,0.04em,1.2em,1.5em,0.5em);
+        margin-bottom: 0;
+        margin-right: 0.5em;
+        }
+    .novedades_2 {
+        @include contenedores-figures(100%, 100%, 15px,0.04em,1.2em,1.5em,0.5em);
+        margin-bottom: 0;
+        margin-right: 0.5em;
+    }
+    .novedades_3 {
+        @include contenedores-figures(100%, 100%, 15px,0.04em,1.2em,1.5em,0.5em);
+        margin-bottom: 0;
+        margin-right: 0.5em;
+    }
+}
+.texto_novedades{
+    grid-area:texto_novedades; 
+    @include cuadro-texto(10px,320px,80%,20px);
+    .titulo{
+        @include font-tit(700,30px);  
+    }
+    .texto{
+        @include font-text-ind(600,20px);  
+    }
+}
+
+
 // /*cierra Media +768 /-1024*/
 
 // /*Abre Media Index +1024*/
@@ -308,7 +347,7 @@
             @include font-tit(800,50px);  
         }
         .textoNosotros_index{
-            @include font-text-ind(500,21px);  
+            @include font-text-ind(500,22px);  
         }
 
     }

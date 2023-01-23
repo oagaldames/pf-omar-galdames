@@ -44,3 +44,18 @@
     "footer"
     ;
 }
+#grid_novedades {
+    display: grid;
+    height: 100%;
+    width: 100vw;
+    gap: 0.5em;
+    background-color: $bg-bd;
+    grid-template-areas: 
+    "header"
+    "titulo_novedades"
+    "main"
+    "novedades"
+    "texto_novedades"
+    "footer";
+    justify-content: center;
+}

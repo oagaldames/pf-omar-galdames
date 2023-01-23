@@ -6,7 +6,7 @@
     }
 }
 .contenedor_servicios_1 {
-    @include contenedor-servicios(450px, 100%, 15px,0.04em,1.2em,0.5em,0.1em);
+    @include contenedores-figures(450px, 100%, 15px,0.04em,1.2em,0.5em,0.1em);
     .titulo_fig {
         @include serv-tit-fig(10px, 700, 20px, center);
     }
@@ -24,7 +24,7 @@
     }
 }
 .contenedor_servicios_2 {
-    @include contenedor-servicios(450px, 100%, 15px,0.04em,1.2em,0.5em,0.1em);
+    @include contenedores-figures(450px, 100%, 15px,0.04em,1.2em,0.5em,0.1em);
     .titulo_fig {
         @include serv-tit-fig(10px, 700, 20px, center);
     }
@@ -42,7 +42,7 @@
     }
 }
 .contenedor_servicios_3 {
-    @include contenedor-servicios(450px, 100%, 15px,0.04em,1.2em,0.5em,0.1em);
+    @include contenedores-figures(450px, 100%, 15px,0.04em,1.2em,0.5em,0.1em);
     .titulo_fig {
         @include serv-tit-fig(10px, 700, 20px, center);
     }
@@ -60,7 +60,7 @@
     }
 }
 .contenedor_servicios_4 {
-    @include contenedor-servicios(450px, 100%, 15px,0.04em,1.2em,0.5em,0.1em);
+    @include contenedores-figures(450px, 100%, 15px,0.04em,1.2em,0.5em,0.1em);
     .titulo_fig {
         @include serv-tit-fig(10px, 700, 20px, center);
     }

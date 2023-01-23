@@ -90,7 +90,7 @@
     text-align: center;
     color:black;  
 }
-@mixin contenedor-servicios($ch,$cw,$br,$lsp,$lhe,$pa,$gap){
+@mixin contenedores-figures($ch,$cw,$br,$lsp,$lhe,$pa,$gap){
     display:flex;
     flex-direction: column;
     box-sizing: border-box;

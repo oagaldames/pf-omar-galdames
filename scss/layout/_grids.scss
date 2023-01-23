@@ -29,3 +29,18 @@
     "footer"
     ;
 }
+#grid_productos {
+    display: grid;
+    height: 100%;
+    width: 100vw;
+    gap: 0.5em;
+    background-color: $bg-bd;
+    grid-template-areas: 
+    "header"
+    "titulo_producto"
+    "producto_1-2"
+    "producto_3-4"
+    "producto_5-6"
+    "footer"
+    ;
+}

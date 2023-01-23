@@ -50,7 +50,7 @@
         
     }
     /*Estilos pagina Index */
-    /* Estilos cards*/
+    
     .contenedor_cards{
         grid-area: cards;
         display:flex;
@@ -85,25 +85,103 @@
         }
 
     }
-
+ /*Estilos pagina servicios */
+    .titulo_servicios {
+        h1 {
+            @include text-tit(40px, 900);
+        }
+    }
+    .contenedor_servicios_1{
+        @include contenedor-servicios(100%, 100%, 25px,0.1em,1.5em,1.5em,0.2em);
+        .titulo_fig {
+            @include serv-tit-fig(2px, 600, 28px, center);
+        }
+        .servicios_1 {
+            @include serv_area(servicios_1, row, 100%, 100%);
+            .figure_servicios {
+                @include serv-fig(90%, center);
+            }
+            .contenedor_texto {
+                @include serv-contenedor-texto(70%, 70%);
+                .text_fig {
+                    @include serv-texto(500, 18px, left,10px);
+                }
+            }
+        }
+    }
+    .contenedor_servicios_2{
+        @include contenedor-servicios(100%, 100%, 25px,0.1em,1.5em,1.5em,0.2em);
+        .titulo_fig {
+            @include serv-tit-fig(2px, 600, 28px, center);
+        }
+        .servicios_2 {
+            @include serv_area(servicios_2, row, 100%, 100%);
+            .figure_servicios {
+                @include serv-fig(90%, center);
+            }
+            .contenedor_texto {
+                @include serv-contenedor-texto(70%, 70%);
+                .text_fig {
+                    @include serv-texto(500, 18px, left,10px);
+                }
+            }
+        }
+    }
+    .contenedor_servicios_3{
+        @include contenedor-servicios(100%, 100%, 25px,0.1em,1.5em,1.5em,0.2em);
+        .titulo_fig {
+            @include serv-tit-fig(2px, 600, 28px, center);
+        }
+        .servicios_3 {
+            @include serv_area(servicios_3, row, 100%, 100%);
+            .figure_servicios {
+                @include serv-fig(90%, center);
+            }
+            .contenedor_texto {
+                @include serv-contenedor-texto(70%, 70%);
+                .text_fig {
+                    @include serv-texto(500, 18px, left,10px);
+                }
+            }
+        }
+    }
+    .contenedor_servicios_4{
+        @include contenedor-servicios(100%, 100%, 25px,0.1em,1.5em,1.5em,0.2em);
+        .titulo_fig {
+            @include serv-tit-fig(2px, 600, 28px, center);
+        }
+        .servicios_4 {
+            @include serv_area(servicios_4, row, 100%, 100%);
+            .figure_servicios {
+                @include serv-fig(90%, center);
+            }
+            .contenedor_texto {
+                @include serv-contenedor-texto(70%, 70%);
+                .text_fig {
+                    @include serv-texto(500, 18px, left,10px);
+                }
+            }
+        }
+    }
 }
-// /*cierra Media Index +768 /-1024*/
+
+// /*cierra Media +768 /-1024*/
 
 // /*Abre Media Index +1024*/
 @media(min-width:1024px){
-    
+    //* estilos index *//
     .contenedor_cards{
         gap:25px;
         .servicios_index{
-        @include cards-ind(460px,18rem); 
+            @include cards-ind(460px,18rem); 
             .btn{
-                margin-top: 0.9em;
+                margin-top: 1em;
                 }   
             }
         .productos_index{
             @include cards-ind(460px,18rem); 
             .btn{
-                margin-top: 0.9em;
+                margin-top: 2.5em;
                 }   
         }
         .novedades_index{
@@ -111,9 +189,8 @@
             .btn{
                 margin-top: 2.95em;
                 }  
-            }
+        }
     }
-
     .texto_index{
         @include cuadro-texto(20px,450px,90%,25px);
         .titulo_index{
@@ -124,5 +201,6 @@
         }
 
     }
-
+   //* estilos servicios *//
+ 
 }

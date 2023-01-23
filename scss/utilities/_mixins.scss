@@ -90,23 +90,65 @@
     text-align: center;
     color:black;  
 }
-@mixin fig-serv($ch,$cw,$br){
-
+@mixin contenedor-servicios($ch,$cw,$br,$lsp,$lhe,$pa,$gap){
+    display:flex;
+    flex-direction: column;
     box-sizing: border-box;
     border-width: 1px;
-    background: #F9D7CC;
+    background: $bg-cuadro-text;
     border-radius: $br;
     height: $ch;
     width: $cw;
+    letter-spacing: $lsp;
+    line-height: $lhe;
+    padding: $pa; 
+    gap:$gap;
         &:hover {
         box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
         }
-
 }
-@mixin cards-serv($ch,$cw){
+@mixin serv-tit-fig($pt,$fw,$fs,$ta){
+    padding-top: $pt;
+    font-weight:$fw;
+    font-size: $fs;
+    text-align: $ta;
+    color:black;
+}
+
+@mixin serv-area($name-area,$flex-dir,$he,$wi){
+    display:flex; 
+    grid-area: $name-area;
+    flex-direction: $flex-dir;   
+    height: $he;
+    width: $wi;
+}
+@mixin serv-fig($wi,$aling){
+    width: $wi;
+    align-self: $aling;
+    &:hover img {
+    border-radius:25%;
+    box-shadow: 0px 0px 5px 5px #ec731e;
+    filter: saturate(180%);
+    }
+}
+
+@mixin serv-contenedor-texto($he,$wi){
+    display:flex;
+    align-items: center;
+    align-self: center;
+    height: $he;
+    width: $wi;
+}
+@mixin serv-texto($fw,$fs,$ta,$pal){
+    font-weight:$fw;
+    font-size: $fs;
+    text-align: $ta;
+    padding-left: $pal;
+    color:black;
+}
+    @mixin cards-serv($ch,$cw){
     .card{
         height: $ch;
         width: $cw;
     }
 }
-

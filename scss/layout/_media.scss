@@ -1,273 +1,349 @@
 /*Media Screen +768px*/
 
-@media(min-width: 768px){
-    /*Abre Media Index +768/-1024**/  
+@media(min-width: 768px) {
+
+    /*Abre Media Index +768/-1024**/
     /* Estilos footer*/
     footer {
         height: 120px;
+
         .contendor_footer_datos {
-            @include cont-foo-da(0.1em,0.5,2em);
-            display:grid;
+            @include cont-foo-da(0.1em, 0.5, 2em);
+            display: grid;
             grid-template-rows: 1fr;
-            grid-template-columns: repeat(2,1fr);
-            grid-template-areas: 
-            "contacto" "redes"
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
+                "contacto" "redes"
             ;
-            .contenedor_contactos{
+
+            .contenedor_contactos {
                 grid-area: contacto;
-                grid-column:1 / 2;
+                grid-column: 1 / 2;
             }
-            .contenedor_contactos h2{
-                grid-column:1 / 2;
+
+            .contenedor_contactos h2 {
+                grid-column: 1 / 2;
             }
-            .elemento_icon{
-                grid-column:1 / 2;
-                @include icon-foo(0.5em,1.5,0.5em);
+
+            .elemento_icon {
+                grid-column: 1 / 2;
+                @include icon-foo(0.5em, 1.5, 0.5em);
             }
-            .elemento_footer{
-                @include ele-foo(15px,500);
-                grid-column:1 / 2;
-                vertical-align:text-bottom;
+
+            .elemento_footer {
+                @include ele-foo(15px, 500);
+                grid-column: 1 / 2;
+                vertical-align: text-bottom;
             }
-            .contenedor_redes{
-                grid-area: redes; 
-                grid-column:2 / 3; 
-                grid-row:1 / 2;
+
+            .contenedor_redes {
+                grid-area: redes;
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
                 justify-self: flex-end;
             }
-            .red_social h3{
-                grid-column:2 / 3;
-                grid-row:1 / 2;  
-                @include tit-redes-foo(30px,20px,800,right,0.1em,0.8em); 
+
+            .red_social h3 {
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+                @include tit-redes-foo(30px, 20px, 800, right, 0.1em, 0.8em);
             }
+
             .red_icon {
-                grid-column:2 / 3;
-                grid-row:1 / 2;
-                @include red-ico-foo(0.3em,0.4em,0em,0.9em,0.4em,1.5);
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+                @include red-ico-foo(0.3em, 0.4em, 0em, 0.9em, 0.4em, 1.5);
             }
         }
-        
-        
+
+
     }
+
     /*Estilos pagina Index */
-    
-    .contenedor_cards{
+
+    .contenedor_cards {
         grid-area: cards;
-        display:flex;
+        display: flex;
         flex-direction: row;
-        gap:5px;
-        .servicios_index{
-            @include cards-ind(430px,15rem); 
-            .btn{
+        gap: 5px;
+
+        .servicios_index {
+            @include cards-ind(430px, 15rem);
+
+            .btn {
                 margin-top: 0.3em;
-                }   
             }
-        .productos_index{
-            @include cards-ind(430px,15rem); 
-            .btn{
-                margin-top: 1.4em;
-                }   
         }
-        .novedades_index{
-            @include cards-ind(430px,15rem);
-            .btn{
+
+        .productos_index {
+            @include cards-ind(430px, 15rem);
+
+            .btn {
+                margin-top: 1.4em;
+            }
+        }
+
+        .novedades_index {
+            @include cards-ind(430px, 15rem);
+
+            .btn {
                 margin-top: 2.8em;
-                }  
+            }
         }
     }
-    .texto_index{
-        @include cuadro-texto(20px,600px,95%,25px);
-        .titulo_index{
-            @include font-tit(800,50px);  
+
+    .texto_index {
+        @include cuadro-texto(20px, 600px, 95%, 25px);
+
+        .titulo_index {
+            @include font-tit(800, 50px);
         }
-        .textoNosotros_index{
-            @include font-text-ind(500,22px);  
+
+        .textoNosotros_index {
+            @include font-text-ind(500, 22px);
         }
 
     }
- /*Estilos pagina servicios */
+
+    /*Estilos pagina servicios */
     .titulo_servicios {
         h1 {
             @include text-tit(40px, 900);
         }
     }
-    .contenedor_servicios_1{
-        @include contenedores-figures(100%, 100%, 25px,0.1em,1.5em,1.5em,0.2em);
+
+    .contenedor_servicios_1 {
+        @include contenedores-figures(100%, 100%, 25px, 0.1em, 1.5em, 1.5em, 0.2em);
+
         .titulo_fig {
             @include serv-tit-fig(2px, 600, 28px, center);
         }
+
         .servicios_1 {
             @include serv_area(servicios_1, row, 100%, 100%);
+
             .figure_servicios {
                 @include serv-fig(90%, center);
             }
+
             .contenedor_texto {
                 @include serv-contenedor-texto(70%, 70%);
+
                 .text_fig {
-                    @include serv-texto(500, 18px, left,10px);
+                    @include serv-texto(500, 18px, left, 10px);
                 }
             }
         }
     }
-    .contenedor_servicios_2{
-        @include contenedores-figures(100%, 100%, 25px,0.1em,1.5em,1.5em,0.2em);
+
+    .contenedor_servicios_2 {
+        @include contenedores-figures(100%, 100%, 25px, 0.1em, 1.5em, 1.5em, 0.2em);
+
         .titulo_fig {
             @include serv-tit-fig(2px, 600, 28px, center);
         }
+
         .servicios_2 {
             @include serv_area(servicios_2, row, 100%, 100%);
+
             .figure_servicios {
                 @include serv-fig(90%, center);
             }
+
             .contenedor_texto {
                 @include serv-contenedor-texto(70%, 70%);
+
                 .text_fig {
-                    @include serv-texto(500, 18px, left,10px);
+                    @include serv-texto(500, 18px, left, 10px);
                 }
             }
         }
     }
-    .contenedor_servicios_3{
-        @include contenedores-figures(100%, 100%, 25px,0.1em,1.5em,1.5em,0.2em);
+
+    .contenedor_servicios_3 {
+        @include contenedores-figures(100%, 100%, 25px, 0.1em, 1.5em, 1.5em, 0.2em);
+
         .titulo_fig {
             @include serv-tit-fig(2px, 600, 28px, center);
         }
+
         .servicios_3 {
             @include serv_area(servicios_3, row, 100%, 100%);
+
             .figure_servicios {
                 @include serv-fig(90%, center);
             }
+
             .contenedor_texto {
                 @include serv-contenedor-texto(70%, 70%);
+
                 .text_fig {
-                    @include serv-texto(500, 18px, left,10px);
+                    @include serv-texto(500, 18px, left, 10px);
                 }
             }
         }
     }
-    .contenedor_servicios_4{
-        @include contenedores-figures(100%, 100%, 25px,0.1em,1.5em,1.5em,0.2em);
+
+    .contenedor_servicios_4 {
+        @include contenedores-figures(100%, 100%, 25px, 0.1em, 1.5em, 1.5em, 0.2em);
+
         .titulo_fig {
             @include serv-tit-fig(2px, 600, 28px, center);
         }
+
         .servicios_4 {
             @include serv_area(servicios_4, row, 100%, 100%);
+
             .figure_servicios {
                 @include serv-fig(90%, center);
             }
+
             .contenedor_texto {
                 @include serv-contenedor-texto(70%, 70%);
+
                 .text_fig {
-                    @include serv-texto(500, 18px, left,10px);
+                    @include serv-texto(500, 18px, left, 10px);
                 }
             }
         }
     }
 
     /*Estilos pagina productos */
-   
+
     .titulo_productos {
         h1 {
             @include text-tit(40px, 900);
         }
     }
-    .contenedor_producto_1-2{
+
+    .contenedor_producto_1-2 {
         display: flex;
         flex-direction: row;
+
         .contenedor_producto_1 {
-            @include contenedores-figures(100%, 100%, 15px,0.04em,1.2em,0.5em,1em);
+            @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
             margin-bottom: 0;
             margin-right: 0.5em;
+
             .titulo_fig {
                 @include serv-tit-fig(15px, 700, 25px, center);
             }
+
             .producto_1 {
                 height: 100%;
                 width: 100%;
+
                 .figure_servicios {
                     @include serv-fig(100%, center);
                 }
             }
         }
+
         .contenedor_producto_2 {
-            @include contenedores-figures(100%, 100%, 15px,0.04em,1.2em,0.5em,1em);
+            @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
             margin-bottom: 0;
-            margin-right: 0.5em;;
+            margin-right: 0.5em;
+            ;
+
             .titulo_fig {
                 @include serv-tit-fig(15px, 700, 25px, center);
             }
+
             .producto_2 {
                 height: 100%;
                 width: 100%;
+
                 .figure_servicios {
                     @include serv-fig(100%, center);
                 }
             }
         }
     }
-    .contenedor_producto_3-4{
+
+    .contenedor_producto_3-4 {
         display: flex;
         flex-direction: row;
+
         .contenedor_producto_3 {
-        @include contenedores-figures(100%, 100%, 15px,0.04em,1.2em,0.5em,1em);
+            @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
 
             margin-bottom: 0;
-            margin-right: 0.5em;;
+            margin-right: 0.5em;
+            ;
+
             .titulo_fig {
                 @include serv-tit-fig(15px, 700, 25px, center);
             }
+
             .producto_3 {
                 height: 100%;
                 width: 100%;
+
                 .figure_servicios {
                     @include serv-fig(100%, center);
                 }
             }
         }
+
         .contenedor_producto_4 {
-            @include contenedores-figures(100%, 100%, 15px,0.04em,1.2em,0.5em,1em);
+            @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
             margin-bottom: 0;
-            margin-right: 0.5em;;
+            margin-right: 0.5em;
+            ;
+
             .titulo_fig {
                 @include serv-tit-fig(15px, 700, 25px, center);
             }
+
             .producto_4 {
                 height: 100%;
                 width: 100%;
+
                 .figure_servicios {
                     @include serv-fig(100%, center);
                 }
             }
         }
     }
-    .contenedor_producto_5-6{
+
+    .contenedor_producto_5-6 {
         display: flex;
         flex-direction: row;
+
         .contenedor_producto_5 {
-            @include contenedores-figures(100%, 100%, 15px,0.04em,1.2em,0.5em,1em);
+            @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
             margin-bottom: 0;
-            margin-right: 0.5em;;
+            margin-right: 0.5em;
+            ;
+
             .titulo_fig {
                 @include serv-tit-fig(15px, 700, 25px, center);
             }
+
             .producto_5 {
                 height: 100%;
                 width: 100%;
+
                 .figure_servicios {
                     @include serv-fig(100%, center);
                 }
             }
         }
+
         .contenedor_producto_6 {
-            @include contenedores-figures(100%, 100%, 15px,0.04em,1.2em,0.5em,1em);
+            @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
             margin-bottom: 0;
-            margin-right: 0.5em;;
+            margin-right: 0.5em;
+            ;
+
             .titulo_fig {
                 @include serv-tit-fig(15px, 700, 25px, center);
             }
+
             .producto_6 {
                 height: 100%;
                 width: 100%;
+
                 .figure_servicios {
                     @include serv-fig(100%, center);
                 }
@@ -275,79 +351,76 @@
         }
     }
 
-}
-    /*Estilos pagina productos */
-.titulo_novedades {
-    @include titulos("titulo_novedades");
 
+
+/*Estilos pagina novedades */
+.titulo_novedades {
     h1 {
         @include text-tit(40px, 900);
     }
 }
 
-.contenedor_novedades{
+.contenedor_novedades {
     flex-direction: row;
-    .novedades_1 {
-        @include contenedores-figures(100%, 100%, 15px,0.04em,1.2em,1.5em,0.5em);
-        margin-bottom: 0;
-        margin-right: 0.5em;
-        }
-    .novedades_2 {
-        @include contenedores-figures(100%, 100%, 15px,0.04em,1.2em,1.5em,0.5em);
-        margin-bottom: 0;
-        margin-right: 0.5em;
-    }
-    .novedades_3 {
-        @include contenedores-figures(100%, 100%, 15px,0.04em,1.2em,1.5em,0.5em);
-        margin-bottom: 0;
-        margin-right: 0.5em;
-    }
 }
-.texto_novedades{
-    grid-area:texto_novedades; 
-    @include cuadro-texto(10px,320px,80%,20px);
-    .titulo{
-        @include font-tit(700,30px);  
+
+.texto_novedades {
+    grid-area: texto_novedades;
+    @include cuadro-texto(10px, 320px, 80%, 20px);
+
+    .titulo {
+        @include font-tit(700, 30px);
     }
-    .texto{
-        @include font-text-ind(600,20px);  
+
+    .texto {
+        @include font-text-ind(600, 20px);
     }
 }
 
-
+}
 // /*cierra Media +768 /-1024*/
 
 // /*Abre Media Index +1024*/
-@media(min-width:1024px){
+@media(min-width:1024px) {
+
     //* estilos index *//
-    .contenedor_cards{
-        gap:25px;
-        .servicios_index{
-            @include cards-ind(460px,18rem); 
-            .btn{
+    .contenedor_cards {
+        gap: 25px;
+
+        .servicios_index {
+            @include cards-ind(460px, 18rem);
+
+            .btn {
                 margin-top: 1em;
-                }   
             }
-        .productos_index{
-            @include cards-ind(460px,18rem); 
-            .btn{
-                margin-top: 2.5em;
-                }   
         }
-        .novedades_index{
-            @include cards-ind(460px,18rem);
-            .btn{
+
+        .productos_index {
+            @include cards-ind(460px, 18rem);
+
+            .btn {
+                margin-top: 2.5em;
+            }
+        }
+
+        .novedades_index {
+            @include cards-ind(460px, 18rem);
+
+            .btn {
                 margin-top: 2.95em;
-                }  
+            }
         }
     }
-    .texto_index{
-        @include cuadro-texto(20px,450px,90%,25px);
-        .titulo_index{
-            @include font-tit(800,50px);  
+
+    .texto_index {
+        @include cuadro-texto(20px, 450px, 90%, 25px);
+
+        .titulo_index {
+            @include font-tit(800, 50px);
         }
-        .textoNosotros_index{
-            @include font-text-ind(500,22px);  
+
+        .textoNosotros_index {
+            @include font-text-ind(500, 22px);
         }
 
     }

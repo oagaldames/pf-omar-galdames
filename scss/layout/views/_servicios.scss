@@ -1,6 +1,6 @@
 //*Estilos servicios.html mobile*//
 .titulo_servicios {
-    @include titulos("titulo_servicios");
+    @include titulos;
     h1 {
         @include text-tit(25px, 400);
     }

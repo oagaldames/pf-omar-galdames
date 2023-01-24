@@ -1,41 +1,14 @@
-//*Estilos servicios.html mobile*//
 .titulo_novedades {
-    @include titulos("titulo_novedades");
-
+    @include titulos;
     h1 {
         @include text-tit(25px, 400);
     }
 }
-
-.main_Index {
-    @extend .carousel-ind;
-}
-
 .contenedor_novedades{
     grid-area: novedades;
     display: flex;
     flex-direction: column;
-    .novedades_1 {
-        @include contenedores-figures(230px, 100%, 15px,0.04em,1.2em,1.5em,0.5em);
-        margin-bottom: 0.5em;
-        .figure_novedades_1 {
-            @include serv-fig(100%, center);
-        }
-    }
-    .novedades_2 {
-        @include contenedores-figures(230px, 100%, 15px,0.04em,1.2em,1.5em,0.5em);
-        margin-bottom: 0.5em;
-        .figure_novedades_2 {
-            @include serv-fig(100%, center);
-        }
-    }
-    .novedades_3 {
-        @include contenedores-figures(230px, 100%, 15px,0.04em,1.2em,1.5em,0.5em);
-        margin-bottom: 0.5em;
-        .figure_novedades_3 {
-            @include serv-fig(100%, center);
-        }
-    }
+    @include contenedores-figures(100%, 95%, 15px,0.04em,1.2em,1em,0.2em);
 }
 .texto_novedades{
     grid-area:texto_novedades; 

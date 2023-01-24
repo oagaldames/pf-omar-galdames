@@ -1,6 +1,6 @@
-@mixin titulos($name-area){    
+@mixin titulos{    
         display:flex;
-        grid-area:$name-area;
+        grid-area:titulo;
         flex-wrap: wrap;
         padding: 5px; 
         justify-content: center;

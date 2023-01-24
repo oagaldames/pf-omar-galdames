@@ -1,0 +1,15 @@
+//*Estilos contacto.html mobile*//
+.titulo_contacto {
+    @include titulos;
+    h1 {
+         @include text-tit(25px, 400);
+    }
+}
+.imagen_contacto{
+    grid-area:imagen;
+    display: flex;
+}
+.form_contacto{
+    display: flex;
+    flex-direction: column;
+}

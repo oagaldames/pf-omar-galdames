@@ -1,75 +1,78 @@
-
 #grid_index {
     display: grid;
     height: 100%;
     width: 100vw;
     gap: 0.5em;
     background-color: $bg-bd;
-    grid-template-areas: 
-    "header"
-    "main"
-    "cards"
-    "texto_index"
-    "footer";
+    grid-template-areas:
+        "header"
+        "main"
+        "cards"
+        "texto_index"
+        "footer";
     justify-content: center;
 }
+
 #grid_servicios {
     display: grid;
     height: 100%;
     width: 100vw;
     gap: 0.5em;
     background-color: $bg-bd;
-    grid-template-areas: 
-    "header"
-    "titulo"
-    "servicios_1"
-    "servicios_2"
-    "servicios_3"
-    "servicios_4" 
-    "footer"
+    grid-template-areas:
+        "header"
+        "titulo"
+        "servicios_1"
+        "servicios_2"
+        "servicios_3"
+        "servicios_4"
+        "footer"
     ;
 }
+
 #grid_productos {
     display: grid;
     height: 100%;
     width: 100vw;
     gap: 0.5em;
     background-color: $bg-bd;
-    grid-template-areas: 
-    "header"
-    "titulo"
-    "producto_1-2"
-    "producto_3-4"
-    "producto_5-6"
-    "footer"
+    grid-template-areas:
+        "header"
+        "titulo"
+        "producto_1-2"
+        "producto_3-4"
+        "producto_5-6"
+        "footer"
     ;
 }
+
 #grid_novedades {
     display: grid;
     height: 100%;
     width: 100vw;
     gap: 0.5em;
     background-color: $bg-bd;
-    grid-template-areas: 
-    "header"
-    "titulo"
-    "main"
-    "novedades"
-    "texto_novedades"
-    "footer";
+    grid-template-areas:
+        "header"
+        "titulo"
+        "main"
+        "novedades"
+        "texto_novedades"
+        "footer";
     justify-content: center;
 }
+
 #grid_contacto {
     display: grid;
     height: 100%;
     width: 100vw;
     gap: 0.5em;
     background-color: $bg-bd;
-    grid-template-areas: 
-    "header"
-    "titulo"
-    "imagen"
-    "form_contacto"
-    "footer";
+    grid-template-areas:
+        "header"
+        "titulo"
+        "imagen"
+        "form_contacto"
+        "footer";
     justify-content: center;
 }

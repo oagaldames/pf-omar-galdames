@@ -1,79 +1,103 @@
 //*Estilos servicios.html mobile*//
 .titulo_servicios {
     @include titulos;
+
     h1 {
         @include text-tit(25px, 400);
     }
 }
+
 .contenedor_servicios_1 {
-    @include contenedores-figures(450px, 100%, 15px,0.04em,1.2em,0.5em,0.1em);
+    @include contenedores-figures(450px, 100%, 15px, 0.04em, 1.2em, 0.5em, 0.1em);
+
     .titulo_fig {
         @include serv-tit-fig(10px, 700, 20px, center);
     }
+
     .servicios_1 {
         @include serv_area(servicios_1, column, 100%, 100%);
+
         .figure_servicios {
             @include serv-fig(90%, center);
         }
-        .contenedor_texto {
-            @include serv-contenedor-texto(100%, 90%);
-            .text_fig {
-                @include serv-texto(600, 13px, center,0px);
-            }
-        }
-    }
-}
-.contenedor_servicios_2 {
-    @include contenedores-figures(450px, 100%, 15px,0.04em,1.2em,0.5em,0.1em);
-    .titulo_fig {
-        @include serv-tit-fig(10px, 700, 20px, center);
-    }
-    .servicios_2 {
-        @include serv_area(servicios_2, column, 100%, 100%);
-        .figure_servicios {
-            @include serv-fig(90%, center);
-        }
-        .contenedor_texto {
-            @include serv-contenedor-texto(100%, 90%);
-            .text_fig {
-                @include serv-texto(600, 13px, center,0px);
-            }
-        }
-    }
-}
-.contenedor_servicios_3 {
-    @include contenedores-figures(450px, 100%, 15px,0.04em,1.2em,0.5em,0.1em);
-    .titulo_fig {
-        @include serv-tit-fig(10px, 700, 20px, center);
-    }
-    .servicios_3 {
-        @include serv_area(servicios_3, column, 100%, 100%);
-        .figure_servicios {
-            @include serv-fig(90%, center);
-        }
-        .contenedor_texto {
-            @include serv-contenedor-texto(100%, 90%);
-            .text_fig {
-                @include serv-texto(600, 13px, center,0px);
-            }
-        }
-    }
-}
-.contenedor_servicios_4 {
-    @include contenedores-figures(450px, 100%, 15px,0.04em,1.2em,0.5em,0.1em);
-    .titulo_fig {
-        @include serv-tit-fig(10px, 700, 20px, center);
-    }
-    .servicios_4 {
-        @include serv_area(servicios_4, column, 100%, 100%);
-        .figure_servicios {
-            @include serv-fig(90%, center);
-        }
+
         .contenedor_texto {
             @include serv-contenedor-texto(100%, 90%);
 
             .text_fig {
-                @include serv-texto(600, 13px, center,0px);
+                @include serv-texto(400, 13px, center, 0px);
+            }
+        }
+    }
+}
+
+.contenedor_servicios_2 {
+    @include contenedores-figures(450px, 100%, 15px, 0.04em, 1.2em, 0.5em, 0.1em);
+
+    .titulo_fig {
+        @include serv-tit-fig(10px, 700, 20px, center);
+    }
+
+    .servicios_2 {
+        @include serv_area(servicios_2, column, 100%, 100%);
+
+        .figure_servicios {
+            @include serv-fig(90%, center);
+        }
+
+        .contenedor_texto {
+            @include serv-contenedor-texto(100%, 90%);
+
+            .text_fig {
+                @include serv-texto(400, 13px, center, 0px);
+            }
+        }
+    }
+}
+
+.contenedor_servicios_3 {
+    @include contenedores-figures(450px, 100%, 15px, 0.04em, 1.2em, 0.5em, 0.1em);
+
+    .titulo_fig {
+        @include serv-tit-fig(10px, 700, 20px, center);
+    }
+
+    .servicios_3 {
+        @include serv_area(servicios_3, column, 100%, 100%);
+
+        .figure_servicios {
+            @include serv-fig(90%, center);
+        }
+
+        .contenedor_texto {
+            @include serv-contenedor-texto(100%, 90%);
+
+            .text_fig {
+                @include serv-texto(400, 13px, center, 0px);
+            }
+        }
+    }
+}
+
+.contenedor_servicios_4 {
+    @include contenedores-figures(450px, 100%, 15px, 0.04em, 1.2em, 0.5em, 0.1em);
+
+    .titulo_fig {
+        @include serv-tit-fig(10px, 700, 20px, center);
+    }
+
+    .servicios_4 {
+        @include serv_area(servicios_4, column, 100%, 100%);
+
+        .figure_servicios {
+            @include serv-fig(90%, center);
+        }
+
+        .contenedor_texto {
+            @include serv-contenedor-texto(100%, 90%);
+
+            .text_fig {
+                @include serv-texto(400, 13px, center, 0px);
             }
         }
     }

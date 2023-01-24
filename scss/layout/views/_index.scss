@@ -1,36 +1,37 @@
 //*Estilos index.html mobile*//
-.main_Index{
-@extend .carousel-ind;
+.main_Index {
+    @extend .carousel-ind;
 }
-.contenedor_cards{
+
+.contenedor_cards {
     grid-area: cards;
     display: flex;
     flex-direction: column;
-    gap:10px;    
+    gap: 10px;
     justify-self: center;
-    .servicios_index{
-        @include cards-ind(420px,18rem);
+
+    .servicios_index {
+        @include cards-ind(420px, 18rem);
     }
 
-    .productos_index{
-        @include cards-ind(420px,18rem);
+    .productos_index {
+        @include cards-ind(420px, 18rem);
     }
 
-    .novedades_index{
-        @include cards-ind(420px,18rem);
+    .novedades_index {
+        @include cards-ind(420px, 18rem);
     }
 }
 
-.texto_index{
+.texto_index {
     grid-area: texto_index;
-    @include cuadro-texto(15px,520px,90%,20px);
-    .titulo_index{
-        @include font-tit(700,40px);  
+    @include cuadro-texto(15px, 520px, 90%, 20px);
+
+    .titulo_index {
+        @include font-tit(500, 40px);
     }
-    .textoNosotros_index{
-        @include font-text-ind(550,13px);  
+
+    .textoNosotros_index {
+        @include font-text-ind(400, 13px);
     }
 }
-
-
-

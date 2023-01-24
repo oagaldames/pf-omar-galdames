@@ -1,7 +1,7 @@
-$bg-hf:linear-gradient(90deg,rgb(212, 24, 24) 0%,  rgb(222, 179, 179) 100%);
-$bg-bd:rgb(187, 157, 133); 
-$bg-titulos:radial-gradient(circle, rgb(236, 194, 194) 0%, rgb(242, 149, 149) 100%);
-$bg-ho-nav: #982e2e;
-$bg-cuadro-text:radial-gradient(circle, rgb(239, 196, 196) 10%, rgb(233, 139, 139) 100%);
-$color-font_hf:rgb(243, 235, 235);
-$bg-dc:radial-gradient(circle,rgb(182, 178, 178) 10%,  rgb(86, 83, 83) 100%);
+$bg-hf: radial-gradient(circle, rgb(171, 201, 245) 0%, rgb(17, 78, 169) 100%);
+$bg-bd: rgb(223, 226, 228);
+$bg-titulos: linear-gradient(to right, rgb(171, 201, 245) 0%, rgb(17, 78, 169) 100%);
+$bg-ho-nav: #0c0a90;
+$bg-cuadro-text: linear-gradient(to bottom, rgba(101, 101, 241, 0.427), rgb(245, 216, 221));
+$color-font_hf: rgb(243, 235, 235);
+$bg-dc: radial-gradient(circle, rgb(182, 178, 178) 10%, rgb(86, 83, 83) 100%);

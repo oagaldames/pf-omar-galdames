@@ -1,94 +1,113 @@
 //*Estilos productos.html mobile*//
-    .titulo_productos {
+.titulo_productos {
     @include titulos;
+
     h1 {
         @include text-tit(25px, 400);
     }
 }
-.contenedor_producto_1-2{
+
+.contenedor_producto_1-2 {
     display: flex;
     flex-direction: column;
-    
-.contenedor_producto_1 {
-    @include contenedores-figures(100%, 100%, 15px,0.04em,1.2em,0.5em,1em);
-    margin-bottom: 0.5em;
-    .titulo_fig {
-        @include serv-tit-fig(10px, 700, 20px, center);
-    }
-    .producto_1 {
+
+    .contenedor_producto_1 {
+        @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
+        margin-bottom: 0.5em;
+
+        .titulo_fig {
+            @include serv-tit-fig(10px, 700, 20px, center);
+        }
+
+        .producto_1 {
             .figure_servicios {
-            @include serv-fig(100%, center);
+                @include serv-fig(100%, center);
+            }
         }
     }
-}
-.contenedor_producto_2 {
-    @include contenedores-figures(250px, 100%, 15px,0.04em,1.2em,0.5em,1em);
-    margin-bottom: 0.5em;
-    .titulo_fig {
-        @include serv-tit-fig(10px, 700, 20px, center);
-    }
-    .producto_2 {
+
+    .contenedor_producto_2 {
+        @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
+        margin-bottom: 0.5em;
+
+        .titulo_fig {
+            @include serv-tit-fig(10px, 700, 20px, center);
+        }
+
+        .producto_2 {
             .figure_servicios {
-            @include serv-fig(100%, center);
+                @include serv-fig(100%, center);
+            }
         }
     }
 }
-}
-.contenedor_producto_3-4{
+
+.contenedor_producto_3-4 {
     display: flex;
     flex-direction: column;
-    
-.contenedor_producto_3 {
-    @include contenedores-figures(250px, 100%, 15px,0.04em,1.2em,0.5em,1em);
-    margin-bottom: 0.5em;
-    .titulo_fig {
-        @include serv-tit-fig(10px, 700, 20px, center);
+
+    .contenedor_producto_3 {
+        @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
+        margin-bottom: 0.5em;
+
+        .titulo_fig {
+            @include serv-tit-fig(10px, 700, 20px, center);
+        }
+
+        .producto_3 {
+            .figure_servicios {
+                @include serv-fig(100%, center);
+            }
+        }
     }
-    .producto_3 {
-        .figure_servicios {
-            @include serv-fig(100%, center);
+
+    .contenedor_producto_4 {
+        @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
+        margin-bottom: 0.5em;
+
+        .titulo_fig {
+            @include serv-tit-fig(10px, 700, 20px, center);
+        }
+
+        .producto_4 {
+            .figure_servicios {
+                @include serv-fig(100%, center);
+            }
         }
     }
 }
-.contenedor_producto_4 {
-    @include contenedores-figures(300px, 100%, 15px,0.04em,1.2em,0.5em,1em);
-    margin-bottom: 0.5em;
-    .titulo_fig {
-        @include serv-tit-fig(10px, 700, 20px, center);
-    }
-    .producto_4 {
-        .figure_servicios {
-            @include serv-fig(100%, center);
-        }
-    }
-}
-}
-.contenedor_producto_5-6{
+
+.contenedor_producto_5-6 {
     display: flex;
     flex-direction: column;
-    
-.contenedor_producto_5 {
-    @include contenedores-figures(300px, 100%, 15px,0.04em,1.2em,0.5em,1em);
-    margin-bottom: 0.5em;
-    .titulo_fig {
-        @include serv-tit-fig(10px, 700, 20px, center);
-    }
-    .producto_5 {
-        .figure_servicios {
-            @include serv-fig(100%, center);
+
+    .contenedor_producto_5 {
+        @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
+        margin-bottom: 0.5em;
+
+        .titulo_fig {
+            @include serv-tit-fig(10px, 700, 20px, center);
+        }
+
+        .producto_5 {
+            .figure_servicios {
+                @include serv-fig(100%, center);
+            }
         }
     }
-}
-.contenedor_producto_6 {
-    @include contenedores-figures(250px, 100%, 15px,0.04em,1.2em,0.5em,1em);
-    margin-bottom: 0.5em;
-    .titulo_fig {
-        @include serv-tit-fig(10px, 700, 20px, center);
-    }
-    .producto_6 {
-        .figure_servicios {
-            @include serv-fig(100%, center);
+
+    .contenedor_producto_6 {
+        @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
+        margin-bottom: 0.5em;
+
+        .titulo_fig {
+            @include serv-tit-fig(10px, 700, 20px, center);
+        }
+
+        .producto_6 {
+            .figure_servicios {
+                @include serv-fig(100%, center);
+            }
         }
     }
-}
 }

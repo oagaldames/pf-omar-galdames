@@ -1,30 +1,37 @@
 //*Estilos contacto.html mobile*//
 .titulo_contacto {
     @include titulos;
+
     h1 {
-         @include text-tit(25px, 400);
+        @include text-tit(25px, 400);
     }
 }
-.imagen_contacto{
-    grid-area:imagen;
+
+.imagen_contacto {
+    grid-area: imagen;
     display: flex;
 }
-.form_contacto{
+
+.form_contacto {
     grid-area: form_contacto;
     display: flex;
-    @include contenedores-figures(100%, 90%, 15px,0.04em,1.2em,1em,0.2em);
-    .cuadro_texto{
+    @include contenedores-figures(100%, 90%, 15px, 0.04em, 1.2em, 1em, 0.2em);
+
+    .cuadro_texto {
         text-align: center;
         gap: 5px;
-        .tituloTextoContacto{
+
+        .tituloTextoContacto {
             font-size: 20px;
-            }
-            .textoContacto{
-                font-size: 15px;
-            }
+        }
+
+        .textoContacto {
+            font-size: 15px;
         }
     }
-    .datos_contacto{
-        color: beige;
-        @include contenedor-contacto;
-    }
+}
+
+.datos_contacto {
+    color: beige;
+    @include contenedor-contacto;
+}

@@ -1,22 +1,27 @@
 .titulo_novedades {
     @include titulos;
+
     h1 {
         @include text-tit(25px, 400);
     }
 }
-.contenedor_novedades{
+
+.contenedor_novedades {
     grid-area: novedades;
     display: flex;
     flex-direction: column;
-    @include contenedores-figures(100%, 95%, 15px,0.04em,1.2em,1em,0.2em);
+    @include contenedores-figures(100%, 95%, 15px, 0.04em, 1.2em, 1em, 0.2em);
 }
-.texto_novedades{
-    grid-area:texto_novedades; 
-    @include cuadro-texto(10px,320px,80%,20px);
-    .titulo{
-        @include font-tit(700,25px);  
+
+.texto_novedades {
+    grid-area: texto_novedades;
+    @include cuadro-texto(10px, 320px, 80%, 20px);
+
+    .titulo {
+        @include font-tit(700, 25px);
     }
-    .texto{
-        @include font-text-ind(550,13px);  
+
+    .texto {
+        @include font-text-ind(400, 13px);
     }
 }

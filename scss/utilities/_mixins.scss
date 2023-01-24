@@ -7,8 +7,8 @@
         align-items: center;
         justify-self: center;
         align-self: center;
-        height: 80%;
-        width: 90%;
+        height: 90%;
+        width: 95%;
         box-sizing: border-box;
         border-width: 1px;
         background:$bg-titulos;
@@ -124,11 +124,6 @@
 @mixin serv-fig($wi,$aling){
     width: $wi;
     align-self: $aling;
-    &:hover img {
-    border-radius:25%;
-    box-shadow: 0px 0px 5px 5px #ec731e;
-    filter: saturate(180%);
-    }
 }
 
 @mixin serv-contenedor-texto($he,$wi){
@@ -151,3 +146,21 @@
         width: $cw;
     }
 }
+@mixin contenedor-contacto{
+    // display:flex;
+    // flex-direction: column;
+    // box-sizing: border-box;
+    border-width: 1px;
+    background: $bg-dc;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%w;
+    // letter-spacing: $lsp;
+    // line-height: $lhe;
+    padding: 10px; 
+    gap:10px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+         
+    
+}
+

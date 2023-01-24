@@ -10,6 +10,21 @@
     display: flex;
 }
 .form_contacto{
+    grid-area: form_contacto;
     display: flex;
-    flex-direction: column;
-}
+    @include contenedores-figures(100%, 90%, 15px,0.04em,1.2em,1em,0.2em);
+    .cuadro_texto{
+        text-align: center;
+        gap: 5px;
+        .tituloTextoContacto{
+            font-size: 20px;
+            }
+            .textoContacto{
+                font-size: 15px;
+            }
+        }
+    }
+    .datos_contacto{
+        color: beige;
+        @include contenedor-contacto;
+    }

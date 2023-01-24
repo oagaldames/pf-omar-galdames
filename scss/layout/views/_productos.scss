@@ -10,7 +10,7 @@
     flex-direction: column;
     
 .contenedor_producto_1 {
-    @include contenedores-figures(250px, 100%, 15px,0.04em,1.2em,0.5em,1em);
+    @include contenedores-figures(100%, 100%, 15px,0.04em,1.2em,0.5em,1em);
     margin-bottom: 0.5em;
     .titulo_fig {
         @include serv-tit-fig(10px, 700, 20px, center);

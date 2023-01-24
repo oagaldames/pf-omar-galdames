@@ -59,7 +59,7 @@
 
     }
 
-    /*Estilos pagina Index */
+    /*Estilos pagina Index.html */
 
     .contenedor_cards {
         grid-area: cards;
@@ -208,7 +208,7 @@
         }
     }
 
-    /*Estilos pagina productos */
+    /*Estilos pagina productos.html */
 
     .titulo_productos {
         h1 {
@@ -353,31 +353,59 @@
 
 
 
-/*Estilos pagina novedades */
-.titulo_novedades {
-    h1 {
-        @include text-tit(40px, 900);
-    }
-}
-
-.contenedor_novedades {
-    flex-direction: row;
-}
-
-.texto_novedades {
-    grid-area: texto_novedades;
-    @include cuadro-texto(10px, 320px, 80%, 20px);
-
-    .titulo {
-        @include font-tit(700, 30px);
+    /*Estilos pagina novedades.html */
+    .titulo_novedades {
+        h1 {
+            @include text-tit(40px, 900);
+        }
     }
 
-    .texto {
-        @include font-text-ind(600, 20px);
+    .contenedor_novedades {
+        flex-direction: row;
     }
-}
+
+    .texto_novedades {
+        grid-area: texto_novedades;
+        @include cuadro-texto(10px, 320px, 80%, 20px);
+
+        .titulo {
+            @include font-tit(700, 30px);
+        }
+
+        .texto {
+            @include font-text-ind(600, 20px);
+        }
+    }
+
+    /*Estilos pagina contacto.html */
+    .titulo_contacto {
+        @include titulos;
+
+        h1 {
+            @include text-tit(40px, 900);
+        }
+    }
+
+    .form_contacto {
+        flex-direction: row;
+
+        .cuadro_texto {
+            width: 60%;
+
+            .tituloTextoContacto {
+                font-size: 25px;
+                padding-top: 20px;
+                padding-bottom: 50px;
+            }
+
+            .texto_contacto {
+                font-size: 20px;
+            }
+        }
+    }
 
 }
+
 // /*cierra Media +768 /-1024*/
 
 // /*Abre Media Index +1024*/

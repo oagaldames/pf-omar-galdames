@@ -1,3 +1,8 @@
+.main{
+    width: 100%;
+    height: 100%;
+    grid-area: main;
+}
 .text-prin-foo {
     width: 100%;
     height: 25px;
@@ -8,8 +13,8 @@
 
 .carousel-ind {
     grid-area: main;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 100%;
+    justify-content: center;
+    align-items: center;
 }

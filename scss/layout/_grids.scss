@@ -1,9 +1,9 @@
 #grid_index {
     display: grid;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     gap: 0.5em;
-    background-color: $bg-bd;
+    background:$bg-bd;
     grid-template-areas:
         "header"
         "main"
@@ -16,7 +16,7 @@
 #grid_servicios {
     display: grid;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     gap: 0.5em;
     background-color: $bg-bd;
     grid-template-areas:
@@ -33,7 +33,7 @@
 #grid_productos {
     display: grid;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     gap: 0.5em;
     background-color: $bg-bd;
     grid-template-areas:
@@ -49,7 +49,7 @@
 #grid_novedades {
     display: grid;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     gap: 0.5em;
     background-color: $bg-bd;
     grid-template-areas:
@@ -65,7 +65,7 @@
 #grid_contacto {
     display: grid;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     gap: 0.5em;
     background-color: $bg-bd;
     grid-template-areas:

@@ -1,25 +1,27 @@
 //*Estilos index.html mobile*//
 .main_Index {
-    @extend .carousel-ind;
+    @extend .main;
 }
 
 .contenedor_cards {
     grid-area: cards;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
     gap: 10px;
-    justify-self: center;
+    align-items: center;
 
     .servicios_index {
-        @include cards-ind(420px, 18rem);
+        @include cards-ind(420px, 16rem);
     }
 
     .productos_index {
-        @include cards-ind(420px, 18rem);
+        @include cards-ind(420px, 16rem);
     }
 
     .novedades_index {
-        @include cards-ind(420px, 18rem);
+        @include cards-ind(420px, 16rem);
     }
 }
 

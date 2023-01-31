@@ -8,106 +8,81 @@
 }
 
 .contenedor_producto_1-2 {
+    grid-area: producto_1-2;
     display: flex;
     flex-direction: column;
 
     .contenedor_producto_1 {
-        @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
+        .cards-title {
+            @include cards-tit(1em, 3px, black, 500);
+        }
+
+        @include contenedores-figures(450px, 100%, 15px, 0.04em, 1.2em, 0.5em, 0.5em);
         margin-bottom: 0.5em;
-
-        .titulo_fig {
-            @include serv-tit-fig(10px, 700, 20px, center);
-        }
-
-        .producto_1 {
-            .figure_servicios {
-                @include serv-fig(100%, center);
-            }
-        }
+        @include cards-product(15px,0px,17px);
     }
 
     .contenedor_producto_2 {
-        @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
+        .cards-title {
+            @include cards-tit(1em, 3px, black, 500);
+        }
+
+        @include contenedores-figures(450px, 100%, 15px, 0.04em, 1.2em, 0.5em, 0.5em);
         margin-bottom: 0.5em;
-
-        .titulo_fig {
-            @include serv-tit-fig(10px, 700, 20px, center);
-        }
-
-        .producto_2 {
-            .figure_servicios {
-                @include serv-fig(100%, center);
-            }
-        }
+        @include cards-product(15px,0px,17px);
     }
 }
 
 .contenedor_producto_3-4 {
+    grid-area: producto_3-4;
     display: flex;
     flex-direction: column;
 
     .contenedor_producto_3 {
-        @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
+        .cards-title {
+            @include cards-tit(1em, 3px, black, 500);
+        }
+
+        @include contenedores-figures(450px, 100%, 15px, 0.04em, 1.2em, 0.5em, 0.5em);
         margin-bottom: 0.5em;
-
-        .titulo_fig {
-            @include serv-tit-fig(10px, 700, 20px, center);
-        }
-
-        .producto_3 {
-            .figure_servicios {
-                @include serv-fig(100%, center);
-            }
-        }
+        @include cards-product(15px,0px,17px);
     }
 
     .contenedor_producto_4 {
-        @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
+        .cards-title {
+            @include cards-tit(1em, 3px, black, 500);
+        }
+
+        @include contenedores-figures(450px, 100%, 15px, 0.04em, 1.2em, 0.5em, 0.5em);
         margin-bottom: 0.5em;
-
-        .titulo_fig {
-            @include serv-tit-fig(10px, 700, 20px, center);
-        }
-
-        .producto_4 {
-            .figure_servicios {
-                @include serv-fig(100%, center);
-            }
-        }
+        @include cards-product(15px,0px,17px);
     }
 }
 
 .contenedor_producto_5-6 {
+    grid-area: producto_5-6;
     display: flex;
     flex-direction: column;
 
     .contenedor_producto_5 {
-        @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
+        .cards-title {
+            @include cards-tit(1em, 3px, black, 500);
+        }
+
+        @include contenedores-figures(450px, 100%, 15px, 0.04em, 1.2em, 0.5em, 0.5em);
         margin-bottom: 0.5em;
-
-        .titulo_fig {
-            @include serv-tit-fig(10px, 700, 20px, center);
-        }
-
-        .producto_5 {
-            .figure_servicios {
-                @include serv-fig(100%, center);
-            }
-        }
+        @include cards-product(15px,0px,17px);
     }
 
     .contenedor_producto_6 {
-        @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
+        .cards-title {
+            @include cards-tit(1em, 3px, black, 500);
+        }
+
+        @include contenedores-figures(450px, 100%, 15px, 0.04em, 1.2em, 0.5em, 0.5em);
         margin-bottom: 0.5em;
-
-        .titulo_fig {
-            @include serv-tit-fig(10px, 700, 20px, center);
-        }
-
-        .producto_6 {
-            .figure_servicios {
-                @include serv-fig(100%, center);
-            }
-        }
+        @include cards-product(15px,0px,17px);
     }
 }
+
+

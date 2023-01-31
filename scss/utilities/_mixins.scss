@@ -167,19 +167,153 @@
 }
 
 @mixin contenedor-contacto {
-    // display:flex;
-    // flex-direction: column;
-    // box-sizing: border-box;
     border-width: 1px;
     background: $bg-dc;
     border-radius: 15px;
     height: 100%;
     width: 100%w;
-    // letter-spacing: $lsp;
-    // line-height: $lhe;
     padding: 10px;
     gap: 10px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 
 
 }
+
+// moodificacion cards productos
+@mixin cards-tit($mt,$ls,$color,$fw){
+    margin-top:$mt;
+    letter-spacing: $ls;
+    color:$color;
+    font-weight: $fw;
+    text-align: center
+}
+@mixin cards-button{
+    grid-column: 1/2;
+    justify-self: center;
+    grid-row: 2;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    padding: 0 1.5em;
+    height: 3em;
+    line-height: 2.9em;
+    min-width: 3em;
+    background-color:$accent-color;
+    border: solid 2px white;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    left: 50%;
+    backface-visibility: hidden;
+    transition: 0.3s ease-in-out;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+        &:hover {
+            background-color: #fff;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+            text-shadow: none;
+            color: $accent-color;
+        }
+}
+
+@mixin cards-product($fs,$ls,$lh) {
+    .card {
+        height: 100%;
+        margin: 1em;
+        perspective: 2000px;
+
+        .content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
+        }
+
+        &:hover {
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .more {
+            display: none;
+
+            &:checked~.content {
+                transform: rotateY(180deg);
+            }
+        }
+
+        .front,
+        .back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            border-radius: 6px;
+
+            .inner {
+                height: 100%;
+                display: grid;
+                padding: 1.5em;
+                transform: translateZ(80px) scale(0.94);
+            }
+        }
+
+        .front {
+            background-color: #fff;
+            background-size: cover;
+            background-position: center center;
+
+            &:after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: block;
+                border-radius: 6px;
+                backface-visibility: hidden;
+            }
+
+            .inner {
+                grid-template-rows: 5fr 1fr ;
+                justify-items: center;
+                .button{
+                    @include cards-button;
+                }
+            }
+        }
+
+        .back {
+            transform: rotateY(180deg);
+            background: $bg-cards;
+            border: 2px solid rgb(240, 240, 240);
+            
+            .inner {
+                
+                grid-template-rows: 5fr 1fr ;
+                justify-items: center;
+                .return{
+                    @include cards-button;
+                    }
+                }
+            }
+
+            .description {
+                width: 100%;
+                height: 100%;
+                justify-items: center;
+
+                p {
+                    letter-spacing: $ls;
+                    line-height: $lh;
+                    color: $accent-color ;
+                    font-weight: 500;
+                    font-size: $fs;
+                    text-align: center;
+                }
+            }
+        }
+    }

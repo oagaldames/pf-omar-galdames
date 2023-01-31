@@ -1,7 +1,7 @@
 {
-  "name": "preentrega3-omar-galdames",
+  "name": "pf-omar-galdames",
   "version": "1.0.0",
-  "description": "Tercera Entrega Desarrollo Web- CoderHouse\r Autor: Omar Adrian Galdames.",
+  "description": "Proyecto Final Desarrollo Web- CoderHouse\r Autor: Omar Adrian Galdames.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oagaldames/preentrega3-omar-galdames.git"
+    "url": "git+https://github.com/oagaldames/pf-omar-galdames.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/oagaldames/preentrega3-omar-galdames/issues"
+    "url": "https://github.com/oagaldames/pf-omar-galdames/issues"
   },
-  "homepage": "https://github.com/oagaldames/preentrega3-omar-galdames#readme",
+  "homepage": "https://github.com/oagaldames/pf-omar-galdames#readme",
   "devDependencies": {
     "node-sass": "^8.0.0",
     "nodemon": "^2.0.20"

@@ -217,139 +217,71 @@
     }
 
     .contenedor_producto_1-2 {
-        display: flex;
+        display:flex;
         flex-direction: row;
-
         .contenedor_producto_1 {
-            @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
             margin-bottom: 0;
             margin-right: 0.5em;
-
-            .titulo_fig {
-                @include serv-tit-fig(15px, 700, 25px, center);
+            .cards-title {
+                @include cards-tit(1em, 1px, black, 800);
             }
-
-            .producto_1 {
-                height: 100%;
-                width: 100%;
-
-                .figure_servicios {
-                    @include serv-fig(100%, center);
-                }
-            }
+            @include cards-product(17px, 1px, 18px);
         }
-
         .contenedor_producto_2 {
-            @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
             margin-bottom: 0;
             margin-right: 0.5em;
-            ;
 
-            .titulo_fig {
-                @include serv-tit-fig(15px, 700, 25px, center);
+            .cards-title {
+                @include cards-tit(1em, 1px, black, 800);
             }
 
-            .producto_2 {
-                height: 100%;
-                width: 100%;
-
-                .figure_servicios {
-                    @include serv-fig(100%, center);
-                }
-            }
+            @include cards-product(17px, 1px, 18px);
         }
     }
-
     .contenedor_producto_3-4 {
-        display: flex;
+        display:flex;
         flex-direction: row;
-
         .contenedor_producto_3 {
-            @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
-
             margin-bottom: 0;
             margin-right: 0.5em;
-            ;
-
-            .titulo_fig {
-                @include serv-tit-fig(15px, 700, 25px, center);
-            }
-
-            .producto_3 {
-                height: 100%;
-                width: 100%;
-
-                .figure_servicios {
-                    @include serv-fig(100%, center);
-                }
-            }
+        .cards-title {
+            @include cards-tit(1em, 1px, black, 800);
         }
-
+        @include cards-product(17px, 1px, 18px);
+    }
         .contenedor_producto_4 {
-            @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
             margin-bottom: 0;
             margin-right: 0.5em;
-            ;
-
-            .titulo_fig {
-                @include serv-tit-fig(15px, 700, 25px, center);
-            }
-
-            .producto_4 {
-                height: 100%;
-                width: 100%;
-
-                .figure_servicios {
-                    @include serv-fig(100%, center);
-                }
-            }
+        .cards-title {
+            @include cards-tit(1em, 1px, black, 800);
         }
-    }
 
+        @include cards-product(17px, 1px, 18px);
+    }
+}
     .contenedor_producto_5-6 {
-        display: flex;
+        display:flex;
         flex-direction: row;
-
-        .contenedor_producto_5 {
-            @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
-            margin-bottom: 0;
-            margin-right: 0.5em;
-            ;
-
-            .titulo_fig {
-                @include serv-tit-fig(15px, 700, 25px, center);
-            }
-
-            .producto_5 {
-                height: 100%;
-                width: 100%;
-
-                .figure_servicios {
-                    @include serv-fig(100%, center);
-                }
-            }
+    .contenedor_producto_5 {
+        margin-bottom: 0;
+        margin-right: 0.5em;
+        .cards-title {
+            @include cards-tit(1em, 1px, black, 800);
         }
-
-        .contenedor_producto_6 {
-            @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 0.5em, 1em);
-            margin-bottom: 0;
-            margin-right: 0.5em;
-            ;
-
-            .titulo_fig {
-                @include serv-tit-fig(15px, 700, 25px, center);
-            }
-
-            .producto_6 {
-                height: 100%;
-                width: 100%;
-
-                .figure_servicios {
-                    @include serv-fig(100%, center);
-                }
-            }
-        }
+        @include cards-product(17px, 1px, 18px);
     }
+    .contenedor_producto_6 {
+        margin-bottom: 0;
+        margin-right: 0.5em;
+        .cards-title {
+            @include cards-tit(1em, 1px, black, 800);
+        }
+        @include cards-product(17px, 1px, 18px);
+    }
+}
+
+
+
 
     /*Estilos pagina novedades.html */
     .titulo_novedades {

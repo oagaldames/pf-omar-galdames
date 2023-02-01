@@ -7,10 +7,8 @@
     grid-area: cards;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
     gap: 10px;
-    align-items: center;
+    justify-self: center;
 
     .servicios_index {
         @include cards-ind(420px, 16rem);

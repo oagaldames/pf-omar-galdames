@@ -4,6 +4,7 @@ $bg-titulos: linear-gradient(to right, rgb(171, 201, 245) 0%, rgb(17, 78, 169) 1
 $bg-ho-nav: #0c0a90;
 $bg-cuadro-text: linear-gradient(to bottom, rgb(171, 201, 245) 0%, rgb(42, 96, 178) 100%);
 $color-font_hf: rgb(243, 235, 235);
-$bg-dc: radial-gradient(circle, rgb(182, 178, 178) 10%, rgb(86, 83, 83) 100%);
+$bg-dc: linear-gradient(30deg,rgba(160, 140, 109, 0.7),	rgba(248, 244, 239, 0.7));
 $accent-color: #2059f7;
 $bg-cards:linear-gradient(30deg,rgba(4, 65, 157, 0.7),	rgba(189, 233, 244, 0.7));
+$bg-cards-index:linear-gradient(30deg,rgba(160, 140, 109, 0.7),	rgba(248, 244, 239, 0.7));

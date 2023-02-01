@@ -66,7 +66,8 @@
     .card {
         height: $ch;
         width: $cw;
-        background:$bg-dc;
+        background:$bg-cards-index;
+        color: black;
         &:hover {
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
         }
@@ -168,7 +169,7 @@
 
 @mixin contenedor-contacto {
     border-width: 1px;
-    background: $bg-dc;
+    background: $bg-cards-index;
     border-radius: 15px;
     height: 100%;
     width: 100%w;
@@ -179,7 +180,6 @@
 
 }
 
-// moodificacion cards productos
 @mixin cards-tit($mt,$ls,$color,$fw){
     margin-top:$mt;
     letter-spacing: $ls;

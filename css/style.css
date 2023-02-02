@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif; }
 
 .main, .main_Index {
   width: 100%;
@@ -39,7 +43,7 @@
     color: white; }
 
 body {
-  font-family: 'Roboto';
+  font-family: 'Poppins', sans-serif;
   width: 100vw;
   height: 100%;
   box-sizing: border-box; }
@@ -204,7 +208,7 @@ footer {
     color: whitesmoke; }
   .texto_index .textoNosotros_index {
     font-weight: 400;
-    font-size: 13px;
+    font-size: 12px;
     text-align: center;
     color: whitesmoke; }
 
@@ -430,8 +434,8 @@ footer {
   grid-area: producto_1-2;
   display: flex;
   flex-direction: column; }
-  .contenedor_producto_1-2 .contenedor_producto_1, .contenedor_producto_1-2 .contenedor_producto_2 {
-    background-color: cornflowerblue;
+  .contenedor_producto_1-2 .contenedor_producto_1,
+  .contenedor_producto_1-2 .contenedor_producto_2 {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -445,32 +449,40 @@ footer {
     padding: 0.5em;
     gap: 0.5em;
     margin-bottom: 0.5em; }
-    .contenedor_producto_1-2 .contenedor_producto_1 .cards-title, .contenedor_producto_1-2 .contenedor_producto_2 .cards-title {
+    .contenedor_producto_1-2 .contenedor_producto_1 .cards-title,
+    .contenedor_producto_1-2 .contenedor_producto_2 .cards-title {
       margin-top: 1em;
       letter-spacing: 3px;
       color: whitesmoke;
       font-weight: 500;
       text-align: center; }
-    .contenedor_producto_1-2 .contenedor_producto_1:hover, .contenedor_producto_1-2 .contenedor_producto_2:hover {
+    .contenedor_producto_1-2 .contenedor_producto_1:hover,
+    .contenedor_producto_1-2 .contenedor_producto_2:hover {
       box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
-    .contenedor_producto_1-2 .contenedor_producto_1 .card, .contenedor_producto_1-2 .contenedor_producto_2 .card {
+    .contenedor_producto_1-2 .contenedor_producto_1 .card,
+    .contenedor_producto_1-2 .contenedor_producto_2 .card {
       height: 100%;
       margin: 1em;
       perspective: 2000px; }
-      .contenedor_producto_1-2 .contenedor_producto_1 .card .content, .contenedor_producto_1-2 .contenedor_producto_2 .card .content {
+      .contenedor_producto_1-2 .contenedor_producto_1 .card .content,
+      .contenedor_producto_1-2 .contenedor_producto_2 .card .content {
         position: relative;
         width: 100%;
         height: 100%;
         transform-style: preserve-3d;
         transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1); }
-      .contenedor_producto_1-2 .contenedor_producto_1 .card:hover, .contenedor_producto_1-2 .contenedor_producto_2 .card:hover {
+      .contenedor_producto_1-2 .contenedor_producto_1 .card:hover,
+      .contenedor_producto_1-2 .contenedor_producto_2 .card:hover {
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
-      .contenedor_producto_1-2 .contenedor_producto_1 .card .more, .contenedor_producto_1-2 .contenedor_producto_2 .card .more {
+      .contenedor_producto_1-2 .contenedor_producto_1 .card .more,
+      .contenedor_producto_1-2 .contenedor_producto_2 .card .more {
         display: none; }
-        .contenedor_producto_1-2 .contenedor_producto_1 .card .more:checked ~ .content, .contenedor_producto_1-2 .contenedor_producto_2 .card .more:checked ~ .content {
+        .contenedor_producto_1-2 .contenedor_producto_1 .card .more:checked ~ .content,
+        .contenedor_producto_1-2 .contenedor_producto_2 .card .more:checked ~ .content {
           transform: rotateY(180deg); }
       .contenedor_producto_1-2 .contenedor_producto_1 .card .front,
-      .contenedor_producto_1-2 .contenedor_producto_1 .card .back, .contenedor_producto_1-2 .contenedor_producto_2 .card .front,
+      .contenedor_producto_1-2 .contenedor_producto_1 .card .back,
+      .contenedor_producto_1-2 .contenedor_producto_2 .card .front,
       .contenedor_producto_1-2 .contenedor_producto_2 .card .back {
         position: absolute;
         top: 0;
@@ -481,17 +493,20 @@ footer {
         transform-style: preserve-3d;
         border-radius: 6px; }
         .contenedor_producto_1-2 .contenedor_producto_1 .card .front .inner,
-        .contenedor_producto_1-2 .contenedor_producto_1 .card .back .inner, .contenedor_producto_1-2 .contenedor_producto_2 .card .front .inner,
+        .contenedor_producto_1-2 .contenedor_producto_1 .card .back .inner,
+        .contenedor_producto_1-2 .contenedor_producto_2 .card .front .inner,
         .contenedor_producto_1-2 .contenedor_producto_2 .card .back .inner {
           height: 100%;
           display: grid;
           padding: 1.5em;
           transform: translateZ(80px) scale(0.94); }
-      .contenedor_producto_1-2 .contenedor_producto_1 .card .front, .contenedor_producto_1-2 .contenedor_producto_2 .card .front {
+      .contenedor_producto_1-2 .contenedor_producto_1 .card .front,
+      .contenedor_producto_1-2 .contenedor_producto_2 .card .front {
         background-color: white;
         background-size: cover;
         background-position: center center; }
-        .contenedor_producto_1-2 .contenedor_producto_1 .card .front:after, .contenedor_producto_1-2 .contenedor_producto_2 .card .front:after {
+        .contenedor_producto_1-2 .contenedor_producto_1 .card .front:after,
+        .contenedor_producto_1-2 .contenedor_producto_2 .card .front:after {
           position: absolute;
           top: 0;
           left: 0;
@@ -500,10 +515,12 @@ footer {
           display: block;
           border-radius: 6px;
           backface-visibility: hidden; }
-        .contenedor_producto_1-2 .contenedor_producto_1 .card .front .inner, .contenedor_producto_1-2 .contenedor_producto_2 .card .front .inner {
+        .contenedor_producto_1-2 .contenedor_producto_1 .card .front .inner,
+        .contenedor_producto_1-2 .contenedor_producto_2 .card .front .inner {
           grid-template-rows: 5fr 1fr;
           justify-items: center; }
-          .contenedor_producto_1-2 .contenedor_producto_1 .card .front .inner .button, .contenedor_producto_1-2 .contenedor_producto_2 .card .front .inner .button {
+          .contenedor_producto_1-2 .contenedor_producto_1 .card .front .inner .button,
+          .contenedor_producto_1-2 .contenedor_producto_2 .card .front .inner .button {
             grid-column: 1/2;
             justify-self: center;
             grid-row: 2;
@@ -524,19 +541,23 @@ footer {
             backface-visibility: hidden;
             transition: 0.3s ease-in-out;
             text-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
-            .contenedor_producto_1-2 .contenedor_producto_1 .card .front .inner .button:hover, .contenedor_producto_1-2 .contenedor_producto_2 .card .front .inner .button:hover {
+            .contenedor_producto_1-2 .contenedor_producto_1 .card .front .inner .button:hover,
+            .contenedor_producto_1-2 .contenedor_producto_2 .card .front .inner .button:hover {
               background-color: #fff;
               box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
               text-shadow: none;
               color: #2059f7; }
-      .contenedor_producto_1-2 .contenedor_producto_1 .card .back, .contenedor_producto_1-2 .contenedor_producto_2 .card .back {
+      .contenedor_producto_1-2 .contenedor_producto_1 .card .back,
+      .contenedor_producto_1-2 .contenedor_producto_2 .card .back {
         transform: rotateY(180deg);
         background: linear-gradient(30deg, rgba(4, 65, 157, 0.7), rgba(189, 233, 244, 0.7));
         border: 2px solid #f0f0f0; }
-        .contenedor_producto_1-2 .contenedor_producto_1 .card .back .inner, .contenedor_producto_1-2 .contenedor_producto_2 .card .back .inner {
+        .contenedor_producto_1-2 .contenedor_producto_1 .card .back .inner,
+        .contenedor_producto_1-2 .contenedor_producto_2 .card .back .inner {
           grid-template-rows: 5fr 1fr;
           justify-items: center; }
-          .contenedor_producto_1-2 .contenedor_producto_1 .card .back .inner .return, .contenedor_producto_1-2 .contenedor_producto_2 .card .back .inner .return {
+          .contenedor_producto_1-2 .contenedor_producto_1 .card .back .inner .return,
+          .contenedor_producto_1-2 .contenedor_producto_2 .card .back .inner .return {
             grid-column: 1/2;
             justify-self: center;
             grid-row: 2;
@@ -557,16 +578,19 @@ footer {
             backface-visibility: hidden;
             transition: 0.3s ease-in-out;
             text-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
-            .contenedor_producto_1-2 .contenedor_producto_1 .card .back .inner .return:hover, .contenedor_producto_1-2 .contenedor_producto_2 .card .back .inner .return:hover {
+            .contenedor_producto_1-2 .contenedor_producto_1 .card .back .inner .return:hover,
+            .contenedor_producto_1-2 .contenedor_producto_2 .card .back .inner .return:hover {
               background-color: #fff;
               box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
               text-shadow: none;
               color: #2059f7; }
-      .contenedor_producto_1-2 .contenedor_producto_1 .card .description, .contenedor_producto_1-2 .contenedor_producto_2 .card .description {
+      .contenedor_producto_1-2 .contenedor_producto_1 .card .description,
+      .contenedor_producto_1-2 .contenedor_producto_2 .card .description {
         width: 100%;
         height: 100%;
         justify-items: center; }
-        .contenedor_producto_1-2 .contenedor_producto_1 .card .description p, .contenedor_producto_1-2 .contenedor_producto_2 .card .description p {
+        .contenedor_producto_1-2 .contenedor_producto_1 .card .description p,
+        .contenedor_producto_1-2 .contenedor_producto_2 .card .description p {
           letter-spacing: 0px;
           line-height: 17px;
           color: #2059f7;
@@ -578,7 +602,8 @@ footer {
   grid-area: producto_3-4;
   display: flex;
   flex-direction: column; }
-  .contenedor_producto_3-4 .contenedor_producto_3, .contenedor_producto_3-4 .contenedor_producto_4 {
+  .contenedor_producto_3-4 .contenedor_producto_3,
+  .contenedor_producto_3-4 .contenedor_producto_4 {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -592,32 +617,40 @@ footer {
     padding: 0.5em;
     gap: 0.5em;
     margin-bottom: 0.5em; }
-    .contenedor_producto_3-4 .contenedor_producto_3 .cards-title, .contenedor_producto_3-4 .contenedor_producto_4 .cards-title {
+    .contenedor_producto_3-4 .contenedor_producto_3 .cards-title,
+    .contenedor_producto_3-4 .contenedor_producto_4 .cards-title {
       margin-top: 1em;
       letter-spacing: 3px;
       color: whitesmoke;
       font-weight: 500;
       text-align: center; }
-    .contenedor_producto_3-4 .contenedor_producto_3:hover, .contenedor_producto_3-4 .contenedor_producto_4:hover {
+    .contenedor_producto_3-4 .contenedor_producto_3:hover,
+    .contenedor_producto_3-4 .contenedor_producto_4:hover {
       box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
-    .contenedor_producto_3-4 .contenedor_producto_3 .card, .contenedor_producto_3-4 .contenedor_producto_4 .card {
+    .contenedor_producto_3-4 .contenedor_producto_3 .card,
+    .contenedor_producto_3-4 .contenedor_producto_4 .card {
       height: 100%;
       margin: 1em;
       perspective: 2000px; }
-      .contenedor_producto_3-4 .contenedor_producto_3 .card .content, .contenedor_producto_3-4 .contenedor_producto_4 .card .content {
+      .contenedor_producto_3-4 .contenedor_producto_3 .card .content,
+      .contenedor_producto_3-4 .contenedor_producto_4 .card .content {
         position: relative;
         width: 100%;
         height: 100%;
         transform-style: preserve-3d;
         transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1); }
-      .contenedor_producto_3-4 .contenedor_producto_3 .card:hover, .contenedor_producto_3-4 .contenedor_producto_4 .card:hover {
+      .contenedor_producto_3-4 .contenedor_producto_3 .card:hover,
+      .contenedor_producto_3-4 .contenedor_producto_4 .card:hover {
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
-      .contenedor_producto_3-4 .contenedor_producto_3 .card .more, .contenedor_producto_3-4 .contenedor_producto_4 .card .more {
+      .contenedor_producto_3-4 .contenedor_producto_3 .card .more,
+      .contenedor_producto_3-4 .contenedor_producto_4 .card .more {
         display: none; }
-        .contenedor_producto_3-4 .contenedor_producto_3 .card .more:checked ~ .content, .contenedor_producto_3-4 .contenedor_producto_4 .card .more:checked ~ .content {
+        .contenedor_producto_3-4 .contenedor_producto_3 .card .more:checked ~ .content,
+        .contenedor_producto_3-4 .contenedor_producto_4 .card .more:checked ~ .content {
           transform: rotateY(180deg); }
       .contenedor_producto_3-4 .contenedor_producto_3 .card .front,
-      .contenedor_producto_3-4 .contenedor_producto_3 .card .back, .contenedor_producto_3-4 .contenedor_producto_4 .card .front,
+      .contenedor_producto_3-4 .contenedor_producto_3 .card .back,
+      .contenedor_producto_3-4 .contenedor_producto_4 .card .front,
       .contenedor_producto_3-4 .contenedor_producto_4 .card .back {
         position: absolute;
         top: 0;
@@ -628,17 +661,20 @@ footer {
         transform-style: preserve-3d;
         border-radius: 6px; }
         .contenedor_producto_3-4 .contenedor_producto_3 .card .front .inner,
-        .contenedor_producto_3-4 .contenedor_producto_3 .card .back .inner, .contenedor_producto_3-4 .contenedor_producto_4 .card .front .inner,
+        .contenedor_producto_3-4 .contenedor_producto_3 .card .back .inner,
+        .contenedor_producto_3-4 .contenedor_producto_4 .card .front .inner,
         .contenedor_producto_3-4 .contenedor_producto_4 .card .back .inner {
           height: 100%;
           display: grid;
           padding: 1.5em;
           transform: translateZ(80px) scale(0.94); }
-      .contenedor_producto_3-4 .contenedor_producto_3 .card .front, .contenedor_producto_3-4 .contenedor_producto_4 .card .front {
+      .contenedor_producto_3-4 .contenedor_producto_3 .card .front,
+      .contenedor_producto_3-4 .contenedor_producto_4 .card .front {
         background-color: white;
         background-size: cover;
         background-position: center center; }
-        .contenedor_producto_3-4 .contenedor_producto_3 .card .front:after, .contenedor_producto_3-4 .contenedor_producto_4 .card .front:after {
+        .contenedor_producto_3-4 .contenedor_producto_3 .card .front:after,
+        .contenedor_producto_3-4 .contenedor_producto_4 .card .front:after {
           position: absolute;
           top: 0;
           left: 0;
@@ -647,10 +683,12 @@ footer {
           display: block;
           border-radius: 6px;
           backface-visibility: hidden; }
-        .contenedor_producto_3-4 .contenedor_producto_3 .card .front .inner, .contenedor_producto_3-4 .contenedor_producto_4 .card .front .inner {
+        .contenedor_producto_3-4 .contenedor_producto_3 .card .front .inner,
+        .contenedor_producto_3-4 .contenedor_producto_4 .card .front .inner {
           grid-template-rows: 5fr 1fr;
           justify-items: center; }
-          .contenedor_producto_3-4 .contenedor_producto_3 .card .front .inner .button, .contenedor_producto_3-4 .contenedor_producto_4 .card .front .inner .button {
+          .contenedor_producto_3-4 .contenedor_producto_3 .card .front .inner .button,
+          .contenedor_producto_3-4 .contenedor_producto_4 .card .front .inner .button {
             grid-column: 1/2;
             justify-self: center;
             grid-row: 2;
@@ -671,19 +709,23 @@ footer {
             backface-visibility: hidden;
             transition: 0.3s ease-in-out;
             text-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
-            .contenedor_producto_3-4 .contenedor_producto_3 .card .front .inner .button:hover, .contenedor_producto_3-4 .contenedor_producto_4 .card .front .inner .button:hover {
+            .contenedor_producto_3-4 .contenedor_producto_3 .card .front .inner .button:hover,
+            .contenedor_producto_3-4 .contenedor_producto_4 .card .front .inner .button:hover {
               background-color: #fff;
               box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
               text-shadow: none;
               color: #2059f7; }
-      .contenedor_producto_3-4 .contenedor_producto_3 .card .back, .contenedor_producto_3-4 .contenedor_producto_4 .card .back {
+      .contenedor_producto_3-4 .contenedor_producto_3 .card .back,
+      .contenedor_producto_3-4 .contenedor_producto_4 .card .back {
         transform: rotateY(180deg);
         background: linear-gradient(30deg, rgba(4, 65, 157, 0.7), rgba(189, 233, 244, 0.7));
         border: 2px solid #f0f0f0; }
-        .contenedor_producto_3-4 .contenedor_producto_3 .card .back .inner, .contenedor_producto_3-4 .contenedor_producto_4 .card .back .inner {
+        .contenedor_producto_3-4 .contenedor_producto_3 .card .back .inner,
+        .contenedor_producto_3-4 .contenedor_producto_4 .card .back .inner {
           grid-template-rows: 5fr 1fr;
           justify-items: center; }
-          .contenedor_producto_3-4 .contenedor_producto_3 .card .back .inner .return, .contenedor_producto_3-4 .contenedor_producto_4 .card .back .inner .return {
+          .contenedor_producto_3-4 .contenedor_producto_3 .card .back .inner .return,
+          .contenedor_producto_3-4 .contenedor_producto_4 .card .back .inner .return {
             grid-column: 1/2;
             justify-self: center;
             grid-row: 2;
@@ -704,16 +746,19 @@ footer {
             backface-visibility: hidden;
             transition: 0.3s ease-in-out;
             text-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
-            .contenedor_producto_3-4 .contenedor_producto_3 .card .back .inner .return:hover, .contenedor_producto_3-4 .contenedor_producto_4 .card .back .inner .return:hover {
+            .contenedor_producto_3-4 .contenedor_producto_3 .card .back .inner .return:hover,
+            .contenedor_producto_3-4 .contenedor_producto_4 .card .back .inner .return:hover {
               background-color: #fff;
               box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
               text-shadow: none;
               color: #2059f7; }
-      .contenedor_producto_3-4 .contenedor_producto_3 .card .description, .contenedor_producto_3-4 .contenedor_producto_4 .card .description {
+      .contenedor_producto_3-4 .contenedor_producto_3 .card .description,
+      .contenedor_producto_3-4 .contenedor_producto_4 .card .description {
         width: 100%;
         height: 100%;
         justify-items: center; }
-        .contenedor_producto_3-4 .contenedor_producto_3 .card .description p, .contenedor_producto_3-4 .contenedor_producto_4 .card .description p {
+        .contenedor_producto_3-4 .contenedor_producto_3 .card .description p,
+        .contenedor_producto_3-4 .contenedor_producto_4 .card .description p {
           letter-spacing: 0px;
           line-height: 17px;
           color: #2059f7;
@@ -725,7 +770,8 @@ footer {
   grid-area: producto_5-6;
   display: flex;
   flex-direction: column; }
-  .contenedor_producto_5-6 .contenedor_producto_5, .contenedor_producto_5-6 .contenedor_producto_6 {
+  .contenedor_producto_5-6 .contenedor_producto_5,
+  .contenedor_producto_5-6 .contenedor_producto_6 {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -739,32 +785,40 @@ footer {
     padding: 0.5em;
     gap: 0.5em;
     margin-bottom: 0.5em; }
-    .contenedor_producto_5-6 .contenedor_producto_5 .cards-title, .contenedor_producto_5-6 .contenedor_producto_6 .cards-title {
+    .contenedor_producto_5-6 .contenedor_producto_5 .cards-title,
+    .contenedor_producto_5-6 .contenedor_producto_6 .cards-title {
       margin-top: 1em;
       letter-spacing: 3px;
       color: whitesmoke;
       font-weight: 500;
       text-align: center; }
-    .contenedor_producto_5-6 .contenedor_producto_5:hover, .contenedor_producto_5-6 .contenedor_producto_6:hover {
+    .contenedor_producto_5-6 .contenedor_producto_5:hover,
+    .contenedor_producto_5-6 .contenedor_producto_6:hover {
       box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
-    .contenedor_producto_5-6 .contenedor_producto_5 .card, .contenedor_producto_5-6 .contenedor_producto_6 .card {
+    .contenedor_producto_5-6 .contenedor_producto_5 .card,
+    .contenedor_producto_5-6 .contenedor_producto_6 .card {
       height: 100%;
       margin: 1em;
       perspective: 2000px; }
-      .contenedor_producto_5-6 .contenedor_producto_5 .card .content, .contenedor_producto_5-6 .contenedor_producto_6 .card .content {
+      .contenedor_producto_5-6 .contenedor_producto_5 .card .content,
+      .contenedor_producto_5-6 .contenedor_producto_6 .card .content {
         position: relative;
         width: 100%;
         height: 100%;
         transform-style: preserve-3d;
         transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1); }
-      .contenedor_producto_5-6 .contenedor_producto_5 .card:hover, .contenedor_producto_5-6 .contenedor_producto_6 .card:hover {
+      .contenedor_producto_5-6 .contenedor_producto_5 .card:hover,
+      .contenedor_producto_5-6 .contenedor_producto_6 .card:hover {
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
-      .contenedor_producto_5-6 .contenedor_producto_5 .card .more, .contenedor_producto_5-6 .contenedor_producto_6 .card .more {
+      .contenedor_producto_5-6 .contenedor_producto_5 .card .more,
+      .contenedor_producto_5-6 .contenedor_producto_6 .card .more {
         display: none; }
-        .contenedor_producto_5-6 .contenedor_producto_5 .card .more:checked ~ .content, .contenedor_producto_5-6 .contenedor_producto_6 .card .more:checked ~ .content {
+        .contenedor_producto_5-6 .contenedor_producto_5 .card .more:checked ~ .content,
+        .contenedor_producto_5-6 .contenedor_producto_6 .card .more:checked ~ .content {
           transform: rotateY(180deg); }
       .contenedor_producto_5-6 .contenedor_producto_5 .card .front,
-      .contenedor_producto_5-6 .contenedor_producto_5 .card .back, .contenedor_producto_5-6 .contenedor_producto_6 .card .front,
+      .contenedor_producto_5-6 .contenedor_producto_5 .card .back,
+      .contenedor_producto_5-6 .contenedor_producto_6 .card .front,
       .contenedor_producto_5-6 .contenedor_producto_6 .card .back {
         position: absolute;
         top: 0;
@@ -775,17 +829,20 @@ footer {
         transform-style: preserve-3d;
         border-radius: 6px; }
         .contenedor_producto_5-6 .contenedor_producto_5 .card .front .inner,
-        .contenedor_producto_5-6 .contenedor_producto_5 .card .back .inner, .contenedor_producto_5-6 .contenedor_producto_6 .card .front .inner,
+        .contenedor_producto_5-6 .contenedor_producto_5 .card .back .inner,
+        .contenedor_producto_5-6 .contenedor_producto_6 .card .front .inner,
         .contenedor_producto_5-6 .contenedor_producto_6 .card .back .inner {
           height: 100%;
           display: grid;
           padding: 1.5em;
           transform: translateZ(80px) scale(0.94); }
-      .contenedor_producto_5-6 .contenedor_producto_5 .card .front, .contenedor_producto_5-6 .contenedor_producto_6 .card .front {
+      .contenedor_producto_5-6 .contenedor_producto_5 .card .front,
+      .contenedor_producto_5-6 .contenedor_producto_6 .card .front {
         background-color: white;
         background-size: cover;
         background-position: center center; }
-        .contenedor_producto_5-6 .contenedor_producto_5 .card .front:after, .contenedor_producto_5-6 .contenedor_producto_6 .card .front:after {
+        .contenedor_producto_5-6 .contenedor_producto_5 .card .front:after,
+        .contenedor_producto_5-6 .contenedor_producto_6 .card .front:after {
           position: absolute;
           top: 0;
           left: 0;
@@ -794,10 +851,12 @@ footer {
           display: block;
           border-radius: 6px;
           backface-visibility: hidden; }
-        .contenedor_producto_5-6 .contenedor_producto_5 .card .front .inner, .contenedor_producto_5-6 .contenedor_producto_6 .card .front .inner {
+        .contenedor_producto_5-6 .contenedor_producto_5 .card .front .inner,
+        .contenedor_producto_5-6 .contenedor_producto_6 .card .front .inner {
           grid-template-rows: 5fr 1fr;
           justify-items: center; }
-          .contenedor_producto_5-6 .contenedor_producto_5 .card .front .inner .button, .contenedor_producto_5-6 .contenedor_producto_6 .card .front .inner .button {
+          .contenedor_producto_5-6 .contenedor_producto_5 .card .front .inner .button,
+          .contenedor_producto_5-6 .contenedor_producto_6 .card .front .inner .button {
             grid-column: 1/2;
             justify-self: center;
             grid-row: 2;
@@ -818,19 +877,23 @@ footer {
             backface-visibility: hidden;
             transition: 0.3s ease-in-out;
             text-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
-            .contenedor_producto_5-6 .contenedor_producto_5 .card .front .inner .button:hover, .contenedor_producto_5-6 .contenedor_producto_6 .card .front .inner .button:hover {
+            .contenedor_producto_5-6 .contenedor_producto_5 .card .front .inner .button:hover,
+            .contenedor_producto_5-6 .contenedor_producto_6 .card .front .inner .button:hover {
               background-color: #fff;
               box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
               text-shadow: none;
               color: #2059f7; }
-      .contenedor_producto_5-6 .contenedor_producto_5 .card .back, .contenedor_producto_5-6 .contenedor_producto_6 .card .back {
+      .contenedor_producto_5-6 .contenedor_producto_5 .card .back,
+      .contenedor_producto_5-6 .contenedor_producto_6 .card .back {
         transform: rotateY(180deg);
         background: linear-gradient(30deg, rgba(4, 65, 157, 0.7), rgba(189, 233, 244, 0.7));
         border: 2px solid #f0f0f0; }
-        .contenedor_producto_5-6 .contenedor_producto_5 .card .back .inner, .contenedor_producto_5-6 .contenedor_producto_6 .card .back .inner {
+        .contenedor_producto_5-6 .contenedor_producto_5 .card .back .inner,
+        .contenedor_producto_5-6 .contenedor_producto_6 .card .back .inner {
           grid-template-rows: 5fr 1fr;
           justify-items: center; }
-          .contenedor_producto_5-6 .contenedor_producto_5 .card .back .inner .return, .contenedor_producto_5-6 .contenedor_producto_6 .card .back .inner .return {
+          .contenedor_producto_5-6 .contenedor_producto_5 .card .back .inner .return,
+          .contenedor_producto_5-6 .contenedor_producto_6 .card .back .inner .return {
             grid-column: 1/2;
             justify-self: center;
             grid-row: 2;
@@ -851,16 +914,19 @@ footer {
             backface-visibility: hidden;
             transition: 0.3s ease-in-out;
             text-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
-            .contenedor_producto_5-6 .contenedor_producto_5 .card .back .inner .return:hover, .contenedor_producto_5-6 .contenedor_producto_6 .card .back .inner .return:hover {
+            .contenedor_producto_5-6 .contenedor_producto_5 .card .back .inner .return:hover,
+            .contenedor_producto_5-6 .contenedor_producto_6 .card .back .inner .return:hover {
               background-color: #fff;
               box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
               text-shadow: none;
               color: #2059f7; }
-      .contenedor_producto_5-6 .contenedor_producto_5 .card .description, .contenedor_producto_5-6 .contenedor_producto_6 .card .description {
+      .contenedor_producto_5-6 .contenedor_producto_5 .card .description,
+      .contenedor_producto_5-6 .contenedor_producto_6 .card .description {
         width: 100%;
         height: 100%;
         justify-items: center; }
-        .contenedor_producto_5-6 .contenedor_producto_5 .card .description p, .contenedor_producto_5-6 .contenedor_producto_6 .card .description p {
+        .contenedor_producto_5-6 .contenedor_producto_5 .card .description p,
+        .contenedor_producto_5-6 .contenedor_producto_6 .card .description p {
           letter-spacing: 0px;
           line-height: 17px;
           color: #2059f7;
@@ -904,7 +970,7 @@ footer {
   letter-spacing: 0.04em;
   line-height: 1.2em;
   padding: 1em;
-  gap: 0.2em; }
+  gap: 0.6em; }
   .contenedor_novedades:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
   .contenedor_novedades .novedad-art {
@@ -934,7 +1000,7 @@ footer {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
   .texto_novedades .titulo {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     color: whitesmoke; }
   .texto_novedades .texto {
@@ -996,7 +1062,7 @@ footer {
       font-size: 15px; }
 
 .datos_contacto {
-  color: #0b0b0b;
+  color: whitesmoke;
   border-width: 1px;
   background: linear-gradient(to bottom, #abc9f5 0%, #2a60b2 100%);
   border-radius: 15px;
@@ -1075,7 +1141,7 @@ footer {
       .contenedor_cards .servicios_index .card:hover {
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
     .contenedor_cards .servicios_index .btn {
-      margin-top: 0.3em; }
+      margin-top: 0.5em; }
     .contenedor_cards .productos_index .card {
       height: 430px;
       width: 14rem;
@@ -1084,7 +1150,7 @@ footer {
       .contenedor_cards .productos_index .card:hover {
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
     .contenedor_cards .productos_index .btn {
-      margin-top: 1.4em; }
+      margin-top: 2em; }
     .contenedor_cards .novedades_index .card {
       height: 430px;
       width: 14rem;
@@ -1093,7 +1159,7 @@ footer {
       .contenedor_cards .novedades_index .card:hover {
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
     .contenedor_cards .novedades_index .btn {
-      margin-top: 2.8em; }
+      margin-top: 3.9em; }
   .texto_index {
     display: flex;
     flex-wrap: wrap;
@@ -1114,7 +1180,7 @@ footer {
       color: whitesmoke; }
     .texto_index .textoNosotros_index {
       font-weight: 400;
-      font-size: 22px;
+      font-size: 20px;
       text-align: center;
       color: whitesmoke; }
   /*Estilos pagina servicios */
@@ -1304,158 +1370,40 @@ footer {
   .contenedor_producto_1-2 {
     display: flex;
     flex-direction: row; }
-    .contenedor_producto_1-2 .contenedor_producto_1 {
-      margin-bottom: 0;
-      margin-right: 0.5em; }
-      .contenedor_producto_1-2 .contenedor_producto_1 .cards-title {
-        margin-top: 1em;
-        letter-spacing: 1px;
-        color: whitesmoke;
-        font-weight: 800;
-        text-align: center; }
-      .contenedor_producto_1-2 .contenedor_producto_1 .card {
-        height: 100%;
-        margin: 1em;
-        perspective: 2000px; }
-        .contenedor_producto_1-2 .contenedor_producto_1 .card .content {
-          position: relative;
-          width: 100%;
-          height: 100%;
-          transform-style: preserve-3d;
-          transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1); }
-        .contenedor_producto_1-2 .contenedor_producto_1 .card:hover {
-          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
-        .contenedor_producto_1-2 .contenedor_producto_1 .card .more {
-          display: none; }
-          .contenedor_producto_1-2 .contenedor_producto_1 .card .more:checked ~ .content {
-            transform: rotateY(180deg); }
-        .contenedor_producto_1-2 .contenedor_producto_1 .card .front,
-        .contenedor_producto_1-2 .contenedor_producto_1 .card .back {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          backface-visibility: hidden;
-          transform-style: preserve-3d;
-          border-radius: 6px; }
-          .contenedor_producto_1-2 .contenedor_producto_1 .card .front .inner,
-          .contenedor_producto_1-2 .contenedor_producto_1 .card .back .inner {
-            height: 100%;
-            display: grid;
-            padding: 1.5em;
-            transform: translateZ(80px) scale(0.94); }
-        .contenedor_producto_1-2 .contenedor_producto_1 .card .front {
-          background-color: white;
-          background-size: cover;
-          background-position: center center; }
-          .contenedor_producto_1-2 .contenedor_producto_1 .card .front:after {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: block;
-            border-radius: 6px;
-            backface-visibility: hidden; }
-          .contenedor_producto_1-2 .contenedor_producto_1 .card .front .inner {
-            grid-template-rows: 5fr 1fr;
-            justify-items: center; }
-            .contenedor_producto_1-2 .contenedor_producto_1 .card .front .inner .button {
-              grid-column: 1/2;
-              justify-self: center;
-              grid-row: 2;
-              letter-spacing: 1px;
-              font-weight: 600;
-              cursor: pointer;
-              display: block;
-              padding: 0 1.5em;
-              height: 3em;
-              line-height: 2.9em;
-              min-width: 3em;
-              background-color: #2059f7;
-              border: solid 2px white;
-              color: white;
-              border-radius: 4px;
-              text-align: center;
-              left: 50%;
-              backface-visibility: hidden;
-              transition: 0.3s ease-in-out;
-              text-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
-              .contenedor_producto_1-2 .contenedor_producto_1 .card .front .inner .button:hover {
-                background-color: #fff;
-                box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-                text-shadow: none;
-                color: #2059f7; }
-        .contenedor_producto_1-2 .contenedor_producto_1 .card .back {
-          transform: rotateY(180deg);
-          background: linear-gradient(30deg, rgba(4, 65, 157, 0.7), rgba(189, 233, 244, 0.7));
-          border: 2px solid #f0f0f0; }
-          .contenedor_producto_1-2 .contenedor_producto_1 .card .back .inner {
-            grid-template-rows: 5fr 1fr;
-            justify-items: center; }
-            .contenedor_producto_1-2 .contenedor_producto_1 .card .back .inner .return {
-              grid-column: 1/2;
-              justify-self: center;
-              grid-row: 2;
-              letter-spacing: 1px;
-              font-weight: 600;
-              cursor: pointer;
-              display: block;
-              padding: 0 1.5em;
-              height: 3em;
-              line-height: 2.9em;
-              min-width: 3em;
-              background-color: #2059f7;
-              border: solid 2px white;
-              color: white;
-              border-radius: 4px;
-              text-align: center;
-              left: 50%;
-              backface-visibility: hidden;
-              transition: 0.3s ease-in-out;
-              text-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
-              .contenedor_producto_1-2 .contenedor_producto_1 .card .back .inner .return:hover {
-                background-color: #fff;
-                box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-                text-shadow: none;
-                color: #2059f7; }
-        .contenedor_producto_1-2 .contenedor_producto_1 .card .description {
-          width: 100%;
-          height: 100%;
-          justify-items: center; }
-          .contenedor_producto_1-2 .contenedor_producto_1 .card .description p {
-            letter-spacing: 1px;
-            line-height: 18px;
-            color: #2059f7;
-            font-weight: 500;
-            font-size: 17px;
-            text-align: center; }
+    .contenedor_producto_1-2 .contenedor_producto_1,
     .contenedor_producto_1-2 .contenedor_producto_2 {
       margin-bottom: 0;
       margin-right: 0.5em; }
+      .contenedor_producto_1-2 .contenedor_producto_1 .cards-title,
       .contenedor_producto_1-2 .contenedor_producto_2 .cards-title {
         margin-top: 1em;
         letter-spacing: 1px;
         color: whitesmoke;
         font-weight: 800;
         text-align: center; }
+      .contenedor_producto_1-2 .contenedor_producto_1 .card,
       .contenedor_producto_1-2 .contenedor_producto_2 .card {
         height: 100%;
         margin: 1em;
         perspective: 2000px; }
+        .contenedor_producto_1-2 .contenedor_producto_1 .card .content,
         .contenedor_producto_1-2 .contenedor_producto_2 .card .content {
           position: relative;
           width: 100%;
           height: 100%;
           transform-style: preserve-3d;
           transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1); }
+        .contenedor_producto_1-2 .contenedor_producto_1 .card:hover,
         .contenedor_producto_1-2 .contenedor_producto_2 .card:hover {
           box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
+        .contenedor_producto_1-2 .contenedor_producto_1 .card .more,
         .contenedor_producto_1-2 .contenedor_producto_2 .card .more {
           display: none; }
+          .contenedor_producto_1-2 .contenedor_producto_1 .card .more:checked ~ .content,
           .contenedor_producto_1-2 .contenedor_producto_2 .card .more:checked ~ .content {
             transform: rotateY(180deg); }
+        .contenedor_producto_1-2 .contenedor_producto_1 .card .front,
+        .contenedor_producto_1-2 .contenedor_producto_1 .card .back,
         .contenedor_producto_1-2 .contenedor_producto_2 .card .front,
         .contenedor_producto_1-2 .contenedor_producto_2 .card .back {
           position: absolute;
@@ -1466,16 +1414,20 @@ footer {
           backface-visibility: hidden;
           transform-style: preserve-3d;
           border-radius: 6px; }
+          .contenedor_producto_1-2 .contenedor_producto_1 .card .front .inner,
+          .contenedor_producto_1-2 .contenedor_producto_1 .card .back .inner,
           .contenedor_producto_1-2 .contenedor_producto_2 .card .front .inner,
           .contenedor_producto_1-2 .contenedor_producto_2 .card .back .inner {
             height: 100%;
             display: grid;
             padding: 1.5em;
             transform: translateZ(80px) scale(0.94); }
+        .contenedor_producto_1-2 .contenedor_producto_1 .card .front,
         .contenedor_producto_1-2 .contenedor_producto_2 .card .front {
           background-color: white;
           background-size: cover;
           background-position: center center; }
+          .contenedor_producto_1-2 .contenedor_producto_1 .card .front:after,
           .contenedor_producto_1-2 .contenedor_producto_2 .card .front:after {
             position: absolute;
             top: 0;
@@ -1485,9 +1437,11 @@ footer {
             display: block;
             border-radius: 6px;
             backface-visibility: hidden; }
+          .contenedor_producto_1-2 .contenedor_producto_1 .card .front .inner,
           .contenedor_producto_1-2 .contenedor_producto_2 .card .front .inner {
             grid-template-rows: 5fr 1fr;
             justify-items: center; }
+            .contenedor_producto_1-2 .contenedor_producto_1 .card .front .inner .button,
             .contenedor_producto_1-2 .contenedor_producto_2 .card .front .inner .button {
               grid-column: 1/2;
               justify-self: center;
@@ -1509,18 +1463,22 @@ footer {
               backface-visibility: hidden;
               transition: 0.3s ease-in-out;
               text-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
+              .contenedor_producto_1-2 .contenedor_producto_1 .card .front .inner .button:hover,
               .contenedor_producto_1-2 .contenedor_producto_2 .card .front .inner .button:hover {
                 background-color: #fff;
                 box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
                 text-shadow: none;
                 color: #2059f7; }
+        .contenedor_producto_1-2 .contenedor_producto_1 .card .back,
         .contenedor_producto_1-2 .contenedor_producto_2 .card .back {
           transform: rotateY(180deg);
           background: linear-gradient(30deg, rgba(4, 65, 157, 0.7), rgba(189, 233, 244, 0.7));
           border: 2px solid #f0f0f0; }
+          .contenedor_producto_1-2 .contenedor_producto_1 .card .back .inner,
           .contenedor_producto_1-2 .contenedor_producto_2 .card .back .inner {
             grid-template-rows: 5fr 1fr;
             justify-items: center; }
+            .contenedor_producto_1-2 .contenedor_producto_1 .card .back .inner .return,
             .contenedor_producto_1-2 .contenedor_producto_2 .card .back .inner .return {
               grid-column: 1/2;
               justify-self: center;
@@ -1542,177 +1500,62 @@ footer {
               backface-visibility: hidden;
               transition: 0.3s ease-in-out;
               text-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
+              .contenedor_producto_1-2 .contenedor_producto_1 .card .back .inner .return:hover,
               .contenedor_producto_1-2 .contenedor_producto_2 .card .back .inner .return:hover {
                 background-color: #fff;
                 box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
                 text-shadow: none;
                 color: #2059f7; }
+        .contenedor_producto_1-2 .contenedor_producto_1 .card .description,
         .contenedor_producto_1-2 .contenedor_producto_2 .card .description {
           width: 100%;
           height: 100%;
           justify-items: center; }
+          .contenedor_producto_1-2 .contenedor_producto_1 .card .description p,
           .contenedor_producto_1-2 .contenedor_producto_2 .card .description p {
             letter-spacing: 1px;
-            line-height: 18px;
+            line-height: 16px;
             color: #2059f7;
             font-weight: 500;
-            font-size: 17px;
+            font-size: 15px;
             text-align: center; }
   .contenedor_producto_3-4 {
     display: flex;
     flex-direction: row; }
-    .contenedor_producto_3-4 .contenedor_producto_3 {
-      margin-bottom: 0;
-      margin-right: 0.5em; }
-      .contenedor_producto_3-4 .contenedor_producto_3 .cards-title {
-        margin-top: 1em;
-        letter-spacing: 1px;
-        color: whitesmoke;
-        font-weight: 800;
-        text-align: center; }
-      .contenedor_producto_3-4 .contenedor_producto_3 .card {
-        height: 100%;
-        margin: 1em;
-        perspective: 2000px; }
-        .contenedor_producto_3-4 .contenedor_producto_3 .card .content {
-          position: relative;
-          width: 100%;
-          height: 100%;
-          transform-style: preserve-3d;
-          transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1); }
-        .contenedor_producto_3-4 .contenedor_producto_3 .card:hover {
-          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
-        .contenedor_producto_3-4 .contenedor_producto_3 .card .more {
-          display: none; }
-          .contenedor_producto_3-4 .contenedor_producto_3 .card .more:checked ~ .content {
-            transform: rotateY(180deg); }
-        .contenedor_producto_3-4 .contenedor_producto_3 .card .front,
-        .contenedor_producto_3-4 .contenedor_producto_3 .card .back {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          backface-visibility: hidden;
-          transform-style: preserve-3d;
-          border-radius: 6px; }
-          .contenedor_producto_3-4 .contenedor_producto_3 .card .front .inner,
-          .contenedor_producto_3-4 .contenedor_producto_3 .card .back .inner {
-            height: 100%;
-            display: grid;
-            padding: 1.5em;
-            transform: translateZ(80px) scale(0.94); }
-        .contenedor_producto_3-4 .contenedor_producto_3 .card .front {
-          background-color: white;
-          background-size: cover;
-          background-position: center center; }
-          .contenedor_producto_3-4 .contenedor_producto_3 .card .front:after {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: block;
-            border-radius: 6px;
-            backface-visibility: hidden; }
-          .contenedor_producto_3-4 .contenedor_producto_3 .card .front .inner {
-            grid-template-rows: 5fr 1fr;
-            justify-items: center; }
-            .contenedor_producto_3-4 .contenedor_producto_3 .card .front .inner .button {
-              grid-column: 1/2;
-              justify-self: center;
-              grid-row: 2;
-              letter-spacing: 1px;
-              font-weight: 600;
-              cursor: pointer;
-              display: block;
-              padding: 0 1.5em;
-              height: 3em;
-              line-height: 2.9em;
-              min-width: 3em;
-              background-color: #2059f7;
-              border: solid 2px white;
-              color: white;
-              border-radius: 4px;
-              text-align: center;
-              left: 50%;
-              backface-visibility: hidden;
-              transition: 0.3s ease-in-out;
-              text-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
-              .contenedor_producto_3-4 .contenedor_producto_3 .card .front .inner .button:hover {
-                background-color: #fff;
-                box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-                text-shadow: none;
-                color: #2059f7; }
-        .contenedor_producto_3-4 .contenedor_producto_3 .card .back {
-          transform: rotateY(180deg);
-          background: linear-gradient(30deg, rgba(4, 65, 157, 0.7), rgba(189, 233, 244, 0.7));
-          border: 2px solid #f0f0f0; }
-          .contenedor_producto_3-4 .contenedor_producto_3 .card .back .inner {
-            grid-template-rows: 5fr 1fr;
-            justify-items: center; }
-            .contenedor_producto_3-4 .contenedor_producto_3 .card .back .inner .return {
-              grid-column: 1/2;
-              justify-self: center;
-              grid-row: 2;
-              letter-spacing: 1px;
-              font-weight: 600;
-              cursor: pointer;
-              display: block;
-              padding: 0 1.5em;
-              height: 3em;
-              line-height: 2.9em;
-              min-width: 3em;
-              background-color: #2059f7;
-              border: solid 2px white;
-              color: white;
-              border-radius: 4px;
-              text-align: center;
-              left: 50%;
-              backface-visibility: hidden;
-              transition: 0.3s ease-in-out;
-              text-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
-              .contenedor_producto_3-4 .contenedor_producto_3 .card .back .inner .return:hover {
-                background-color: #fff;
-                box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-                text-shadow: none;
-                color: #2059f7; }
-        .contenedor_producto_3-4 .contenedor_producto_3 .card .description {
-          width: 100%;
-          height: 100%;
-          justify-items: center; }
-          .contenedor_producto_3-4 .contenedor_producto_3 .card .description p {
-            letter-spacing: 1px;
-            line-height: 18px;
-            color: #2059f7;
-            font-weight: 500;
-            font-size: 17px;
-            text-align: center; }
+    .contenedor_producto_3-4 .contenedor_producto_3,
     .contenedor_producto_3-4 .contenedor_producto_4 {
       margin-bottom: 0;
       margin-right: 0.5em; }
+      .contenedor_producto_3-4 .contenedor_producto_3 .cards-title,
       .contenedor_producto_3-4 .contenedor_producto_4 .cards-title {
         margin-top: 1em;
         letter-spacing: 1px;
         color: whitesmoke;
         font-weight: 800;
         text-align: center; }
+      .contenedor_producto_3-4 .contenedor_producto_3 .card,
       .contenedor_producto_3-4 .contenedor_producto_4 .card {
         height: 100%;
         margin: 1em;
         perspective: 2000px; }
+        .contenedor_producto_3-4 .contenedor_producto_3 .card .content,
         .contenedor_producto_3-4 .contenedor_producto_4 .card .content {
           position: relative;
           width: 100%;
           height: 100%;
           transform-style: preserve-3d;
           transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1); }
+        .contenedor_producto_3-4 .contenedor_producto_3 .card:hover,
         .contenedor_producto_3-4 .contenedor_producto_4 .card:hover {
           box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
+        .contenedor_producto_3-4 .contenedor_producto_3 .card .more,
         .contenedor_producto_3-4 .contenedor_producto_4 .card .more {
           display: none; }
+          .contenedor_producto_3-4 .contenedor_producto_3 .card .more:checked ~ .content,
           .contenedor_producto_3-4 .contenedor_producto_4 .card .more:checked ~ .content {
             transform: rotateY(180deg); }
+        .contenedor_producto_3-4 .contenedor_producto_3 .card .front,
+        .contenedor_producto_3-4 .contenedor_producto_3 .card .back,
         .contenedor_producto_3-4 .contenedor_producto_4 .card .front,
         .contenedor_producto_3-4 .contenedor_producto_4 .card .back {
           position: absolute;
@@ -1723,16 +1566,20 @@ footer {
           backface-visibility: hidden;
           transform-style: preserve-3d;
           border-radius: 6px; }
+          .contenedor_producto_3-4 .contenedor_producto_3 .card .front .inner,
+          .contenedor_producto_3-4 .contenedor_producto_3 .card .back .inner,
           .contenedor_producto_3-4 .contenedor_producto_4 .card .front .inner,
           .contenedor_producto_3-4 .contenedor_producto_4 .card .back .inner {
             height: 100%;
             display: grid;
             padding: 1.5em;
             transform: translateZ(80px) scale(0.94); }
+        .contenedor_producto_3-4 .contenedor_producto_3 .card .front,
         .contenedor_producto_3-4 .contenedor_producto_4 .card .front {
           background-color: white;
           background-size: cover;
           background-position: center center; }
+          .contenedor_producto_3-4 .contenedor_producto_3 .card .front:after,
           .contenedor_producto_3-4 .contenedor_producto_4 .card .front:after {
             position: absolute;
             top: 0;
@@ -1742,9 +1589,11 @@ footer {
             display: block;
             border-radius: 6px;
             backface-visibility: hidden; }
+          .contenedor_producto_3-4 .contenedor_producto_3 .card .front .inner,
           .contenedor_producto_3-4 .contenedor_producto_4 .card .front .inner {
             grid-template-rows: 5fr 1fr;
             justify-items: center; }
+            .contenedor_producto_3-4 .contenedor_producto_3 .card .front .inner .button,
             .contenedor_producto_3-4 .contenedor_producto_4 .card .front .inner .button {
               grid-column: 1/2;
               justify-self: center;
@@ -1766,18 +1615,22 @@ footer {
               backface-visibility: hidden;
               transition: 0.3s ease-in-out;
               text-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
+              .contenedor_producto_3-4 .contenedor_producto_3 .card .front .inner .button:hover,
               .contenedor_producto_3-4 .contenedor_producto_4 .card .front .inner .button:hover {
                 background-color: #fff;
                 box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
                 text-shadow: none;
                 color: #2059f7; }
+        .contenedor_producto_3-4 .contenedor_producto_3 .card .back,
         .contenedor_producto_3-4 .contenedor_producto_4 .card .back {
           transform: rotateY(180deg);
           background: linear-gradient(30deg, rgba(4, 65, 157, 0.7), rgba(189, 233, 244, 0.7));
           border: 2px solid #f0f0f0; }
+          .contenedor_producto_3-4 .contenedor_producto_3 .card .back .inner,
           .contenedor_producto_3-4 .contenedor_producto_4 .card .back .inner {
             grid-template-rows: 5fr 1fr;
             justify-items: center; }
+            .contenedor_producto_3-4 .contenedor_producto_3 .card .back .inner .return,
             .contenedor_producto_3-4 .contenedor_producto_4 .card .back .inner .return {
               grid-column: 1/2;
               justify-self: center;
@@ -1799,177 +1652,62 @@ footer {
               backface-visibility: hidden;
               transition: 0.3s ease-in-out;
               text-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
+              .contenedor_producto_3-4 .contenedor_producto_3 .card .back .inner .return:hover,
               .contenedor_producto_3-4 .contenedor_producto_4 .card .back .inner .return:hover {
                 background-color: #fff;
                 box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
                 text-shadow: none;
                 color: #2059f7; }
+        .contenedor_producto_3-4 .contenedor_producto_3 .card .description,
         .contenedor_producto_3-4 .contenedor_producto_4 .card .description {
           width: 100%;
           height: 100%;
           justify-items: center; }
+          .contenedor_producto_3-4 .contenedor_producto_3 .card .description p,
           .contenedor_producto_3-4 .contenedor_producto_4 .card .description p {
             letter-spacing: 1px;
-            line-height: 18px;
+            line-height: 16px;
             color: #2059f7;
             font-weight: 500;
-            font-size: 17px;
+            font-size: 15px;
             text-align: center; }
   .contenedor_producto_5-6 {
     display: flex;
     flex-direction: row; }
-    .contenedor_producto_5-6 .contenedor_producto_5 {
-      margin-bottom: 0;
-      margin-right: 0.5em; }
-      .contenedor_producto_5-6 .contenedor_producto_5 .cards-title {
-        margin-top: 1em;
-        letter-spacing: 1px;
-        color: whitesmoke;
-        font-weight: 800;
-        text-align: center; }
-      .contenedor_producto_5-6 .contenedor_producto_5 .card {
-        height: 100%;
-        margin: 1em;
-        perspective: 2000px; }
-        .contenedor_producto_5-6 .contenedor_producto_5 .card .content {
-          position: relative;
-          width: 100%;
-          height: 100%;
-          transform-style: preserve-3d;
-          transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1); }
-        .contenedor_producto_5-6 .contenedor_producto_5 .card:hover {
-          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
-        .contenedor_producto_5-6 .contenedor_producto_5 .card .more {
-          display: none; }
-          .contenedor_producto_5-6 .contenedor_producto_5 .card .more:checked ~ .content {
-            transform: rotateY(180deg); }
-        .contenedor_producto_5-6 .contenedor_producto_5 .card .front,
-        .contenedor_producto_5-6 .contenedor_producto_5 .card .back {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          backface-visibility: hidden;
-          transform-style: preserve-3d;
-          border-radius: 6px; }
-          .contenedor_producto_5-6 .contenedor_producto_5 .card .front .inner,
-          .contenedor_producto_5-6 .contenedor_producto_5 .card .back .inner {
-            height: 100%;
-            display: grid;
-            padding: 1.5em;
-            transform: translateZ(80px) scale(0.94); }
-        .contenedor_producto_5-6 .contenedor_producto_5 .card .front {
-          background-color: white;
-          background-size: cover;
-          background-position: center center; }
-          .contenedor_producto_5-6 .contenedor_producto_5 .card .front:after {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: block;
-            border-radius: 6px;
-            backface-visibility: hidden; }
-          .contenedor_producto_5-6 .contenedor_producto_5 .card .front .inner {
-            grid-template-rows: 5fr 1fr;
-            justify-items: center; }
-            .contenedor_producto_5-6 .contenedor_producto_5 .card .front .inner .button {
-              grid-column: 1/2;
-              justify-self: center;
-              grid-row: 2;
-              letter-spacing: 1px;
-              font-weight: 600;
-              cursor: pointer;
-              display: block;
-              padding: 0 1.5em;
-              height: 3em;
-              line-height: 2.9em;
-              min-width: 3em;
-              background-color: #2059f7;
-              border: solid 2px white;
-              color: white;
-              border-radius: 4px;
-              text-align: center;
-              left: 50%;
-              backface-visibility: hidden;
-              transition: 0.3s ease-in-out;
-              text-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
-              .contenedor_producto_5-6 .contenedor_producto_5 .card .front .inner .button:hover {
-                background-color: #fff;
-                box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-                text-shadow: none;
-                color: #2059f7; }
-        .contenedor_producto_5-6 .contenedor_producto_5 .card .back {
-          transform: rotateY(180deg);
-          background: linear-gradient(30deg, rgba(4, 65, 157, 0.7), rgba(189, 233, 244, 0.7));
-          border: 2px solid #f0f0f0; }
-          .contenedor_producto_5-6 .contenedor_producto_5 .card .back .inner {
-            grid-template-rows: 5fr 1fr;
-            justify-items: center; }
-            .contenedor_producto_5-6 .contenedor_producto_5 .card .back .inner .return {
-              grid-column: 1/2;
-              justify-self: center;
-              grid-row: 2;
-              letter-spacing: 1px;
-              font-weight: 600;
-              cursor: pointer;
-              display: block;
-              padding: 0 1.5em;
-              height: 3em;
-              line-height: 2.9em;
-              min-width: 3em;
-              background-color: #2059f7;
-              border: solid 2px white;
-              color: white;
-              border-radius: 4px;
-              text-align: center;
-              left: 50%;
-              backface-visibility: hidden;
-              transition: 0.3s ease-in-out;
-              text-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
-              .contenedor_producto_5-6 .contenedor_producto_5 .card .back .inner .return:hover {
-                background-color: #fff;
-                box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-                text-shadow: none;
-                color: #2059f7; }
-        .contenedor_producto_5-6 .contenedor_producto_5 .card .description {
-          width: 100%;
-          height: 100%;
-          justify-items: center; }
-          .contenedor_producto_5-6 .contenedor_producto_5 .card .description p {
-            letter-spacing: 1px;
-            line-height: 18px;
-            color: #2059f7;
-            font-weight: 500;
-            font-size: 17px;
-            text-align: center; }
+    .contenedor_producto_5-6 .contenedor_producto_5,
     .contenedor_producto_5-6 .contenedor_producto_6 {
       margin-bottom: 0;
       margin-right: 0.5em; }
+      .contenedor_producto_5-6 .contenedor_producto_5 .cards-title,
       .contenedor_producto_5-6 .contenedor_producto_6 .cards-title {
         margin-top: 1em;
         letter-spacing: 1px;
         color: whitesmoke;
-        font-weight: 800;
+        font-weight: 700;
         text-align: center; }
+      .contenedor_producto_5-6 .contenedor_producto_5 .card,
       .contenedor_producto_5-6 .contenedor_producto_6 .card {
         height: 100%;
         margin: 1em;
         perspective: 2000px; }
+        .contenedor_producto_5-6 .contenedor_producto_5 .card .content,
         .contenedor_producto_5-6 .contenedor_producto_6 .card .content {
           position: relative;
           width: 100%;
           height: 100%;
           transform-style: preserve-3d;
           transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1); }
+        .contenedor_producto_5-6 .contenedor_producto_5 .card:hover,
         .contenedor_producto_5-6 .contenedor_producto_6 .card:hover {
           box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
+        .contenedor_producto_5-6 .contenedor_producto_5 .card .more,
         .contenedor_producto_5-6 .contenedor_producto_6 .card .more {
           display: none; }
+          .contenedor_producto_5-6 .contenedor_producto_5 .card .more:checked ~ .content,
           .contenedor_producto_5-6 .contenedor_producto_6 .card .more:checked ~ .content {
             transform: rotateY(180deg); }
+        .contenedor_producto_5-6 .contenedor_producto_5 .card .front,
+        .contenedor_producto_5-6 .contenedor_producto_5 .card .back,
         .contenedor_producto_5-6 .contenedor_producto_6 .card .front,
         .contenedor_producto_5-6 .contenedor_producto_6 .card .back {
           position: absolute;
@@ -1980,16 +1718,20 @@ footer {
           backface-visibility: hidden;
           transform-style: preserve-3d;
           border-radius: 6px; }
+          .contenedor_producto_5-6 .contenedor_producto_5 .card .front .inner,
+          .contenedor_producto_5-6 .contenedor_producto_5 .card .back .inner,
           .contenedor_producto_5-6 .contenedor_producto_6 .card .front .inner,
           .contenedor_producto_5-6 .contenedor_producto_6 .card .back .inner {
             height: 100%;
             display: grid;
             padding: 1.5em;
             transform: translateZ(80px) scale(0.94); }
+        .contenedor_producto_5-6 .contenedor_producto_5 .card .front,
         .contenedor_producto_5-6 .contenedor_producto_6 .card .front {
           background-color: white;
           background-size: cover;
           background-position: center center; }
+          .contenedor_producto_5-6 .contenedor_producto_5 .card .front:after,
           .contenedor_producto_5-6 .contenedor_producto_6 .card .front:after {
             position: absolute;
             top: 0;
@@ -1999,9 +1741,11 @@ footer {
             display: block;
             border-radius: 6px;
             backface-visibility: hidden; }
+          .contenedor_producto_5-6 .contenedor_producto_5 .card .front .inner,
           .contenedor_producto_5-6 .contenedor_producto_6 .card .front .inner {
             grid-template-rows: 5fr 1fr;
             justify-items: center; }
+            .contenedor_producto_5-6 .contenedor_producto_5 .card .front .inner .button,
             .contenedor_producto_5-6 .contenedor_producto_6 .card .front .inner .button {
               grid-column: 1/2;
               justify-self: center;
@@ -2023,18 +1767,22 @@ footer {
               backface-visibility: hidden;
               transition: 0.3s ease-in-out;
               text-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
+              .contenedor_producto_5-6 .contenedor_producto_5 .card .front .inner .button:hover,
               .contenedor_producto_5-6 .contenedor_producto_6 .card .front .inner .button:hover {
                 background-color: #fff;
                 box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
                 text-shadow: none;
                 color: #2059f7; }
+        .contenedor_producto_5-6 .contenedor_producto_5 .card .back,
         .contenedor_producto_5-6 .contenedor_producto_6 .card .back {
           transform: rotateY(180deg);
           background: linear-gradient(30deg, rgba(4, 65, 157, 0.7), rgba(189, 233, 244, 0.7));
           border: 2px solid #f0f0f0; }
+          .contenedor_producto_5-6 .contenedor_producto_5 .card .back .inner,
           .contenedor_producto_5-6 .contenedor_producto_6 .card .back .inner {
             grid-template-rows: 5fr 1fr;
             justify-items: center; }
+            .contenedor_producto_5-6 .contenedor_producto_5 .card .back .inner .return,
             .contenedor_producto_5-6 .contenedor_producto_6 .card .back .inner .return {
               grid-column: 1/2;
               justify-self: center;
@@ -2056,21 +1804,24 @@ footer {
               backface-visibility: hidden;
               transition: 0.3s ease-in-out;
               text-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
+              .contenedor_producto_5-6 .contenedor_producto_5 .card .back .inner .return:hover,
               .contenedor_producto_5-6 .contenedor_producto_6 .card .back .inner .return:hover {
                 background-color: #fff;
                 box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
                 text-shadow: none;
                 color: #2059f7; }
+        .contenedor_producto_5-6 .contenedor_producto_5 .card .description,
         .contenedor_producto_5-6 .contenedor_producto_6 .card .description {
           width: 100%;
           height: 100%;
           justify-items: center; }
+          .contenedor_producto_5-6 .contenedor_producto_5 .card .description p,
           .contenedor_producto_5-6 .contenedor_producto_6 .card .description p {
             letter-spacing: 1px;
-            line-height: 18px;
+            line-height: 16px;
             color: #2059f7;
             font-weight: 500;
-            font-size: 17px;
+            font-size: 15px;
             text-align: center; }
   /*Estilos pagina novedades.html */
   .titulo_novedades h1 {
@@ -2165,7 +1916,7 @@ footer {
       .contenedor_cards .novedades_index .card:hover {
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
     .contenedor_cards .novedades_index .btn {
-      margin-top: 2.95em; }
+      margin-top: 4.5em; }
   .texto_index {
     display: flex;
     flex-wrap: wrap;
@@ -2186,6 +1937,6 @@ footer {
       color: whitesmoke; }
     .texto_index .textoNosotros_index {
       font-weight: 500;
-      font-size: 22px;
+      font-size: 20px;
       text-align: center;
       color: whitesmoke; } }

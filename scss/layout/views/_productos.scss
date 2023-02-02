@@ -11,28 +11,17 @@
     grid-area: producto_1-2;
     display: flex;
     flex-direction: column;
-    
 
-    .contenedor_producto_1,.contenedor_producto_2 {
-        background-color: cornflowerblue;
+    .contenedor_producto_1,
+    .contenedor_producto_2 {
         .cards-title {
             @include cards-tit(1em, 3px, whitesmoke, 500);
         }
 
         @include contenedores-figures(450px, 100%, 15px, 0.04em, 1.2em, 0.5em, 0.5em);
         margin-bottom: 0.5em;
-        @include cards-product(15px,0px,17px);
+        @include cards-product(15px, 0px, 17px);
     }
-
-    // .contenedor_producto_2 {
-    //     .cards-title {
-    //         @include cards-tit(1em, 3px, whitesmoke, 500);
-    //     }
-
-    //     @include contenedores-figures(450px, 100%, 15px, 0.04em, 1.2em, 0.5em, 0.5em);
-    //     margin-bottom: 0.5em;
-    //     @include cards-product(15px,0px,17px);
-    // }
 }
 
 .contenedor_producto_3-4 {
@@ -40,50 +29,31 @@
     display: flex;
     flex-direction: column;
 
-    .contenedor_producto_3,.contenedor_producto_4 {
+    .contenedor_producto_3,
+    .contenedor_producto_4 {
         .cards-title {
-            @include cards-tit(1em, 3px,whitesmoke, 500);
+            @include cards-tit(1em, 3px, whitesmoke, 500);
         }
 
         @include contenedores-figures(450px, 100%, 15px, 0.04em, 1.2em, 0.5em, 0.5em);
         margin-bottom: 0.5em;
-        @include cards-product(15px,0px,17px);
+        @include cards-product(15px, 0px, 17px);
     }
-
-    // .contenedor_producto_4 {
-    //     .cards-title {
-    //         @include cards-tit(1em, 3px, whitesmoke, 500);
-    //     }
-
-    //     @include contenedores-figures(450px, 100%, 15px, 0.04em, 1.2em, 0.5em, 0.5em);
-    //     margin-bottom: 0.5em;
-    //     @include cards-product(15px,0px,17px);
-    // }
 }
 
 .contenedor_producto_5-6 {
     grid-area: producto_5-6;
     display: flex;
     flex-direction: column;
-    .contenedor_producto_5,.contenedor_producto_6 {
+
+    .contenedor_producto_5,
+    .contenedor_producto_6 {
         .cards-title {
-            @include cards-tit(1em, 3px,whitesmoke, 500);
+            @include cards-tit(1em, 3px, whitesmoke, 500);
         }
 
         @include contenedores-figures(450px, 100%, 15px, 0.04em, 1.2em, 0.5em, 0.5em);
         margin-bottom: 0.5em;
-        @include cards-product(15px,0px,17px);
+        @include cards-product(15px, 0px, 17px);
     }
-
-    // .contenedor_producto_6 {
-    //     .cards-title {
-    //         @include cards-tit(1em, 3px,whitesmoke, 500);
-    //     }
-
-    //     @include contenedores-figures(450px, 100%, 15px, 0.04em, 1.2em, 0.5em, 0.5em);
-    //     margin-bottom: 0.5em;
-    //     @include cards-product(15px,0px,17px);
-    // }
 }
-
-

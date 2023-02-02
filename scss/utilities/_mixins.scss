@@ -65,8 +65,9 @@
     .card {
         height: $ch;
         width: $cw;
-        background:$bg-cards-index;
+        background: $bg-cards-index;
         color: whitesmoke;
+
         &:hover {
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
         }
@@ -126,7 +127,7 @@
     font-weight: $fw;
     font-size: $fs;
     text-align: $ta;
-    color:whitesmoke;
+    color: whitesmoke;
 }
 
 @mixin serv-area($name-area, $flex-dir, $he, $wi) {
@@ -177,14 +178,15 @@
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 
-@mixin cards-tit($mt,$ls,$color,$fw){
-    margin-top:$mt;
+@mixin cards-tit($mt, $ls, $color, $fw) {
+    margin-top: $mt;
     letter-spacing: $ls;
-    color:$color;
+    color: $color;
     font-weight: $fw;
     text-align: center
 }
-@mixin cards-button{
+
+@mixin cards-button {
     grid-column: 1/2;
     justify-self: center;
     grid-row: 2;
@@ -196,7 +198,7 @@
     height: 3em;
     line-height: 2.9em;
     min-width: 3em;
-    background-color:$accent-color;
+    background-color: $accent-color;
     border: solid 2px white;
     color: white;
     border-radius: 4px;
@@ -205,20 +207,19 @@
     backface-visibility: hidden;
     transition: 0.3s ease-in-out;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-        &:hover {
-            background-color: #fff;
-            box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-            text-shadow: none;
-            color: $accent-color;
-        }
+    &:hover {
+        background-color: #fff;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+        text-shadow: none;
+        color: $accent-color;
+    }
 }
 
-@mixin cards-product($fs,$ls,$lh) {
+@mixin cards-product($fs, $ls, $lh) {
     .card {
         height: 100%;
         margin: 1em;
         perspective: 2000px;
-
         .content {
             position: relative;
             width: 100%;
@@ -226,19 +227,15 @@
             transform-style: preserve-3d;
             transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
         }
-
         &:hover {
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
         }
-
         .more {
             display: none;
-
             &:checked~.content {
                 transform: rotateY(180deg);
             }
         }
-
         .front,
         .back {
             position: absolute;
@@ -249,7 +246,6 @@
             backface-visibility: hidden;
             transform-style: preserve-3d;
             border-radius: 6px;
-
             .inner {
                 height: 100%;
                 display: grid;
@@ -257,12 +253,10 @@
                 transform: translateZ(80px) scale(0.94);
             }
         }
-
         .front {
-            background-color:white;
+            background-color: white;
             background-size: cover;
             background-position: center center;
-
             &:after {
                 position: absolute;
                 top: 0;
@@ -273,44 +267,39 @@
                 border-radius: 6px;
                 backface-visibility: hidden;
             }
-
             .inner {
-                grid-template-rows: 5fr 1fr ;
+                grid-template-rows: 5fr 1fr;
                 justify-items: center;
-                .button{
+
+                .button {
                     @include cards-button;
                 }
             }
         }
-
         .back {
             transform: rotateY(180deg);
             background: $bg-cards;
             border: 2px solid rgb(240, 240, 240);
-            
             .inner {
-                
-                grid-template-rows: 5fr 1fr ;
+                grid-template-rows: 5fr 1fr;
                 justify-items: center;
-                .return{
+                .return {
                     @include cards-button;
-                    }
-                }
-            }
-
-            .description {
-                width: 100%;
-                height: 100%;
-                justify-items: center;
-
-                p {
-                    letter-spacing: $ls;
-                    line-height: $lh;
-                    color: $accent-color ;
-                    font-weight: 500;
-                    font-size: $fs;
-                    text-align: center;
                 }
             }
         }
+        .description {
+            width: 100%;
+            height: 100%;
+            justify-items: center;
+            p {
+                letter-spacing: $ls;
+                line-height: $lh;
+                color: $accent-color ;
+                font-weight: 500;
+                font-size: $fs;
+                text-align: center;
+            }
+        }
     }
+}

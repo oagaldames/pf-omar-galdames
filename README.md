@@ -1,20 +1,20 @@
-### pf-Omar-galdames
+# pf-omar-galdames
 
-## Proyecto Final Desarrollo Web- CoderHouse
+# Proyecto Final Desarrollo Web- CoderHouse
 
-# Autor: Omar Adrian Galdames.
+## Autor: Omar Adrián Galdames.
 
 Este es un repositorio de desarrollo web, aprovechando la ocasión de hacerlo para mi propio emprendimiento.
 Quedando abierto a incorporar más herramientas que voy a adquirir en los proximos cursos de la Carrera de Desarrollo Full Stack que permitan la progresión de la página lo largo del tiempo.
 
 
-# Tecnologias aplicadas en el proyecto
+### Tecnologias aplicadas en el proyecto
 1. Html 
 2. CSS 
 4. Bootstrap 
 5. SCSS
 
-# Evolucion del Proyecto
+### Evolucion del Proyecto
 1. Diseño del wireframe utilizando Figma
 
 2. Estructura inicial de la web en HTML dandole estilo inicial en CSS.

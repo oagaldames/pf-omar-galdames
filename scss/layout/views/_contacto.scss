@@ -16,17 +16,17 @@
     grid-area: form_contacto;
     display: flex;
     @include contenedores-figures(100%, 90%, 15px, 0.04em, 1.2em, 1em, 0.2em);
-
+    background: $bg-contacto;
     .cuadro_texto {
         text-align: center;
         gap: 5px;
-
+        color:whitesmoke;
         .tituloTextoContacto {
             font-size: 20px;
         }
-
         .textoContacto {
             font-size: 15px;
+            
         }
     }
 }

@@ -44,10 +44,8 @@
         .figure_servicios {
             @include serv-fig(90%, center);
         }
-
         .contenedor_texto {
             @include serv-contenedor-texto(100%, 90%);
-
             .text_fig {
                 @include serv-texto(400, 13px, center, 0px);
             }

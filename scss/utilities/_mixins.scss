@@ -21,7 +21,6 @@
     font-size: $sf;
     color: whitesmoke;
     font-style: bold;
-
 }
 
 @mixin cont-foo-da($ls, $lh, $pl) {
@@ -67,7 +66,7 @@
         height: $ch;
         width: $cw;
         background:$bg-cards-index;
-        color: black;
+        color: whitesmoke;
         &:hover {
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
         }
@@ -93,14 +92,14 @@
     font-weight: $fw;
     font-size: $fs;
     text-align: center;
-    color: black;
+    color: whitesmoke;
 }
 
 @mixin font-text-ind($fw, $fs) {
     font-weight: $fw;
     font-size: $fs;
     text-align: center;
-    color: black;
+    color: whitesmoke;
 }
 
 @mixin contenedores-figures($ch, $cw, $br, $lsp, $lhe, $pa, $gap) {
@@ -127,7 +126,7 @@
     font-weight: $fw;
     font-size: $fs;
     text-align: $ta;
-    color: black;
+    color:whitesmoke;
 }
 
 @mixin serv-area($name-area, $flex-dir, $he, $wi) {
@@ -157,7 +156,7 @@
     font-size: $fs;
     text-align: $ta;
     padding-left: $pal;
-    color: black;
+    color: whitesmoke;
 }
 
 @mixin cards-serv($ch, $cw) {
@@ -176,8 +175,6 @@
     padding: 10px;
     gap: 10px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-
-
 }
 
 @mixin cards-tit($mt,$ls,$color,$fw){
@@ -262,7 +259,7 @@
         }
 
         .front {
-            background-color: #fff;
+            background-color:white;
             background-size: cover;
             background-position: center center;
 

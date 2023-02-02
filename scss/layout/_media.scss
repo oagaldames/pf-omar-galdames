@@ -221,7 +221,7 @@
             margin-bottom: 0;
             margin-right: 0.5em;
             .cards-title {
-                @include cards-tit(1em, 1px, black, 800);
+                @include cards-tit(1em, 1px, whitesmoke, 800);
             }
             @include cards-product(17px, 1px, 18px);
         }
@@ -230,7 +230,7 @@
             margin-right: 0.5em;
 
             .cards-title {
-                @include cards-tit(1em, 1px, black, 800);
+                @include cards-tit(1em, 1px, whitesmoke, 800);
             }
 
             @include cards-product(17px, 1px, 18px);
@@ -243,7 +243,7 @@
             margin-bottom: 0;
             margin-right: 0.5em;
         .cards-title {
-            @include cards-tit(1em, 1px, black, 800);
+            @include cards-tit(1em, 1px, whitesmoke, 800);
         }
         @include cards-product(17px, 1px, 18px);
     }
@@ -251,7 +251,7 @@
             margin-bottom: 0;
             margin-right: 0.5em;
         .cards-title {
-            @include cards-tit(1em, 1px, black, 800);
+            @include cards-tit(1em, 1px, whitesmoke, 800);
         }
 
         @include cards-product(17px, 1px, 18px);
@@ -264,7 +264,7 @@
         margin-bottom: 0;
         margin-right: 0.5em;
         .cards-title {
-            @include cards-tit(1em, 1px, black, 800);
+            @include cards-tit(1em, 1px, whitesmoke, 800);
         }
         @include cards-product(17px, 1px, 18px);
     }
@@ -272,7 +272,7 @@
         margin-bottom: 0;
         margin-right: 0.5em;
         .cards-title {
-            @include cards-tit(1em, 1px, black, 800);
+            @include cards-tit(1em, 1px, whitesmoke, 800);
         }
         @include cards-product(17px, 1px, 18px);
     }

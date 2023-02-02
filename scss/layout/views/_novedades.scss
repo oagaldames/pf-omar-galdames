@@ -10,8 +10,25 @@
     grid-area: novedades;
     display: flex;
     flex-direction: column;
-    @include contenedores-figures(100%, 95%, 15px, 0.04em, 1.2em, 1em, 0.2em);
-}
+    @include contenedores-figures(100%, 100%, 15px, 0.04em, 1.2em, 1em, 0.2em);
+    .novedad-art{
+        margin-bottom: 10px;
+        display: flex;
+        width: 90%;
+        align-self: center;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+            &:hover .hover-galeria{
+            transform: scale(1);
+            }
+    
+            
+            }
+    }
+    .hover-galeria{
+        @extend .hover-novedades
+    }
 
 .texto_novedades {
     grid-area: texto_novedades;

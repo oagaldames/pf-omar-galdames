@@ -1,4 +1,5 @@
 //*Estilos servicios.html mobile*//
+
 .titulo_servicios {
     @include titulos;
 
@@ -7,7 +8,7 @@
     }
 }
 
-.contenedor_servicios_1 {
+.contenedor_servicios_1{
     @include contenedores-figures(450px, 100%, 15px, 0.04em, 1.2em, 0.5em, 0.1em);
 
     .titulo_fig {
@@ -18,7 +19,7 @@
         @include serv_area(servicios_1, column, 100%, 100%);
 
         .figure_servicios {
-            @include serv-fig(90%, center);
+            @include serv-fig(90%,center);
         }
 
         .contenedor_texto {
@@ -30,8 +31,7 @@
         }
     }
 }
-
-.contenedor_servicios_2 {
+.contenedor_servicios_2{
     @include contenedores-figures(450px, 100%, 15px, 0.04em, 1.2em, 0.5em, 0.1em);
 
     .titulo_fig {
@@ -42,18 +42,19 @@
         @include serv_area(servicios_2, column, 100%, 100%);
 
         .figure_servicios {
-            @include serv-fig(90%, center);
+            @include serv-fig(90%,center);
         }
+
         .contenedor_texto {
             @include serv-contenedor-texto(100%, 90%);
+
             .text_fig {
                 @include serv-texto(400, 13px, center, 0px);
             }
         }
     }
 }
-
-.contenedor_servicios_3 {
+.contenedor_servicios_3{
     @include contenedores-figures(450px, 100%, 15px, 0.04em, 1.2em, 0.5em, 0.1em);
 
     .titulo_fig {
@@ -64,7 +65,7 @@
         @include serv_area(servicios_3, column, 100%, 100%);
 
         .figure_servicios {
-            @include serv-fig(90%, center);
+            @include serv-fig(90%,center);
         }
 
         .contenedor_texto {
@@ -75,9 +76,9 @@
             }
         }
     }
-}
 
-.contenedor_servicios_4 {
+}
+.contenedor_servicios_4{
     @include contenedores-figures(450px, 100%, 15px, 0.04em, 1.2em, 0.5em, 0.1em);
 
     .titulo_fig {
@@ -88,7 +89,7 @@
         @include serv_area(servicios_4, column, 100%, 100%);
 
         .figure_servicios {
-            @include serv-fig(90%, center);
+            @include serv-fig(90%,center);
         }
 
         .contenedor_texto {
@@ -99,4 +100,5 @@
             }
         }
     }
+
 }

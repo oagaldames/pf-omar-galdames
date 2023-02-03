@@ -4,6 +4,7 @@
 
     /*Abre Media Index +768/-1024**/
     /* Estilos footer*/
+
     footer {
         height: 120px;
 
@@ -271,7 +272,7 @@
             @include text-tit(40px, 900);
         }
     }
-
+    
     .contenedor_novedades {
         flex-direction: row;
     }
@@ -363,4 +364,7 @@
         }
 
     }
+    // .main_novedades {
+    //     @include main(50%,50%);
+    // }
 }

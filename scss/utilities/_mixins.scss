@@ -1,3 +1,9 @@
+@mixin main($w,$h){
+    width: $w;
+    height: $h;
+    grid-area: main;
+}
+
 @mixin titulos {
     display: flex;
     grid-area: titulo;

@@ -1152,7 +1152,7 @@ footer {
       .contenedor_cards .novedades_index .card:hover {
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
     .contenedor_cards .novedades_index .btn {
-      margin-top: 3.9em; }
+      margin-top: 2.1em; }
   .texto_index {
     display: flex;
     flex-wrap: wrap;
@@ -1909,7 +1909,7 @@ footer {
       .contenedor_cards .novedades_index .card:hover {
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
     .contenedor_cards .novedades_index .btn {
-      margin-top: 4.5em; }
+      margin-top: 2.6em; }
   .texto_index {
     display: flex;
     flex-wrap: wrap;
